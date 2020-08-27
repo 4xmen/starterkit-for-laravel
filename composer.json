@@ -1,0 +1,68 @@
+{
+    "name": "xmen/starter-kit",
+    "description": "",
+    "keywords": [
+        "xmen",
+        "starter-kit"
+    ],
+    "homepage": "https://github.com/spatie/starter-kit",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xmen",
+            "email": "sadeghpm@gmail.com",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "rtconner/laravel-tagging": "~4.0",
+        "spatie/laravel-medialibrary": "^8.2",
+        "spatie/laravel-permission": "^3.11",
+        "spatie/laravel-sluggable": "^2.4",
+        "te7a-houdini/laravel-trix": "^2.0",
+        "thiagocordeiro/laravel-translator": "^1.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^9.3",
+        "psalm/plugin-laravel": "^1.2",
+        "vimeo/psalm": "^3.11"
+    },
+    "autoload": {
+        "files": [
+            "app/Helpers/Helper.php"
+        ],
+        "psr-4": {
+            "Xmen\\StarterKit\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xmen\\StarterKit\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xmen\\StarterKit\\StarterKitServiceProvider"
+            ],
+            "aliases": {
+                "StarterKit": "Xmen\\StarterKit\\StarterKitFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
