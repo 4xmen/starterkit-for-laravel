@@ -73,6 +73,8 @@ Create admin user by running `install` command and then login to dashboard:
 php artisan starter-kit:install
 ```
 
+Also install `laravel/ui` if you need login/registration.
+
 ## Testing
 
 ``` bash

@@ -15,8 +15,8 @@ class StarterKitCommand extends Command
     {
         $this->info('Create Admin User');
 
-        $role = Role::create(['name' => 'super-admin']);
-        $mrole = Role::create(['name' => 'manager']);
+        $role = Role::FirstOrCreate(['name' => 'super-admin']);
+        $mrole = Role::FirstOrCreate(['name' => 'manager']);
 
         $user = new \App\User();
         $user->email=$this->ask('Enter Email:','admin@example.com');
