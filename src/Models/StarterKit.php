@@ -2,8 +2,12 @@
 
 namespace Xmen\StarterKit\Models;
 
+use Spatie\Permission\Traits\HasRoles;
+
 trait StarterKit
 {
+    use HasRoles;
+
     public function news(){
         return $this->hasMany(\Xmen\StarterKit\Models\News::class,'user_id','id');
     }
