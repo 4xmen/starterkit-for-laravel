@@ -1,7 +1,7 @@
 # Laravel Starter Kit
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/xmen/starter-kit.svg?style=flat-square)](https://packagist.org/packages/spatie/starter-kit)
-[![Total Downloads](https://img.shields.io/packagist/dt/xmen/starter-kit.svg?style=flat-square)](https://packagist.org/packages/spatie/starter-kit)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/xmen/starter-kit.svg?style=flat-square)](https://packagist.org/packages/xmen/starter-kit)
+[![Total Downloads](https://img.shields.io/packagist/dt/xmen/starter-kit.svg?style=flat-square)](https://packagist.org/packages/xmen/starter-kit)
 
 
 An Starter Kit For Laravel Projects.
