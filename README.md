@@ -52,6 +52,16 @@ class User extends Authenticatable {
 public const HOME = '/dashboard/news/index';
 ```
 
+7-Add `role` middleware to `Kernel.php`:
+```php
+    //app/Http/Kernel.php
+
+    protected $routeMiddleware = [
+        ...
+        'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
+    ];
+```
+
 You can publish the config file with:
 ```bash
 php artisan vendor:publish --provider="Xmen\StarterKit\StarterKitServiceProvider" --tag="config"

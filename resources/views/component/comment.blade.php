@@ -20,7 +20,7 @@
         <ul>
             @foreach($c->approved_children as $cch)
                 <li>
-                    @include('component.comment', ['c' => $cch])
+                    @include('starter-kit::component.comment', ['c' => $cch])
                 </li>
             @endforeach
         </ul>

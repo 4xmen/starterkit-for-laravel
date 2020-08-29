@@ -23,7 +23,7 @@
 <body>
 <div id="app">
 
-    @include('component.navbar')
+    @include('starter-kit::component.navbar')
     <div id="wrapper">
         <div id="top-menu">
             <div class="row">
