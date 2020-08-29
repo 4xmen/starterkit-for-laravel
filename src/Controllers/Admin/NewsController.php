@@ -96,7 +96,7 @@ class NewsController extends Controller {
             $n = $n->where('status',$request->filter);
         }
         $news = $n->paginate(20);
-        return view('admin.news.NewsIndex', compact('news'));
+        return view('starter-kit::admin.news.NewsIndex', compact('news'));
     }
 
     /**
@@ -107,7 +107,7 @@ class NewsController extends Controller {
     public function create() {
         //
         $cats = Category::all();
-        return view('admin.news.newsForm', compact('cats'));
+        return view('starter-kit::admin.news.newsForm', compact('cats'));
     }
 
     /**
@@ -143,7 +143,7 @@ class NewsController extends Controller {
     public function edit(News $news) {
         //
         $cats = Category::all();
-        return view('admin.news.newsForm', compact('cats', 'news'));
+        return view('starter-kit::admin.news.newsForm', compact('cats', 'news'));
     }
 
     /**

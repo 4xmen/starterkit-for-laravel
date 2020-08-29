@@ -33,7 +33,7 @@
     },
     "autoload": {
         "files": [
-            "app/Helpers/Helper.php"
+            "./src/Helpers/Helper.php"
         ],
         "psr-4": {
             "Xmen\\StarterKit\\": "src"

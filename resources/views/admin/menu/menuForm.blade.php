@@ -122,7 +122,7 @@
                 >
                     @csrf
                     <ol class="menu-manage menu-x" id="menu-manage">
-                        {!!\App\Helpers\showMenuMange($menu->menuItems()->whereNull('parent')->orderBy('sort')->get())!!}
+                        {!!\Xmen\StarterKit\Helpers\showMenuMange($menu->menuItems()->whereNull('parent')->orderBy('sort')->get())!!}
                     </ol>
                     <input type="hidden" name="info" value="[]" id="sorted"/>
                     <input type="button" id="save-menu" class="btn btn-primary" value="{{__("Save")}}">

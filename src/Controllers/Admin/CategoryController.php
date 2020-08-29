@@ -49,7 +49,7 @@ class CategoryController extends Controller {
     public function index() {
         //
         $cats = Category::paginate(20);
-        return view('admin.category.categoryIndex', compact('cats'));
+        return view('starter-kit::admin.category.categoryIndex', compact('cats'));
     }
 
     /**
@@ -60,7 +60,7 @@ class CategoryController extends Controller {
     public function create() {
         //
         $cats = Category::all();
-        return view('admin.category.categoryForm', compact('cats'));
+        return view('starter-kit::admin.category.categoryForm', compact('cats'));
     }
 
     /**
@@ -97,7 +97,7 @@ class CategoryController extends Controller {
         //
         $cats = Category::where('id', '<>', $cat->id)->get();
         $ccat = $cat;
-        return view('admin.category.categoryForm', compact('ccat', 'cats'));
+        return view('starter-kit::admin.category.categoryForm', compact('ccat', 'cats'));
 
     }
 
@@ -131,7 +131,7 @@ class CategoryController extends Controller {
 
     public function sort() {
         $cats = Category::orderBy('sort')->whereNull('parent')->get();
-        return view('admin.category.categorySort',compact('cats'));
+        return view('starter-kit::admin.category.categorySort',compact('cats'));
     }
 
     public function sortStore(Request $request) {

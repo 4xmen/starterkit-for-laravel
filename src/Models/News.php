@@ -2,7 +2,7 @@
 
 namespace Xmen\StarterKit\Models;
 
-use App\Helpers\TDate;
+use Xmen\StarterKit\Helpers\TDate;
 use Conner\Tagging\Taggable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;

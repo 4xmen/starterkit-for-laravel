@@ -13,7 +13,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    {!!\App\Helpers\showMenuMange($menu->menuItems()->whereNull('parent')->orderBy('sort')->get())!!}
+                    {!!\Xmen\StarterKit\Helpers\showMenuMange($menu->menuItems()->whereNull('parent')->orderBy('sort')->get())!!}
 
                 </ul>
             </div>

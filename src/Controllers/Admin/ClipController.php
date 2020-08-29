@@ -75,7 +75,7 @@ class ClipController extends Controller
             $n = $n->where('active', $request->filter);
         }
         $clips = $n->paginate(10);
-        return view('admin.clip.clipList', compact('clips'));
+        return view('starter-kit::admin.clip.clipList', compact('clips'));
     }
 
     /**
@@ -86,7 +86,7 @@ class ClipController extends Controller
     public function create()
     {
         //
-        return view('admin.clip.clipForm');
+        return view('starter-kit::admin.clip.clipForm');
     }
 
     /**
@@ -124,7 +124,7 @@ class ClipController extends Controller
     public function edit(Clip $clip)
     {
         //
-        return view('admin.clip.clipForm', compact('clip'));
+        return view('starter-kit::admin.clip.clipForm', compact('clip'));
     }
 
     /**

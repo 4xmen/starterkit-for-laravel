@@ -68,7 +68,7 @@ class GalleryController extends Controller
             $n = $n->where('status',$request->filter);
         }
         $galleries = $n->paginate(10);
-        return view('admin.gallery.galleryIndex', compact('galleries'));
+        return view('starter-kit::admin.gallery.galleryIndex', compact('galleries'));
     }
 
     /**
@@ -79,7 +79,7 @@ class GalleryController extends Controller
     public function create()
     {
         //
-        return view('admin.gallery.galleryForm');
+        return view('starter-kit::admin.gallery.galleryForm');
     }
 
     /**
@@ -119,7 +119,7 @@ class GalleryController extends Controller
     public function edit(Gallery $gallery)
     {
         //
-        return  view('admin.gallery.galleryForm',compact('gallery'));
+        return  view('starter-kit::admin.gallery.galleryForm',compact('gallery'));
     }
 
     /**

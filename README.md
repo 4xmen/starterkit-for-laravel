@@ -1,25 +1,55 @@
-# 
+# Laravel Starter Kit
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/starter-kit.svg?style=flat-square)](https://packagist.org/packages/spatie/starter-kit)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/starter-kit/run-tests?label=tests)](https://github.com/spatie/starter-kit/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/starter-kit.svg?style=flat-square)](https://packagist.org/packages/spatie/starter-kit)
 
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+An Starter Kit For Laravel Projects.
 
 ## Installation
 
-You can install the package via composer:
+1-Install the package via composer:
 
 ```bash
 composer require xmen/starter-kit
 ```
 
-You can publish and run the migrations with:
+2-Publish and run the migrations with:
 
 ```bash
 php artisan vendor:publish --provider="Xmen\StarterKit\StarterKitServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="migrations"
 php artisan migrate
+```
+
+3-Publish the assets with:
+
+```bash
+php artisan vendor:publish --provider="Xmen\StarterKit\StarterKitServiceProvider" --tag="assets"
+```
+
+4-Publish the language file with:
+
+```bash
+php artisan vendor:publish --provider="Xmen\StarterKit\StarterKitServiceProvider" --tag="lang"
+```
+
+5-Add `StarterKit` trait to `User` model:
+```php
+use Xmen\StarterKit\Models\StarterKit;
+
+class User extends Authenticatable {
+    use StarterKit;
+...
+}
+```
+
+6-Change the home path to dashboard in `RouteServiceProvider`:
+```php
+//app/Providers/RouteServiceProvider.php
+
+public const HOME = '/dashboard/news/index';
 ```
 
 You can publish the config file with:
@@ -31,14 +61,16 @@ This is the contents of the published config file:
 
 ```php
 return [
+    //The dashboard uri
+    'uri'=>'dashboard'
 ];
 ```
 
 ## Usage
 
-``` php
-$starter-kit = new Xmen\StarterKit();
-echo $starter-kit->echoPhrase('Hello, Xmen!');
+Create admin user by running `install` command and then login to dashboard:
+```bash
+php artisan starter-kit:install
 ```
 
 ## Testing
@@ -47,21 +79,15 @@ echo $starter-kit->echoPhrase('Hello, Xmen!');
 composer test
 ```
 
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
-
 ## Security
 
-If you discover any security related issues, please email freek@spatie.be instead of using the issue tracker.
+If you discover any security related issues, please email sadeghpm@gmail.com instead of using the issue tracker.
 
 ## Credits
 
-- [xmen](https://github.com/xmen)
+- [4xmen](https://github.com/4xmen)
+- [SadeghPM](https://github.com/sadeghpm)
+- [A1Gard](https://github.com/A1Gard)
 - [All Contributors](../../contributors)
 
 ## License

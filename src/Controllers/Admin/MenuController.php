@@ -18,7 +18,7 @@ class MenuController extends Controller {
     public function index() {
         //
         $menus = Menu::paginate(5);
-        return view('admin.menu.menuList', compact('menus'));
+        return view('starter-kit::admin.menu.menuList', compact('menus'));
     }
 
     /**
@@ -55,7 +55,7 @@ class MenuController extends Controller {
      */
     public function show(Menu $menu) {
         //
-        return  view('admin.menu.menuShow',compact('menu'));
+        return  view('starter-kit::admin.menu.menuShow',compact('menu'));
     }
 
     /**
@@ -68,7 +68,7 @@ class MenuController extends Controller {
         //
 //        return $menu->menuItems()->whereNull('parent')->orderBy('sort')->get();
         $cats = Category::all();
-        return view('admin.menu.menuForm', compact('menu', 'cats'));
+        return view('starter-kit::admin.menu.menuForm', compact('menu', 'cats'));
     }
 
     public function save(Menu $menu, $arr, $parent = null) {

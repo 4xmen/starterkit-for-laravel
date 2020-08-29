@@ -1,7 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('admin')->name('admin.')->group(
+Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
     function () {
 //        Route::get('/', 'HomeController@index')->name('home');
 //        Route::get('calendar/{y}/{m}', 'HomeController@index')->name('home.nav');

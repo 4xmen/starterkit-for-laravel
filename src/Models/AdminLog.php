@@ -2,7 +2,7 @@
 
 namespace Xmen\StarterKit\Models;
 
-use App\Helpers\TDate;
+use Xmen\StarterKit\Helpers\TDate;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -38,7 +38,7 @@ class AdminLog extends Model
     protected $guarded = [];
 
     public function user(){
-        return $this->belongsTo(User::class,'user_id','id');
+        return $this->belongsTo(\App\User::class,'user_id','id');
     }
 
     public function persianDate(){

@@ -2,7 +2,7 @@
 
 namespace Xmen\StarterKit\Models;
 
-use App\Helpers\TDate;
+use Xmen\StarterKit\Helpers\TDate;
 use Illuminate\Database\Eloquent\Model;
 
 /**

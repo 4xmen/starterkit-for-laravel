@@ -60,7 +60,7 @@ class PollController extends Controller {
         $n = $n->where('active', $request->filter);
     }
     $polls = $n->paginate(10);
-    return view('admin.poll.pollList', compact('polls'));
+    return view('starter-kit::admin.poll.pollList', compact('polls'));
 }
 
     /**
@@ -70,7 +70,7 @@ class PollController extends Controller {
      */
     public function create() {
         //
-        return view('admin.poll.pollForm');
+        return view('starter-kit::admin.poll.pollForm');
     }
 
     /**
@@ -112,7 +112,7 @@ class PollController extends Controller {
      */
     public function edit(Poll $poll) {
         //
-        return  view('admin.poll.pollForm',compact('poll'));
+        return  view('starter-kit::admin.poll.pollForm',compact('poll'));
     }
 
     /**

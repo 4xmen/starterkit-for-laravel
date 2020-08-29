@@ -52,7 +52,7 @@ class CommentController extends Controller
             $comment = $comment->where('status',$request->filter);
         }
         $comments = $comment->paginate(20);
-        return view('admin.comments',compact('comments'));
+        return view('starter-kit::admin.comments',compact('comments'));
     }
 
     /**

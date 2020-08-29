@@ -148,7 +148,7 @@
                     </div>
                     <div class="card-body">
                         <ul class="category-control">
-                            {!!\App\Helpers\showCatNestedControl($cats,old('cat',isset($news)?$news->categories()->pluck('id')->toArray():[]))!!}
+                            {!!\Xmen\StarterKit\Helpers\showCatNestedControl($cats,old('cat',isset($news)?$news->categories()->pluck('id')->toArray():[]))!!}
                         </ul>
                     </div>
                 </div>

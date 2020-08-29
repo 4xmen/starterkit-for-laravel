@@ -11,7 +11,7 @@
             action="#" >
             @csrf
             <ol class="menu-manage" id="cat-sort">
-                {!! \App\Helpers\showCatNode($cats) !!}
+                {!! \Xmen\StarterKit\Helpers\showCatNode($cats) !!}
             </ol>
             <input type="hidden" id="sorted" value="[]"/>
             <input type="hidden" id="cat-sort-store" value="{{route('admin.category.sortStore')}}"/>

@@ -61,7 +61,7 @@ class SliderController extends Controller
             $n = $n->where('active', $request->filter);
         }
         $sliders= $n->paginate(10);
-        return view('admin.slider.sliderList', compact('sliders'));
+        return view('starter-kit::admin.slider.sliderList', compact('sliders'));
     }
 
     /**
@@ -72,7 +72,7 @@ class SliderController extends Controller
     public function create()
     {
         //
-        return  view('admin.slider.sliderForm');
+        return  view('starter-kit::admin.slider.sliderForm');
     }
 
     /**
@@ -110,7 +110,7 @@ class SliderController extends Controller
     public function edit(Slider $slider)
     {
         //
-        return  view('admin.slider.sliderForm',compact('slider'));
+        return  view('starter-kit::admin.slider.sliderForm',compact('slider'));
     }
 
     /**

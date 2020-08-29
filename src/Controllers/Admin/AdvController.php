@@ -70,7 +70,7 @@ class AdvController extends Controller
             $n = $n->where('active', $request->filter);
         }
         $advs = $n->paginate(10);
-        return view('admin.adv.advList', compact('advs'));
+        return view('starter-kit::admin.adv.advList', compact('advs'));
     }
 
     /**
@@ -81,7 +81,7 @@ class AdvController extends Controller
     public function create()
     {
         //
-        return view('admin.adv.advForm');
+        return view('starter-kit::admin.adv.advForm');
     }
 
     /**
@@ -119,7 +119,7 @@ class AdvController extends Controller
     public function edit(Adv $adv)
     {
         //
-        return view('admin.adv.advForm', compact('adv'));
+        return view('starter-kit::admin.adv.advForm', compact('adv'));
     }
 
     /**

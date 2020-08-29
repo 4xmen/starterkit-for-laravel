@@ -12,6 +12,7 @@ class StarterKitServiceProvider extends ServiceProvider
     {
         $this->mapRoutes();
         if ($this->app->runningInConsole()) {
+
             $this->publishes([
                 __DIR__ . '/../config/starter-kit.php' => config_path('starter-kit.php'),
             ], 'config');
@@ -20,8 +21,16 @@ class StarterKitServiceProvider extends ServiceProvider
                 __DIR__ . '/../resources/views' => base_path('resources/views/vendor/starter-kit'),
             ], 'views');
 
+            $this->publishes([
+                __DIR__ . '/../public' => base_path('public/vendor/starter-kit'),
+            ], 'assets');
+
+            $this->publishes([
+                __DIR__ . '/../resources/lang' => base_path('resources/lang'),
+            ], 'lang');
+
             $migrationFileName = 'create_starter_kit_table.php';
-            if (! $this->migrationFileExists($migrationFileName)) {
+            if (!$this->migrationFileExists($migrationFileName)) {
                 $this->publishes([
                     __DIR__ . "/../database/migrations/{$migrationFileName}.stub" => database_path('migrations/' . date('Y_m_d_His', time()) . '_' . $migrationFileName),
                 ], 'migrations');
@@ -56,6 +65,6 @@ class StarterKitServiceProvider extends ServiceProvider
     {
         Route::middleware('web')
             ->namespace('Xmen\StarterKit\Controllers')
-            ->group(__DIR__.'/../routes/web.php');
+            ->group(__DIR__ . '/../routes/web.php');
     }
 }

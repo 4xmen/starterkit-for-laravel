@@ -1,7 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="" />
+    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/StarterKit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/starter-kit.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/starter-kit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/create_starter_kit_table.php.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/create_starter_kit_table.php.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/categorySort.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/categorySort.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/menu/menuForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/menu/menuForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/menu/menuShow.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/menu/menuShow.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/news/newsForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/news/newsForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminlayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminlayout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/StarterKitCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/StarterKitCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/AdvController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/AdvController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/ClipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/ClipController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/CommentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/GalleryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/LogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/LogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/MenuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/MenuController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/PollController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/PollController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/SliderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/SliderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/AdminLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/AdminLog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/News.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StarterKit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarterKit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StarterKitFacade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarterKitFacade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StarterKitServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarterKitServiceProvider.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +65,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -136,8 +194,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/langs" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/langs" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -149,20 +213,53 @@
       <updated>1598456742241</updated>
       <workItem from="1598456743255" duration="2719000" />
       <workItem from="1598509005191" duration="1645000" />
+      <workItem from="1598511004564" duration="126000" />
+      <workItem from="1598511141030" duration="1377000" />
+      <workItem from="1598533378705" duration="2318000" />
+      <workItem from="1598594217107" duration="605000" />
+      <workItem from="1598677651746" duration="3637000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="576" y="313" width="758" height="404" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598511917826">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="576" y="313" width="758" height="404" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1598511917826" />
+    <state x="693" y="274" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598680542577">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="693" y="274" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1598680542577" />
+    <state x="685" y="221" width="539" height="588" key="NewPhpClassDialog" timestamp="1598679926983">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="685" y="221" width="539" height="588" key="NewPhpClassDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1598679926983" />
     <state x="755" y="438" width="389" height="153" key="NewPhpFileDialog" timestamp="1598459535499">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="755" y="438" width="389" height="153" key="NewPhpFileDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1598459535499" />
-    <state x="641" y="33" width="638" height="966" key="find.popup" timestamp="1598509588032">
+    <state x="641" y="33" width="638" height="966" key="find.popup" timestamp="1598680419889">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="641" y="33" width="638" height="966" key="find.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1598509588032" />
+    <state x="641" y="33" width="638" height="966" key="find.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1598680419889" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598679609346">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1598679609346" />
   </component>
 </project>
