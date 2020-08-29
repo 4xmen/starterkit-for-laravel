@@ -27,6 +27,7 @@ php artisan migrate
 
 ```bash
 php artisan vendor:publish --provider="Xmen\StarterKit\StarterKitServiceProvider" --tag="assets"
+php artisan vendor:publish --provider="Xmen\StarterKit\StarterKitServiceProvider" --tag="fonts"
 ```
 
 4-Publish the language file with:

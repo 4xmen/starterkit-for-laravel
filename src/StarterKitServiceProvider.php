@@ -22,8 +22,12 @@ class StarterKitServiceProvider extends ServiceProvider
             ], 'views');
 
             $this->publishes([
-                __DIR__ . '/../public' => base_path('public/vendor/starter-kit'),
+                __DIR__ . '/../public/vendor' => base_path('public/vendor/starter-kit'),
             ], 'assets');
+
+            $this->publishes([
+                __DIR__ . '/../public/asset' => base_path('public'),
+            ], 'fonts');
 
             $this->publishes([
                 __DIR__ . '/../resources/lang' => base_path('resources/lang'),
