@@ -107,7 +107,7 @@
                                            class="float-left ml-4 mt-1 form-check-inline @error('is_breaking') is-invalid @enderror"
                                            placeholder="{{__('Is breaking news?')}}"
                                            @if (old('is_breaking',$news->is_breaking??0) != 0)
-                                               checked
+                                           checked
                                            @endif
                                            value="1"/>
                                 </div>
@@ -123,7 +123,7 @@
                                            placeholder="{{__('Is pinned news?')}}"
                                            @if (old('is_pinned',$news->is_pinned??0) != 0)
                                            checked
-                                           @endif/>
+                                            @endif/>
                                 </div>
                             </div>
                         </div>
@@ -159,7 +159,25 @@
                     <div class="card-body">
                         <input type="text" name="tags" class="taggble" @if(isset($news))
                         value="{{implode(',',$news->tag_names)}}"
-                            @endif>
+                                @endif>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header">
+                        {{__("Icon")}}
+                    </div>
+                    <div class="card-body">
+                        <input type="hidden" name="icon" id="icon" value="{{old('icon',$news->icon??null)}}"/>
+                        <div class="btn-group btn-block">
+                            <button type="button" class="btn btn-primary  iconpicker-component"><i
+                                        class=" fa-fw {{$news->icon??''}}"></i></button>
+                            <button type="button" data-src="#icon" class="icp icp-dd btn  btn-primary dropdown-toggle"
+                                    data-selected="fa-car" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu"></div>
+                        </div>
 
                     </div>
                 </div>

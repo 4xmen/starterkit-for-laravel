@@ -85,7 +85,7 @@
                 <div class="card-body">
                    @foreach($gallery->images as $img)
                        <div class="img-preview">
-                           <a href="{{route('admin.image.delete',$img->id)}}">
+                           <a href="{{route('admin.image.delete',$img->id)}}" class="del-conf">
                                <i class="fa fa-times"></i>
                            </a>
                            <img src="{{$img->imgUrl()}}" alt="">

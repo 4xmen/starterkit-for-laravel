@@ -50,5 +50,6 @@
     var tagsearch = "{{route('admin.ckeditor.tagsearch','')}}";
 </script>
 @yield('js-content')
+@include('starter-kit::component.lang')
 </body>
 </html>

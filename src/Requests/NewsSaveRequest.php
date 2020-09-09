@@ -31,6 +31,7 @@ class NewsSaveRequest extends FormRequest
             'status' => ['required', 'boolean'],
             'is_breaking' => ['nullable', 'boolean'],
             'image' => ['nullable', 'image', 'mimes:jpeg,png,jpg,gif,svg', 'max:2048'],
+            'icon' => ['nullable', 'string','min:3'],
             'category_id' => ['required', 'exists:categories,id']
         ];
     }

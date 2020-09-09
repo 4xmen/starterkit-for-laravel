@@ -19,67 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="Bug fix">
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Black.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Black.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Black.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Thin.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Thin.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/lightbox2/dist/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/lightbox2/dist/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/lightbox2/dist/next.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/lightbox2/dist/prev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/owl.carousel/dist/owl.video.play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/cb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/cw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/db.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/dw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/lb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/lw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/mb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/mw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/rb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/rw.png" afterDir="false" />
+    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="Add Fonts Asset">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/app.js.LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StarterKitServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarterKitServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/create_starter_kit_table.php.stub" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/create_starter_kit_table.php.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/gallery/galleryForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/gallery/galleryForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/news/newsForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/news/newsForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminlayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminlayout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Requests/NewsSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/NewsSaveRequest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +195,9 @@
       <workItem from="1598511141030" duration="1377000" />
       <workItem from="1598533378705" duration="2318000" />
       <workItem from="1598594217107" duration="605000" />
-      <workItem from="1598677651746" duration="7297000" />
+      <workItem from="1598677651746" duration="7926000" />
+      <workItem from="1599369039293" duration="1086000" />
+      <workItem from="1599627480724" duration="966000" />
     </task>
     <task id="LOCAL-00001" summary="Ready To Fire!">
       <created>1598681409055</created>
@@ -289,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598684778468</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add Fonts Asset">
+      <created>1598685209525</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598685209525</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +269,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ready To Fire!" />
     <MESSAGE value="Bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix" />
+    <MESSAGE value="Add Fonts Asset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Fonts Asset" />
   </component>
   <component name="WindowStateProjectService">
     <state x="576" y="313" width="758" height="404" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598511917826">
@@ -329,10 +289,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="755" y="438" width="389" height="153" key="NewPhpFileDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1598459535499" />
-    <state x="555" y="251" width="800" height="527" key="Vcs.Push.Dialog.v2" timestamp="1598684779846">
+    <state x="555" y="251" width="800" height="527" key="Vcs.Push.Dialog.v2" timestamp="1598685211048">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="555" y="251" width="800" height="527" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1598684779846" />
+    <state x="555" y="251" width="800" height="527" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1598685211048" />
     <state x="641" y="33" width="638" height="966" key="find.popup" timestamp="1598684763321">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>

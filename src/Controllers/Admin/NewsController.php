@@ -29,6 +29,7 @@ class NewsController extends Controller {
         $news->user_id = auth()->id();
         $news->is_breaking = $request->has('is_breaking');
         $news->is_pinned = $request->has('is_pinned');
+        $news->icon = $request->input('icon');
         if ($news->hash == null) {
             $news->hash = $dt->PDate('Ym') .str_pad(dechex(crc32($news->slug)), 8, '0', STR_PAD_LEFT);
         }

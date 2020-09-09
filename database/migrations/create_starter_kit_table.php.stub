@@ -33,6 +33,7 @@ class CreateStarterKitTable extends Migration
             $table->string('hash', 14)->unique();
             $table->unsignedInteger('like')->default(0);
             $table->unsignedInteger('dislike')->default(0);
+            $table->string('icon', 128)->nullable();
             $table->softDeletes();
             $table->timestamps();
 
