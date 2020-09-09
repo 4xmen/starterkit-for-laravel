@@ -86,6 +86,17 @@ php artisan starter-kit:install
 
 Also install `laravel/ui` if you need login/registration.
 
+## Update
+After updating to a new StarterKit release, you should be sure to update StarterKit's JavaScript and CSS assets and language file using `publish` command and
+clear any cached views with `view:clear`.
+This will ensure the newly-updated StarterKit version is using the latest versions.
+
+```bash
+php artisan vendor:publish --provider="Xmen\StarterKit\StarterKitServiceProvider" --tag="assets" --force
+php artisan vendor:publish --provider="Xmen\StarterKit\StarterKitServiceProvider" --tag="lang" --force
+php artisan view:clear
+```
+
 ## Testing
 
 ``` bash
