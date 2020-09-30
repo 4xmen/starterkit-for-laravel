@@ -3,8 +3,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
     function () {
-//        Route::get('/', 'HomeController@index')->name('home');
-//        Route::get('calendar/{y}/{m}', 'HomeController@index')->name('home.nav');
+        Route::get('/', 'DashboardController@index')->name('home');
+        Route::get('calendar/{y}/{m}', 'DashboardController@index')->name('home.nav');
         Route::group(
             ['middleware' => ['auth', 'role:super-admin']],
             function () {

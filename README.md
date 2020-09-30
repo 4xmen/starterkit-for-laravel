@@ -50,7 +50,7 @@ class User extends Authenticatable {
 ```php
 //app/Providers/RouteServiceProvider.php
 
-public const HOME = '/dashboard/posts';
+public const HOME = '/dashboard';
 ```
 
 7-Add `role` middleware to `Kernel.php`:
