@@ -1,4 +1,12 @@
 @extends('starter-kit::layouts.adminlayout')
+@section('page_title')
+    @if (isset($adv))
+        {{__("Edit adv")}} {{$adv->name}}
+    @else
+        {{__("Create adv")}}
+    @endif
+    -
+@endsection
 
 @section('content')
     <div class="container">

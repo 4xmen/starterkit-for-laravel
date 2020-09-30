@@ -10,20 +10,20 @@
 
 
 
-        <li id="news-li">
+        <li id="posts-li">
             <a>
                 <i class="fa fa-bullhorn"></i>
-                {{__('News')}}
+                {{__('Post')}}
             </a>
             <ul>
                 <li>
-                    <a href="{{route('admin.news.index')}}">
-                        {{__('News list')}}
+                    <a href="{{route('admin.post.index')}}">
+                        {{__('Post list')}}
                     </a>
                 </li>
                 <li>
-                    <a href="{{route('admin.news.create')}}">
-                        {{__('New News')}}
+                    <a href="{{route('admin.post.create')}}">
+                        {{__('New Post')}}
                     </a>
                 </li>
             </ul>
@@ -42,7 +42,7 @@
         </li>
         <li>
             <a>
-                <i class="fa fa-cubes"></i>
+                <i class="fa fa-book"></i>
                 {{__('Categories')}}
             </a>
             <ul>

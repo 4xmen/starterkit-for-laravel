@@ -3,7 +3,7 @@
 namespace Xmen\StarterKit\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use Xmen\StarterKit\Models\News;
+use Xmen\StarterKit\Models\Post;
 use Conner\Tagging\Model\Tag;
 use Illuminate\Http\Request;
 
@@ -21,7 +21,7 @@ class CkeditorController extends Controller {
         return Tag::where('name', 'LIKE', "%$query%")->limit(5)->pluck('name')->toArray();
     }
     public function newssearch($query) {
-        return News::where('title', 'LIKE', "%$query%")->limit(5)->get(['id','title'])->toArray();
+        return Post::where('title', 'LIKE', "%$query%")->limit(5)->get(['id','title'])->toArray();
     }
 
     public function upload(Request $request) {

@@ -1,20 +1,27 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    @if(!isset($posts))
+        {{__('New Post')}}
+    @else
+        {{__('Edit Post')}}: {{$posts->title}}
+    @endif
+    -
+@endsection
 @section('content')
     <div class="container">
 
         <h1>
-            @if(!isset($news))
-                {{__('New News')}}
+            @if(!isset($posts))
+                {{__('New Post')}}
             @else
-                {{__('Edit News')}}: {{$news->title}}
+                {{__('Edit Post')}}: {{$posts->title}}
             @endif
         </h1>
         @include('starter-kit::component.err')
 
         <form enctype="multipart/form-data" class="row" method="post"
-              @if(!isset($news)) action="{{route('admin.news.store')}}"
-              @else  action="{{route('admin.news.update',$news->slug)}}" @endif>
+              @if(!isset($posts)) action="{{route('admin.post.store')}}"
+              @else  action="{{route('admin.post.update',$posts->slug)}}" @endif>
             <div class="col-xl-9">
                 <div class="card ">
                     @csrf
@@ -27,7 +34,7 @@
                                     </label>
                                     <input name="title" type="text"
                                            class="form-control @error('title') is-invalid @enderror"
-                                           placeholder="{{__('Title')}}" value="{{old('title',$news->title??null)}}"/>
+                                           placeholder="{{__('Title')}}" value="{{old('title',$posts->title??null)}}"/>
                                 </div>
                             </div>
                             <div class="col-md-12 mt-3">
@@ -38,18 +45,18 @@
                                     <textarea name="subtitle"
                                               class="form-control @error('subtitle') is-invalid @enderror"
                                               placeholder="{{__('Subtitle')}}"
-                                              rows="4">{{old('subtitle',$news->subtitle??null)}}</textarea>
+                                              rows="4">{{old('subtitle',$posts->subtitle??null)}}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12 mt-3">
                                 <div class="form-group">
                                     <label for="body">
-                                        {{__('News Text')}}
+                                        {{__('Post Text')}}
                                     </label>
                                     <textarea name="body" class="form-control @error('body') is-invalid @enderror"
-                                              placeholder="{{__('News Text')}}"
-                                              rows="8">{{old('body',$news->body??null)}}</textarea>
-                                    {{--                                    @trix(\App\News::class, 'body')--}}
+                                              placeholder="{{__('Post Text')}}"
+                                              rows="8">{{old('body',$posts->body??null)}}</textarea>
+                                    {{--                                    @trix(\App\Post::class, 'body')--}}
 
 
                                 </div>
@@ -63,7 +70,7 @@
                                             class="form-control searchable  @error('category_id') is-invalid @enderror">
                                         @foreach($cats as $cat )
                                             <option value="{{ $cat->id }}"
-                                                    @if (old('category_id',$news->category_id??null) == $cat->id ) selected @endif > {{$cat->name}} </option>
+                                                    @if (old('category_id',$posts->category_id??null) == $cat->id ) selected @endif > {{$cat->name}} </option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -90,9 +97,9 @@
                                     <select name="status" id="status"
                                             class="form-control @error('status') is-invalid @enderror">
                                         <option value="1"
-                                                @if (old('status',$news->status??null) == '1' ) selected @endif >{{__("Published")}} </option>
+                                                @if (old('status',$posts->status??null) == '1' ) selected @endif >{{__("Published")}} </option>
                                         <option value="0"
-                                                @if (old('status',$news->status??null) == '0' ) selected @endif >{{__("Draft")}} </option>
+                                                @if (old('status',$posts->status??null) == '0' ) selected @endif >{{__("Draft")}} </option>
                                     </select>
                                 </div>
                             </div>
@@ -106,7 +113,7 @@
 
                                            class="float-left ml-4 mt-1 form-check-inline @error('is_breaking') is-invalid @enderror"
                                            placeholder="{{__('Is breaking news?')}}"
-                                           @if (old('is_breaking',$news->is_breaking??0) != 0)
+                                           @if (old('is_breaking',$posts->is_breaking??0) != 0)
                                            checked
                                            @endif
                                            value="1"/>
@@ -121,7 +128,7 @@
                                     <input name="is_pinned" type="checkbox" id="is_pinned"
                                            class="float-left ml-4 mt-1 form-check-inline @error('is_pinned') is-invalid @enderror"
                                            placeholder="{{__('Is pinned news?')}}"
-                                           @if (old('is_pinned',$news->is_pinned??0) != 0)
+                                           @if (old('is_pinned',$posts->is_pinned??0) != 0)
                                            checked
                                             @endif/>
                                 </div>
@@ -132,13 +139,13 @@
                 </div>
             </div>
             <div class="col-xl-3">
-                @if (isset($news))
+                @if (isset($posts))
                     <div class="card mb-3">
                         <div class="card-header">
                             {{__("Index image")}}
                         </div>
                         <div class="card-body">
-                            <img src="{{$news->imgurl()}}" class="img-fluid" alt="{{$news->title}}">
+                            <img src="{{$posts->imgurl()}}" class="img-fluid" alt="{{$posts->title}}">
                         </div>
                     </div>
                 @endif
@@ -148,7 +155,7 @@
                     </div>
                     <div class="card-body">
                         <ul class="category-control">
-                            {!!\Xmen\StarterKit\Helpers\showCatNestedControl($cats,old('cat',isset($news)?$news->categories()->pluck('id')->toArray():[]))!!}
+                            {!!\Xmen\StarterKit\Helpers\showCatNestedControl($cats,old('cat',isset($posts)?$posts->categories()->pluck('id')->toArray():[]))!!}
                         </ul>
                     </div>
                 </div>
@@ -157,8 +164,8 @@
                         {{__("Tags")}}
                     </div>
                     <div class="card-body">
-                        <input type="text" name="tags" class="taggble" @if(isset($news))
-                        value="{{implode(',',$news->tag_names)}}"
+                        <input type="text" name="tags" class="taggble" @if(isset($posts))
+                        value="{{implode(',',$posts->tag_names)}}"
                                 @endif>
                     </div>
                 </div>
@@ -167,10 +174,10 @@
                         {{__("Icon")}}
                     </div>
                     <div class="card-body">
-                        <input type="hidden" name="icon" id="icon" value="{{old('icon',$news->icon??null)}}"/>
+                        <input type="hidden" name="icon" id="icon" value="{{old('icon',$posts->icon??null)}}"/>
                         <div class="btn-group btn-block">
                             <button type="button" class="btn btn-primary  iconpicker-component"><i
-                                        class=" fa-fw {{$news->icon??''}}"></i></button>
+                                        class=" fa-fw {{$posts->icon??''}}"></i></button>
                             <button type="button" data-src="#icon" class="icp icp-dd btn  btn-primary dropdown-toggle"
                                     data-selected="fa-car" data-toggle="dropdown">
                                 <span class="caret"></span>

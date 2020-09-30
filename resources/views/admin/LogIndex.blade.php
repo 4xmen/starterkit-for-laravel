@@ -1,5 +1,8 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    {{__("Comments")}}
+    -
+@endsection
 @section('content')
     <div class="container">
 

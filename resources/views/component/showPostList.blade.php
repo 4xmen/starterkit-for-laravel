@@ -1,4 +1,4 @@
-@foreach($news as $n)
+@foreach($posts as $n)
     <article class="mb-3">
         <div class="row">
             <div class="col-md-3">
@@ -17,5 +17,5 @@
     </article>
 @endforeach
 <div class="text-center">
-    {{$news->links()}}
+    {{$posts->links()}}
 </div>

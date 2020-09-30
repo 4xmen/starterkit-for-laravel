@@ -1,5 +1,12 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    @if (isset($user))
+        {{__("Edit user")}} {{$user->name}}
+    @else
+        {{__("Create user")}}
+    @endif
+    -
+@endsection
 @section('content')
     <div class="container">
         <h1>

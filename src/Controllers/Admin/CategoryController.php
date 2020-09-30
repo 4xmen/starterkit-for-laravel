@@ -21,7 +21,7 @@ class CategoryController extends Controller {
         $cat->name = $request->input('name');
         $cat->slug = \StarterKit::slug($request->input('name'));
         $cat->description = $request->input('description');
-        $cat->parent = $request->input('parent') == '' ? null : $request->input('parent');
+        $cat->parent_id = $request->input('parent') == '' ? null : $request->input('parent');
         $cat->save();
         return $cat;
     }

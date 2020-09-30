@@ -1,5 +1,8 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    {{__("Menus")}}
+    -
+@endsection
 @section('content')
     <div class="container">
         <h1>

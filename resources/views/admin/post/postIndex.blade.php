@@ -1,5 +1,8 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    {{__("Posts")}}
+    -
+@endsection
 @section('content')
     <div class="container">
 
@@ -8,7 +11,7 @@
             <span>
                 {{__("Filter")}}:
             </span>
-            <a href="{{route('admin.news.index')}}" class="btn btn-dark" data-filter="all" >
+            <a href="{{route('admin.post.index')}}" class="btn btn-dark" data-filter="all" >
                 {{__("All")}}
             </a>
             <a href="?filter=0" data-filter="0" class="btn btn-dark filter">
@@ -18,7 +21,7 @@
                 {{__("Published")}}
             </a>
         </div>
-        <form action="{{route('admin.news.bulk')}}" method="post" class="bulk-action">
+        <form action="{{route('admin.post.bulk')}}" method="post" class="bulk-action">
             @csrf
             <table class="table table-striped table-bordered ">
                 <thead class="thead-dark">
@@ -37,13 +40,13 @@
                     </th>
                     <th>
                         {{__("Action")}}
-                        <a href="{{route('admin.news.create')}}" class="btn btn-success float-right"><i
+                        <a href="{{route('admin.post.create')}}" class="btn btn-success float-right"><i
                                 class="fa fa-plus"></i></a>
                     </th>
                 </tr>
                 </thead>
                 <tbody>
-                @foreach ($news as $n)
+                @foreach ($posts as $n)
                     <tr>
                         <td>
                             <input type="checkbox" name="id[]" value="{{$n->id}}" class="m-2 chkbox"/>
@@ -58,14 +61,14 @@
                             {{$n->title}}
                         </td>
                         <td>
-                            <div class="status news-status-{{$n->status}}"></div>
+                            <div class="status post-status-{{$n->status}}"></div>
                         </td>
                         <td>
-                            <a href="{{route('admin.news.edit',$n->slug)}}" class="btn btn-primary">
+                            <a href="{{route('admin.post.edit',$n->slug)}}" class="btn btn-primary">
                                 <i class="fa fa-edit"></i> &nbsp;
                                 {{__("Edit")}}
                             </a>
-                            <a href="{{route('admin.news.delete',$n->slug)}}"
+                            <a href="{{route('admin.post.delete',$n->slug)}}"
                                class="btn btn-danger  delete-confirm">
                                 <i class="fa fa-times"></i> &nbsp;
                                 {{__("Delete")}}
@@ -78,7 +81,7 @@
             @include('starter-kit::component.bulk',['actions' =>['draft' => __("Draft now"),'publish' => __("Publish now")]])
         </form>
         <div class="text-center pt-3">
-            {{$news->links()}}
+            {{$posts->links()}}
         </div>
     </div>
 @endsection

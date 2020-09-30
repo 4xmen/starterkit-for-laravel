@@ -8,8 +8,8 @@ trait StarterKit
 {
     use HasRoles;
 
-    public function news(){
-        return $this->hasMany(\Xmen\StarterKit\Models\News::class,'user_id','id');
+    public function posts(){
+        return $this->hasMany(\Xmen\StarterKit\Models\Post::class,'user_id','id');
     }
 
     public function logs(){

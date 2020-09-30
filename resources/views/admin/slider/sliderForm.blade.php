@@ -1,5 +1,12 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    @if (isset($slider))
+        {{__("Edit slider")}} {{$slider->name}}
+    @else
+        {{__("Create slider")}}
+    @endif
+    -
+@endsection
 @section('content')
     <div class="container">
         <h1>

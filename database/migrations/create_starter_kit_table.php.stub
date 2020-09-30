@@ -14,12 +14,12 @@ class CreateStarterKitTable extends Migration
             $table->string('slug', 128)->unique();
             $table->text('description')->nullable();
             $table->integer('sort')->default(0);
-            $table->unsignedInteger('parent')->nullable()->default(null)->index();
+            $table->unsignedInteger('parent_id')->nullable()->default(null)->index();
             $table->softDeletes();
             $table->timestamps();
         });
 
-        Schema::create('news', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->string('slug')->unique();
@@ -43,14 +43,14 @@ class CreateStarterKitTable extends Migration
                 ->references('id')->on('categories');
         });
 
-        Schema::create('category_news', function (Blueprint $table) {
+        Schema::create('category_post', function (Blueprint $table) {
 
             $table->unsignedBigInteger('category_id');
-            $table->unsignedBigInteger('news_id');
+            $table->unsignedBigInteger('post_id');
 
             $table->foreign('category_id')->on('categories')
                 ->references('id')->onDelete('cascade');
-            $table->foreign('news_id')->on('news')
+            $table->foreign('post_id')->on('posts')
                 ->references('id')->onDelete('cascade');
         });
 

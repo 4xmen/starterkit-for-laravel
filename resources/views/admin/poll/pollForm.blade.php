@@ -1,10 +1,17 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    @if (isset($poll))
+        {{__("Edit poll")}} {{$poll->title}}
+    @else
+        {{__("Create poll")}}
+    @endif
+    -
+@endsection
 @section('content')
     <div class="container">
         <h1>
             @if (isset($poll))
-                {{__("Edit poll")}} {{$poll->name}}
+                {{__("Edit poll")}} {{$poll->title}}
             @else
                 {{__("Create poll")}}
             @endif

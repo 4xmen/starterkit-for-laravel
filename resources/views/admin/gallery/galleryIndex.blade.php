@@ -1,5 +1,8 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    {{__("Galleries")}}
+    -
+@endsection
 @section('content')
     <div class="container">
 
@@ -58,7 +61,7 @@
                             {{$n->title}}
                         </td>
                         <td>
-                            <div class="status news-status-{{$n->status}}"></div>
+                            <div class="status posts-status-{{$n->status}}"></div>
                         </td>
                         <td>
                             <a href="{{route('admin.gallery.edit',$n->slug)}}" class="btn btn-primary">

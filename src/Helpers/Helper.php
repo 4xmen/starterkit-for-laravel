@@ -6,14 +6,14 @@ use Xmen\StarterKit\Models\Category;
 use Xmen\StarterKit\Models\GuestLog;
 use Xmen\StarterKit\Models\Menu;
 use Xmen\StarterKit\Models\MenuItem;
-use Xmen\StarterKit\Models\News;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Xmen\StarterKit\Models\Post;
 
 function showCatNestedControl($cats, $checked = [], $parent = null) {
     $ret = "";
     foreach ($cats as $cat) {
-        if ($cat->parent == $parent) {
+        if ($cat->parent_id == $parent) {
             $ret .= "<li>";
             $check = in_array($cat->id, $checked) ? 'checked=""' : '';
             $ret .= "<label><input type='checkbox' name='cat[]' value='{$cat->id}' $check />";
@@ -132,7 +132,7 @@ LI;
                 </li>
 LI;
                 break;
-            case "news":
+            case "posts":
 
                 break;
             case "cat":
@@ -141,9 +141,9 @@ LI;
             case "cat-sub":
 
                 break;
-            case "cat-news":
+            case "cat-posts":
 
-                break;
+            break;
             case "tag":
 
                 break;
@@ -180,15 +180,15 @@ function MenuShowItems($items) {
             case "link":
                 $out .= '<a href="' .$item->meta . '" >' . $item->title . '</a>';
                 break;
-            case "news":
-                $n = News::whereId($item->menuable_id)->firstOrFail();
+            case "posts":
+                $n = Post::whereId($item->menuable_id)->firstOrFail();
                 $out .= '<a href="' . route('n.show', $n->slug) . '" >' . $item->title . '</a>';
                 break;
             case "tag-sub":
                 $out .= $item->title;
-                $news = News::withAnyTag($item->meta)->limit(10)->get(['title', 'slug']);
+                $posts = Post::withAnyTag($item->meta)->limit(10)->get(['title', 'slug']);
                 $out .= '<ul>';
-                foreach ($news as $new) {
+                foreach ($posts as $new) {
                     $out .= '<li><a href="' . route('n.show', $new->slug) . '" >' . $new->title . '</a></li>';
                 }
                 $out .= '</ul>';
@@ -199,19 +199,19 @@ function MenuShowItems($items) {
                 break;
             case "cat-sub":
                 $out .= $item->title;
-                $cats = Category::where('parent',$item->menuable_id)->limit(20)->get(['name', 'slug']);
+                $cats = Category::where('parent_id',$item->menuable_id)->limit(20)->get(['name', 'slug']);
                 $out .= '<ul>';
                 foreach ($cats as $c) {
                     $out .= '<li><a href="' . route('n.cat', $c->slug) . '" >' . $c->name . '</a></li>';
                 }
                 $out .= '</ul>';
                 break;
-            case "cat-news":
+            case "cat-posts":
                 $out .= $item->title;
                 $cat = Category::whereId($item->menuable_id)->firstOrFail();
-                $news = $cat->news()->limit(10)->get(['slug','title']);
+                $posts = $cat->posts()->limit(10)->get(['slug','title']);
                 $out .= '<ul>';
-                foreach ($news as $new) {
+                foreach ($posts as $new) {
                     $out .= '<li><a href="' . route('n.show', $new->slug) . '" >' . $new->title . '</a></li>';
                 }
                 $out .= '</ul>';
@@ -230,7 +230,7 @@ function MenuShowItems($items) {
 
 function MenuShowByName($menu_name) {
     $menu = Menu::whereName($menu_name)->firstOrFail();
-    return MenuShowItems($menu->menuItems()->whereNull('parent')->get());
+    return MenuShowItems($menu->menuItems()->whereNull('parent_id')->get());
 }
 
 class TDate {

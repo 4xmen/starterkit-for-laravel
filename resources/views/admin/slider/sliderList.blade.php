@@ -1,4 +1,8 @@
 @extends('starter-kit::layouts.adminlayout')
+@section('page_title')
+    {{__("Sliders")}}
+    -
+@endsection
 
 @section('content')
     <div class="container">
@@ -56,7 +60,7 @@
                             <img src="{{$pl->imgUrl()}}" alt="" class="feature-image">
                         </td>
                         <td>
-                            <div class="status news-status-{{$pl->active}}"></div>
+                            <div class="status posts-status-{{$pl->active}}"></div>
                         </td>
                         <td>
                             <a href="{{route('admin.slider.edit',$pl->id)}}" class="btn btn-secondary">

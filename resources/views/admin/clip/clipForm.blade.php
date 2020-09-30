@@ -1,10 +1,17 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    @if (isset($clip))
+        {{__("Edit clip")}} {{$clip->title}}
+    @else
+        {{__("Create clip")}}
+    @endif
+    -
+@endsection
 @section('content')
     <div class="container">
         <h1>
             @if (isset($clip))
-                {{__("Edit clip")}} {{$clip->name}}
+                {{__("Edit clip")}} {{$clip->title}}
             @else
                 {{__("Create clip")}}
             @endif

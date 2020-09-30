@@ -27,35 +27,35 @@ use Te7aHoudini\LaravelTrix\Traits\HasTrixRichText;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\MediaLibrary\MediaCollections\Models\Media[] $media
  * @property-read int|null $media_count
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News newQuery()
- * @method static \Illuminate\Database\Query\Builder|\Xmen\StarterKit\Models\News onlyTrashed()
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News query()
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereBody($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereCategoryId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereDeletedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereSlug($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereSubtitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereUpdatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Xmen\StarterKit\Models\News withTrashed()
- * @method static \Illuminate\Database\Query\Builder|\Xmen\StarterKit\Models\News withoutTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post newQuery()
+ * @method static \Illuminate\Database\Query\Builder|\Xmen\StarterKit\Models\Post onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereBody($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereCategoryId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereSubtitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\Xmen\StarterKit\Models\Post withTrashed()
+ * @method static \Illuminate\Database\Query\Builder|\Xmen\StarterKit\Models\Post withoutTrashed()
  * @mixin \Eloquent
  * @property int $user_id
  * @property int $is_breaking
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereIsBreaking($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereIsBreaking($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereUserId($value)
  * @property int $status
  * @property array $tag_names
  * @property-read \Illuminate\Database\Eloquent\Collection|\Tagged[] $tags
  * @property-read \Illuminate\Database\Eloquent\Collection|\Conner\Tagging\Model\Tagged[] $tagged
  * @property-read int|null $tagged_count
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereStatus($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News withAllTags($tagNames)
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News withAnyTag($tagNames)
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News withoutTags($tagNames)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post withAllTags($tagNames)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post withAnyTag($tagNames)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post withoutTags($tagNames)
  * @property-read \Illuminate\Database\Eloquent\Collection|\Xmen\StarterKit\Models\Category[] $categories
  * @property-read int|null $categories_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\Te7aHoudini\LaravelTrix\Models\TrixAttachment[] $trixAttachments
@@ -63,7 +63,7 @@ use Te7aHoudini\LaravelTrix\Traits\HasTrixRichText;
  * @property-read \Illuminate\Database\Eloquent\Collection|\Te7aHoudini\LaravelTrix\Models\TrixRichText[] $trixRichText
  * @property-read int|null $trix_rich_text_count
  * @property string $hash
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereHash($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereHash($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\Xmen\StarterKit\Models\Comment[] $comments
  * @property-read int|null $comments_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\Xmen\StarterKit\Models\Comment[] $approved_comments
@@ -71,11 +71,11 @@ use Te7aHoudini\LaravelTrix\Traits\HasTrixRichText;
  * @property int $is_pinned
  * @property int $like
  * @property int $dislike
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereDislike($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereIsPinned($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\News whereLike($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereDislike($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereIsPinned($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereLike($value)
  */
-class News extends Model implements HasMedia {
+class Post extends Model implements HasMedia {
     use SoftDeletes, InteractsWithMedia, Taggable, HasTrixRichText;
 
 
@@ -91,7 +91,7 @@ class News extends Model implements HasMedia {
 
     public function registerMediaConversions(Media $media = null): void {
 
-        $this->addMediaConversion('news-image')
+        $this->addMediaConversion('posts-image')
             ->width(1200)
             ->height(600)
             ->crop(Manipulations::CROP_CENTER, 1200, 600)
@@ -105,7 +105,7 @@ class News extends Model implements HasMedia {
 
     public function imgurl() {
         if ($this->getMedia()->count() > 0) {
-            return $this->getMedia()->first()->getUrl('news-image');
+            return $this->getMedia()->first()->getUrl('posts-image');
         } else {
             return "no image";
         }

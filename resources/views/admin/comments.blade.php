@@ -1,5 +1,8 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    {{__("Comments")}}
+    -
+@endsection
 @section('content')
     <div class="container">
 
@@ -40,7 +43,7 @@
                     </th>
                     <th colspan="2">
                         {{__("Action")}}
-                        <a href="{{route('admin.news.create')}}" class="btn btn-success float-right"><i
+                        <a href="{{route('admin.post.create')}}" class="btn btn-success float-right"><i
                                 class="fa fa-plus"></i></a>
                     </th>
                 </tr>

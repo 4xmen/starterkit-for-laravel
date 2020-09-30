@@ -1,5 +1,8 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    {{__("Advertise list")}}
+    -
+@endsection
 @section('content')
     <div class="container">
         <h1>
@@ -74,7 +77,7 @@
                             {{number_format($pl->click)}}
                         </td>
                         <td>
-                            <div class="status news-status-{{$pl->active}}"></div>
+                            <div class="status posts-status-{{$pl->active}}"></div>
                         </td>
                         <td>
                             <a href="{{route('admin.adv.edit',$pl->id)}}" class="btn btn-secondary">

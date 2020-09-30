@@ -33,23 +33,23 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @method static \Illuminate\Database\Query\Builder|\Xmen\StarterKit\Models\Category withTrashed()
  * @method static \Illuminate\Database\Query\Builder|\Xmen\StarterKit\Models\Category withoutTrashed()
  * @mixin \Eloquent
- * @property-read \Illuminate\Database\Eloquent\Collection|\Xmen\StarterKit\Models\News[] $news
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Xmen\StarterKit\Models\Post[] $news
  * @property-read int|null $news_count
  */
 class Category extends Model {
     use SoftDeletes;
 
-    public function news() {
-        return $this->belongsToMany(News::class);
+    public function posts() {
+        return $this->belongsToMany(Post::class);
     }
 
     //
     public function parent() {
-        return $this->belongsTo(Category::class, 'parent');
+        return $this->belongsTo(Category::class, 'parent_id');
     }
 
     public function children() {
-        return $this->hasMany(Category::class, 'parent');
+        return $this->hasMany(Category::class, 'parent_id');
     }
 
     public function getRouteKeyName() {

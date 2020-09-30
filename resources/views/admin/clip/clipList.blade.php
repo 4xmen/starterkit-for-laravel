@@ -1,5 +1,8 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    {{__("Clips")}}
+    -
+@endsection
 @section('content')
     <div class="container">
         <h1>
@@ -62,7 +65,7 @@
                             <img src="{{$pl->coverUrl()}}" alt="" class="feature-image">
                         </td>
                         <td>
-                            <div class="status news-status-{{$pl->active}}"></div>
+                            <div class="status posts-status-{{$pl->active}}"></div>
                         </td>
                         <td>
                             <a href="{{route('admin.clip.edit',$pl->slug)}}" class="btn btn-secondary">

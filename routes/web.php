@@ -10,7 +10,7 @@ Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
             function () {
                 Route::get('ckeditor', 'Admin\CkeditorController@index');
                 Route::get('tagsearch/{query}', 'Admin\CkeditorController@tagsearch')->name('ckeditor.tagsearch');
-                Route::get('newssearch/{query}', 'Admin\CkeditorController@newssearch')->name('ckeditor.newssearch');
+                Route::get('postssearch/{query}', 'Admin\CkeditorController@postssearch')->name('ckeditor.newssearch');
                 Route::post('ckeditor/upload', 'Admin\CkeditorController@upload')->name('ckeditor.upload');
 
                 Route::prefix('users')->name('user.')->group(
@@ -25,7 +25,7 @@ Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
 
                 Route::prefix('category')->name('category.')->group(
                     function () {
-                        Route::get('index', "Admin\CategoryController@index")->name('index');
+                        Route::get('', "Admin\CategoryController@index")->name('index');
                         Route::get('create', "Admin\CategoryController@create")->name('create');
                         Route::post('store', "Admin\CategoryController@store")->name('store');
                         Route::get('edit/{cat}', "Admin\CategoryController@edit")->name('edit');
@@ -37,22 +37,22 @@ Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
                         Route::post('bulk', "Admin\CategoryController@bulk")->name('bulk');
                     }
                 );
-                Route::prefix('news')->name('news.')->group(
+                Route::prefix('post')->name('post.')->group(
                     function () {
-                        Route::get('index', "Admin\NewsController@index")->name('index');
-                        Route::get('create', "Admin\NewsController@create")->name('create');
-                        Route::post('store', "Admin\NewsController@store")->name('store');
-                        Route::get('edit/{news}', "Admin\NewsController@edit")->name('edit');
-                        Route::get('show/{news}', "Admin\NewsController@show")->name('show');
-                        Route::post('update/{news}', "Admin\NewsController@update")->name('update');
-                        Route::get('delete/{news}', "Admin\NewsController@destroy")->name('delete');
-                        Route::post('bulk', "Admin\NewsController@bulk")->name('bulk');
+                        Route::get('', "Admin\PostController@index")->name('index');
+                        Route::get('create', "Admin\PostController@create")->name('create');
+                        Route::post('store', "Admin\PostController@store")->name('store');
+                        Route::get('edit/{posts}', "Admin\PostController@edit")->name('edit');
+                        Route::get('show/{posts}', "Admin\PostController@show")->name('show');
+                        Route::post('update/{posts}', "Admin\PostController@update")->name('update');
+                        Route::get('delete/{posts}', "Admin\PostController@destroy")->name('delete');
+                        Route::post('bulk', "Admin\PostController@bulk")->name('bulk');
                     }
                 );
 
                 Route::prefix('gallery')->name('gallery.')->group(
                     function () {
-                        Route::get('index', "Admin\GalleryController@index")->name('all');
+                        Route::get('', "Admin\GalleryController@index")->name('all');
                         Route::get('create', "Admin\GalleryController@create")->name('create');
                         Route::post('store', "Admin\GalleryController@store")->name('store');
                         Route::get('edit/{gallery}', "Admin\GalleryController@edit")->name('edit');
@@ -65,7 +65,7 @@ Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
 
                 Route::prefix('poll')->name('poll.')->group(
                     function () {
-                        Route::get('index', "Admin\PollController@index")->name('index');
+                        Route::get('', "Admin\PollController@index")->name('index');
                         Route::get('create', "Admin\PollController@create")->name('create');
                         Route::post('store', "Admin\PollController@store")->name('store');
                         Route::get('edit/{poll}', "Admin\PollController@edit")->name('edit');
@@ -77,7 +77,7 @@ Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
                 );
                 Route::prefix('clip')->name('clip.')->group(
                     function () {
-                        Route::get('index', "Admin\ClipController@index")->name('index');
+                        Route::get('', "Admin\ClipController@index")->name('index');
                         Route::get('create', "Admin\ClipController@create")->name('create');
                         Route::post('store', "Admin\ClipController@store")->name('store');
                         Route::get('edit/{clip}', "Admin\ClipController@edit")->name('edit');
@@ -89,7 +89,7 @@ Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
                 );
                 Route::prefix('slider')->name('slider.')->group(
                     function () {
-                        Route::get('index', "Admin\SliderController@index")->name('index');
+                        Route::get('', "Admin\SliderController@index")->name('index');
                         Route::get('create', "Admin\SliderController@create")->name('create');
                         Route::post('store', "Admin\SliderController@store")->name('store');
                         Route::get('edit/{slider}', "Admin\SliderController@edit")->name('edit');
@@ -101,7 +101,7 @@ Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
                 );
                 Route::prefix('adv')->name('adv.')->group(
                     function () {
-                        Route::get('index', "Admin\AdvController@index")->name('index');
+                        Route::get('', "Admin\AdvController@index")->name('index');
                         Route::get('create', "Admin\AdvController@create")->name('create');
                         Route::post('store', "Admin\AdvController@store")->name('store');
                         Route::get('edit/{adv}', "Admin\AdvController@edit")->name('edit');
@@ -114,7 +114,7 @@ Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
 
                 Route::prefix('image')->name('image.')->group(
                     function () {
-                        Route::get('index', "Admin\ImageController@index")->name('all');
+                        Route::get('', "Admin\ImageController@index")->name('all');
                         Route::post('store/{gallery}', "Admin\ImageController@store")->name('store');
                         Route::get('delete/{image}', "Admin\ImageController@destroy")->name('delete');
                         Route::post('bulk', "Admin\ImageController@bulk")->name('bulk');
@@ -123,7 +123,7 @@ Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
 
                 Route::prefix('menu')->name('menu.')->group(
                     function () {
-                        Route::get('index', "Admin\MenuController@index")->name('index');
+                        Route::get('', "Admin\MenuController@index")->name('index');
                         Route::post('store', "Admin\MenuController@store")->name('store');
                         Route::get('manage/{menu}', "Admin\MenuController@edit")->name('manage');
                         Route::post('update/{menu}', "Admin\MenuController@update")->name('update');

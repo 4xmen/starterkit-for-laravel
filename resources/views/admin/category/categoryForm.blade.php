@@ -1,5 +1,12 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    @if(!isset($ccat))
+        {{__('New category')}}
+    @else
+        {{__('Edit category')}}: {{$ccat->name}}
+    @endif
+    -
+@endsection
 @section('content')
     <div class="container">
 

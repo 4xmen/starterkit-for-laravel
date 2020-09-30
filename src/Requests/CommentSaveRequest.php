@@ -25,7 +25,7 @@ class CommentSaveRequest extends FormRequest {
             'name' => ['required', 'string','min:2', 'max:60'],
             'email' => ['required', 'string', 'email', 'max:100'],
             'body' => ['required', 'string','max:10000','min:10'],
-            'parent' => ['nullable','exists:news,id']
+            'parent' => ['nullable','exists:posts,id']
         ];
     }
 }

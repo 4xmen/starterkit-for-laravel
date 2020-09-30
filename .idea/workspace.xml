@@ -19,17 +19,48 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="Add Fonts Asset">
+    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="Add Persian Language Validation Messages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/create_starter_kit_table.php.stub" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/create_starter_kit_table.php.stub" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/vendor/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/vendor/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/LogIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/LogIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/adv/advForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adv/advForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/adv/advList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adv/advList.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/categoryForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/categoryForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/categoryIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/categoryIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/categorySort.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/categorySort.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/clip/clipForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/clip/clipForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/clip/clipList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/clip/clipList.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/comments.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/gallery/galleryForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/gallery/galleryForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/news/newsForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/news/newsForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/gallery/galleryIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/gallery/galleryIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/menu/menuForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/menu/menuForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/menu/menuList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/menu/menuList.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/menu/menuShow.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/menu/menuShow.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/news/NewsIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/postIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/news/newsForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/postForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/poll/pollForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/poll/pollForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/poll/pollList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/poll/pollList.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/sliderForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/slider/sliderForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/sliderList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/slider/sliderList.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/userForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/userForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/userList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/userList.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/component/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/component/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/component/showNewsList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/component/showPostList.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminlayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminlayout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/NewsSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/NewsSaveRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/CkeditorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/CkeditorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/StarterKit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/StarterKit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Requests/CategorySaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/CategorySaveRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Requests/CommentSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/CommentSaveRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Requests/NewsSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/PostSaveRequest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,8 +199,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/asset" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/vendor/css" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -197,7 +229,10 @@
       <workItem from="1598594217107" duration="605000" />
       <workItem from="1598677651746" duration="7926000" />
       <workItem from="1599369039293" duration="1086000" />
-      <workItem from="1599627480724" duration="966000" />
+      <workItem from="1599627480724" duration="1576000" />
+      <workItem from="1599629376474" duration="805000" />
+      <workItem from="1600061385846" duration="219000" />
+      <workItem from="1601441725779" duration="4603000" />
     </task>
     <task id="LOCAL-00001" summary="Ready To Fire!">
       <created>1598681409055</created>
@@ -248,7 +283,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598685209525</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add Icon Picker">
+      <created>1599628473781</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599628473781</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add Persian Language Validation Messages">
+      <created>1599629579801</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1599629579801</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,17 +319,31 @@
     <MESSAGE value="Ready To Fire!" />
     <MESSAGE value="Bug fix" />
     <MESSAGE value="Add Fonts Asset" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Fonts Asset" />
+    <MESSAGE value="Add Icon Picker" />
+    <MESSAGE value="Add Persian Language Validation Messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Persian Language Validation Messages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="576" y="313" width="758" height="404" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598511917826">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="576" y="313" width="758" height="404" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1598511917826" />
+    <state x="361" y="0" width="1188" height="1030" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601444139632">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="361" y="0" width="1188" height="1030" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1601444139632" />
     <state x="693" y="274" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598680542577">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="693" y="274" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1598680542577" />
+    <state x="100" y="100" width="1720" height="832" key="DiffContextDialog" timestamp="1601448305454">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="100" y="100" width="1720" height="832" key="DiffContextDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1601448305454" />
+    <state x="743" y="274" width="424" height="482" key="FileChooserDialogImpl" timestamp="1600061603107">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="743" y="274" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1600061603107" />
     <state x="685" y="221" width="539" height="588" key="NewPhpClassDialog" timestamp="1598679926983">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -289,17 +352,17 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="755" y="438" width="389" height="153" key="NewPhpFileDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1598459535499" />
-    <state x="555" y="251" width="800" height="527" key="Vcs.Push.Dialog.v2" timestamp="1598685211048">
+    <state x="555" y="251" width="800" height="527" key="Vcs.Push.Dialog.v2" timestamp="1599629581452">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="555" y="251" width="800" height="527" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1598685211048" />
-    <state x="641" y="33" width="638" height="966" key="find.popup" timestamp="1598684763321">
+    <state x="555" y="251" width="800" height="527" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1599629581452" />
+    <state x="641" y="33" width="638" height="966" key="find.popup" timestamp="1601443267955">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="641" y="33" width="638" height="966" key="find.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1598684763321" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598679609346">
+    <state x="641" y="33" width="638" height="966" key="find.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1601443267955" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601447823888">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1598679609346" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1601447823888" />
   </component>
 </project>

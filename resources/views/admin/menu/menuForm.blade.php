@@ -1,5 +1,10 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    @if (isset($menu))
+        {{__("Edit Menu")}} {{$menu->name}}
+    @endif
+    -
+@endsection
 @section('content')
     <div class="container">
         <h1>

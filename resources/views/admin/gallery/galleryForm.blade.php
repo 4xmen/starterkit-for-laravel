@@ -1,5 +1,12 @@
 @extends('starter-kit::layouts.adminlayout')
-
+@section('page_title')
+    @if(!isset($gallery))
+        {{__('New Gallery')}}
+    @else
+        {{__('Edit Post')}}: {{$gallery->title}}
+    @endif
+    -
+@endsection
 @section('content')
     <div class="container">
 
@@ -7,7 +14,7 @@
             @if(!isset($gallery))
                 {{__('New Gallery')}}
             @else
-                {{__('Edit News')}}: {{$gallery->title}}
+                {{__('Edit Post')}}: {{$gallery->title}}
             @endif
         </h1>
         @include('starter-kit::component.err')
