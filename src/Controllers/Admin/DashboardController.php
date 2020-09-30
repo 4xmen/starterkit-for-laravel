@@ -3,18 +3,18 @@
 namespace Xmen\StarterKit\Controllers\Admin;
 
 use Xmen\StarterKit\Helpers\TDate;
-use Xmen\StarterKit\Models\Post;
-use Carbon\Traits\Date;
-use Illuminate\Http\Request;
 use LaravelDaily\LaravelCharts\Classes\LaravelChart;
+use App\Http\Controllers\Controller;
 
-class DashboardController extends Controller {
+class DashboardController extends Controller
+{
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct() {
+    public function __construct()
+    {
         $this->middleware('auth');
     }
 
@@ -23,7 +23,8 @@ class DashboardController extends Controller {
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index($y = null, $m = null) {
+    public function index($y = null, $m = null)
+    {
         $dt = TDate::GetInstance();
         if ($y == null) {
             $time = time();
@@ -86,6 +87,6 @@ class DashboardController extends Controller {
             ])
             ->options([]);
 
-        return view('starter-kit::admin.dashboard', compact('dt', 'time', 'start', 'end', 'nm', 'ny', 'pm', 'py','chartjs','chartjs2'));
+        return view('starter-kit::admin.dashboard', compact('dt', 'time', 'start', 'end', 'nm', 'ny', 'pm', 'py', 'chartjs', 'chartjs2'));
     }
 }
