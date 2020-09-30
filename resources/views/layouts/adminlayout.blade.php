@@ -12,23 +12,23 @@
 {{--    @trixassets--}}
 
 
-    <!-- Scripts -->
+<!-- Scripts -->
     <script src="{{ asset('vendor/starter-kit/js/app.js') }}" defer></script>
-    <script src="https://cdn.ckeditor.com/4.14.0/full-all/ckeditor.js" ></script>
+    <script src="https://cdn.ckeditor.com/4.14.0/full-all/ckeditor.js"></script>
 
     <!-- Styles -->
     <link href="{{ asset('vendor/starter-kit/css/app.css') }}" rel="stylesheet">
 
 </head>
 <body>
-<div id="app">
 
-    @include('starter-kit::component.navbar')
-    <div id="wrapper">
+@include('starter-kit::component.navbar')
+<div id="wrapper">
+    <div id="app">
         <div id="top-menu">
             <div class="row">
-                <form action="" class="col-md-9" >
-                    <input type="search" value="" placeholder="{{__("Search in all panel")}}" class="form-control" />
+                <form action="" class="col-md-9">
+                    <input type="search" value="" placeholder="{{__("Search in all panel")}}" class="form-control"/>
                 </form>
                 <div class="col-md-3">
                     <div class="m-2 float-right">
@@ -41,12 +41,13 @@
             @yield('content')
         </main>
     </div>
-    <div id="preloader">
-        <i class="fas fa-spinner fa fa-spinner fa-spin"></i>
-    </div>
+    @yield('js-content')
+</div>
+<div id="preloader">
+    <i class="fas fa-spinner fa fa-spinner fa-spin"></i>
 </div>
 <script type="text/javascript">
-    var xupload =  "{{route('admin.ckeditor.upload', ['_token' => csrf_token() ])}}";
+    var xupload = "{{route('admin.ckeditor.upload', ['_token' => csrf_token() ])}}";
     var tagsearch = "{{route('admin.ckeditor.tagsearch','')}}";
 </script>
 @yield('js-content')

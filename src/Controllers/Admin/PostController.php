@@ -16,50 +16,50 @@ use function Xmen\StarterKit\Helpers\logAdminBatch;
 class PostController extends Controller
 {
 
-    public function createOrUpdate(Post $news, PostSaveRequest $request)
+    public function createOrUpdate(Post $post, PostSaveRequest $request)
     {
 
         $dt = new TDate();
 
-        $news->title = $request->input('title');
-        $news->slug = \StarterKit::slug($request->input('title'));
-        $news->body = $request->input('body');
-        $news->subtitle = $request->input('subtitle');
-        $news->status = $request->input('status');
-        $news->category_id = $request->input('category_id');
-        $news->user_id = auth()->id();
-        $news->is_breaking = $request->has('is_breaking');
-        $news->is_pinned = $request->has('is_pinned');
-        $news->icon = $request->input('icon');
-        if ($news->hash == null) {
-            $news->hash = $dt->PDate('Ym') . str_pad(dechex(crc32($news->slug)), 8, '0', STR_PAD_LEFT);
+        $post->title = $request->input('title');
+        $post->slug = \StarterKit::slug($request->input('title'));
+        $post->body = $request->input('body');
+        $post->subtitle = $request->input('subtitle');
+        $post->status = $request->input('status');
+        $post->category_id = $request->input('category_id');
+        $post->user_id = auth()->id();
+        $post->is_breaking = $request->has('is_breaking');
+        $post->is_pinned = $request->has('is_pinned');
+        $post->icon = $request->input('icon');
+        if ($post->hash == null) {
+            $post->hash = $dt->PDate('Ym') . str_pad(dechex(crc32($post->slug)), 8, '0', STR_PAD_LEFT);
         }
 
-        $news->save();
+        $post->save();
 
-        $news->retag(explode(',', $request->input('tags')));
+        $post->retag(explode(',', $request->input('tags')));
 
-        $news->categories()->sync($request->input('cat'));
+        $post->categories()->sync($request->input('cat'));
 
 
         if ($request->hasFile('image')) {
-            $news->media()->delete();
-            $news->addMedia($request->file('image'))->toMediaCollection();
+            $post->media()->delete();
+            $post->addMedia($request->file('image'))->toMediaCollection();
         }
 
 
-//        foreach ($news->getMedia() as $media) {
+//        foreach ($post->getMedia() as $media) {
 //            in_array($media->id, request('medias', [])) ?: $media->delete();
 //        }
 //        foreach ($request->file('images', []) as $image) {
 //            try {
-//                $news->addMedia($image)->toMediaCollection();
+//                $post->addMedia($image)->toMediaCollection();
 //            } catch (FileDoesNotExist $e) {
 //            } catch (FileIsTooBig $e) {
 //            }
 //        }
 
-        return $news;
+        return $post;
     }
 
     public function bulk(Request $request)
@@ -94,8 +94,8 @@ class PostController extends Controller
         if ($request->has('filter')) {
             $n = $n->where('status', $request->filter);
         }
-        $news = $n->paginate(20);
-        return view('starter-kit::admin.post.postIndex', compact('news'));
+        $posts = $n->paginate(20);
+        return view('starter-kit::admin.post.postIndex', compact('posts'));
     }
 
     public function create()
@@ -108,10 +108,10 @@ class PostController extends Controller
     public function store(PostSaveRequest $request)
     {
         //
-        $news = new Post();
-        $news = $this->createOrUpdate($news, $request);
-        logAdmin(__METHOD__, Post::class, $news->id);
-        return redirect()->route('admin.post.index')->with(['message' => $news->title . ' ' . __('created successfully')]);
+        $post = new Post();
+        $post = $this->createOrUpdate($post, $request);
+        logAdmin(__METHOD__, Post::class, $post->id);
+        return redirect()->route('admin.post.index')->with(['message' => $post->title . ' ' . __('created successfully')]);
     }
 
     public function show($id)
@@ -119,28 +119,25 @@ class PostController extends Controller
         //
     }
 
-    public function edit(Post $news)
+    public function edit(Post $posts)
     {
-        //
         $cats = Category::all();
-        return view('starter-kit::admin.post.postForm', compact('cats', 'news'));
+        return view('starter-kit::admin.post.postForm', compact('cats', 'posts'));
     }
 
-    public function update(PostSaveRequest $request, Post $news)
+    public function update(PostSaveRequest $request, Post $post)
     {
-        //
-//        return $news;
-        $this->createOrUpdate($news, $request);
-        logAdmin(__METHOD__, Post::class, $news->id);
-        return redirect()->route('admin.post.index')->with(['message' => $news->title . ' ' . __('updated successfully')]);
+        $this->createOrUpdate($post, $request);
+        logAdmin(__METHOD__, Post::class, $post->id);
+        return redirect()->route('admin.post.index')->with(['message' => $post->title . ' ' . __('updated successfully')]);
 
     }
 
-    public function destroy(Post $news)
+    public function destroy(Post $post)
     {
         //
-        logAdmin(__METHOD__, Post::class, $news->id);
-        $news->delete();
+        logAdmin(__METHOD__, Post::class, $post->id);
+        $post->delete();
         return redirect()->route('admin.post.index')->with(['message' => __('Post deleted successfully')]);
     }
 }
