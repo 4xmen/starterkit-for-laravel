@@ -17,7 +17,6 @@ class ImageController extends Controller
      */
     public function index()
     {
-        //
     }
 
     /**
@@ -27,18 +26,10 @@ class ImageController extends Controller
      */
     public function create()
     {
-        //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request, Gallery $gallery)
     {
-        //
         $img = $request->file('image');
 
         foreach ($request->input('title') as $k => $item) {
@@ -61,7 +52,6 @@ class ImageController extends Controller
      */
     public function show($id)
     {
-        //
     }
 
     /**
@@ -72,7 +62,6 @@ class ImageController extends Controller
      */
     public function edit($id)
     {
-        //
     }
 
     /**
@@ -84,18 +73,10 @@ class ImageController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Image $image)
     {
-        //
         logAdmin(__METHOD__, Image::class, $image->id);
         $image->delete();
 

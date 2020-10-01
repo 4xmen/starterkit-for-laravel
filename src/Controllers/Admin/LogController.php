@@ -15,14 +15,12 @@ class LogController extends Controller
      */
     public function index()
     {
-        //
         $logs = AdminLog::latest()->paginate(30);
 
         return view('starter-kit::admin.LogIndex', compact('logs'));
     }
     public function user(User $user)
     {
-        //
         $logs = $user->logs()->latest()->paginate(30);
 
         return view('starter-kit::admin.LogIndex', compact('logs'));

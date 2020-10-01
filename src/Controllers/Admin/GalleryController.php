@@ -62,7 +62,6 @@ class GalleryController extends Controller
 
     public function index(Request $request)
     {
-        //
         $n = Gallery::latest();
         if ($request->has('filter')) {
             $n = $n->where('status', $request->filter);
@@ -74,13 +73,11 @@ class GalleryController extends Controller
 
     public function create()
     {
-        //
         return view('starter-kit::admin.gallery.galleryForm');
     }
 
     public function store(GallerySaveRequest $request)
     {
-        //
         $gallery = new Gallery();
         $gallery = $this->createOrUpdate($gallery, $request);
         logAdmin(__METHOD__, Gallery::class, $gallery->id);
@@ -96,18 +93,15 @@ class GalleryController extends Controller
      */
     public function show(Gallery $gallery)
     {
-        //
     }
 
     public function edit(Gallery $gallery)
     {
-        //
         return view('starter-kit::admin.gallery.galleryForm', compact('gallery'));
     }
 
     public function update(GallerySaveRequest $request, Gallery $gallery)
     {
-        //
         $this->createOrUpdate($gallery, $request);
         logAdmin(__METHOD__, Gallery::class, $gallery->id);
 
@@ -116,7 +110,6 @@ class GalleryController extends Controller
 
     public function destroy(Gallery $gallery)
     {
-        //
         $gallery->images()->delete();
         logAdmin(__METHOD__, Gallery::class, $gallery->id);
         $gallery->delete();

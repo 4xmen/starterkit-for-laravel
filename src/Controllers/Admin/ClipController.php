@@ -71,7 +71,6 @@ class ClipController extends Controller
      */
     public function index(Request $request)
     {
-        //
         $n = Clip::latest();
         if ($request->has('filter')) {
             $n = $n->where('active', $request->filter);
@@ -88,7 +87,6 @@ class ClipController extends Controller
      */
     public function create()
     {
-        //
         return view('starter-kit::admin.clip.clipForm');
     }
 
@@ -100,7 +98,6 @@ class ClipController extends Controller
      */
     public function store(ClipSaveRequest $request)
     {
-        //
         $clip = new Clip();
         $clip = $this->createOrUpdate($clip, $request);
         logAdmin(__METHOD__, Clip::class, $clip->id);
@@ -116,7 +113,6 @@ class ClipController extends Controller
      */
     public function show($id)
     {
-        //
     }
 
     /**
@@ -127,7 +123,6 @@ class ClipController extends Controller
      */
     public function edit(Clip $clip)
     {
-        //
         return view('starter-kit::admin.clip.clipForm', compact('clip'));
     }
 
@@ -140,8 +135,6 @@ class ClipController extends Controller
      */
     public function update(ClipSaveRequest $request, Clip $clip)
     {
-        //
-
         $clip = $this->createOrUpdate($clip, $request);
 
         logAdmin(__METHOD__, Clip::class, $clip->id);
@@ -157,7 +150,6 @@ class ClipController extends Controller
      */
     public function destroy(Clip $clip)
     {
-        //
         logAdmin(__METHOD__, Clip::class, $clip->id);
         $clip->delete();
 

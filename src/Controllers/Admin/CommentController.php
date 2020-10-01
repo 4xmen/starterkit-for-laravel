@@ -50,7 +50,6 @@ class CommentController extends Controller
      */
     public function index(Request $request)
     {
-        //
         $comment = Comment::latest();
         if ($request->has('filter')) {
             $comment = $comment->where('status', $request->filter);
@@ -67,7 +66,6 @@ class CommentController extends Controller
      */
     public function create()
     {
-        //
     }
 
     /**
@@ -78,7 +76,6 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        //
     }
 
     /**
@@ -89,7 +86,6 @@ class CommentController extends Controller
      */
     public function show($id)
     {
-        //
     }
 
     /**
@@ -100,7 +96,6 @@ class CommentController extends Controller
      */
     public function edit($id)
     {
-        //
     }
 
     /**
@@ -112,7 +107,6 @@ class CommentController extends Controller
      */
     public function update(Request $request, Comment $comment)
     {
-        //
     }
     /**
      * Update the specified resource in storage.
@@ -123,7 +117,6 @@ class CommentController extends Controller
      */
     public function status(Comment $comment, $status)
     {
-        //
         logAdmin(__METHOD__.'.'.$status, Comment::class, $comment->id);
         $comment->status = $status;
         $comment->save();
@@ -139,7 +132,6 @@ class CommentController extends Controller
      */
     public function destroy(Comment $comment)
     {
-        //
         logAdmin(__METHOD__, Comment::class, $comment->id);
         $comment->delete();
 

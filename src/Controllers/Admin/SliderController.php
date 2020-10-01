@@ -61,7 +61,6 @@ class SliderController extends Controller
      */
     public function index(Request $request)
     {
-        //
         $n = Slider::latest();
         if ($request->has('filter')) {
             $n = $n->where('active', $request->filter);
@@ -78,7 +77,6 @@ class SliderController extends Controller
      */
     public function create()
     {
-        //
         return  view('starter-kit::admin.slider.sliderForm');
     }
 
@@ -90,7 +88,6 @@ class SliderController extends Controller
      */
     public function store(SliderSaveRequest $request)
     {
-        //
         $slider = new Slider();
         $slider = $this->createOrUpdate($slider, $request);
         logAdmin(__METHOD__, Slider::class, $slider->id);
@@ -106,7 +103,6 @@ class SliderController extends Controller
      */
     public function show($id)
     {
-        //
     }
 
     /**
@@ -117,7 +113,6 @@ class SliderController extends Controller
      */
     public function edit(Slider $slider)
     {
-        //
         return  view('starter-kit::admin.slider.sliderForm', compact('slider'));
     }
 
@@ -130,8 +125,6 @@ class SliderController extends Controller
      */
     public function update(SliderSaveRequest $request, Slider $slider)
     {
-        //
-
         $slider = $this->createOrUpdate($slider, $request);
 
         logAdmin(__METHOD__, Slider::class, $slider->id);
@@ -147,7 +140,6 @@ class SliderController extends Controller
      */
     public function destroy(Slider $slider)
     {
-        //
         logAdmin(__METHOD__, Slider::class, $slider->id);
         $slider->delete();
 

@@ -90,7 +90,6 @@ class PostController extends Controller
 
     public function index(Request $request)
     {
-        //
         $n = Post::latest();
         if ($request->has('filter')) {
             $n = $n->where('status', $request->filter);
@@ -102,7 +101,6 @@ class PostController extends Controller
 
     public function create()
     {
-        //
         $cats = Category::all();
 
         return view('starter-kit::admin.post.postForm', compact('cats'));
@@ -110,7 +108,6 @@ class PostController extends Controller
 
     public function store(PostSaveRequest $request)
     {
-        //
         $post = new Post();
         $post = $this->createOrUpdate($post, $request);
         logAdmin(__METHOD__, Post::class, $post->id);
@@ -120,7 +117,6 @@ class PostController extends Controller
 
     public function show($id)
     {
-        //
     }
 
     public function edit(Post $posts)
@@ -140,7 +136,6 @@ class PostController extends Controller
 
     public function destroy(Post $post)
     {
-        //
         logAdmin(__METHOD__, Post::class, $post->id);
         $post->delete();
 

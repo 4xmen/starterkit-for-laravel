@@ -17,7 +17,6 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
         $users = User::orderBy('name')->paginate(20);
 
         return view('starter-kit::admin.user.userList', compact('users'));
@@ -30,7 +29,6 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
         return view('starter-kit::admin.user.userForm');
     }
 
@@ -54,7 +52,6 @@ class UserController extends Controller
      */
     public function store(UserSaveRequest $request)
     {
-        //
         $user = new User();
         $user = $this->createOrUpdate($user, $request);
         logAdmin(__METHOD__, User::class, $user->id);
@@ -70,18 +67,15 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
     }
 
     public function edit(User $user)
     {
-        //
         return view('starter-kit::admin.user.userForm', compact('user'));
     }
 
     public function update(UserSaveRequest $request, User $user)
     {
-        //
         $this->createOrUpdate($user, $request);
         logAdmin(__METHOD__, User::class, $user->id);
 
@@ -96,7 +90,6 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        //
         $user->delete();
         logAdmin(__METHOD__, User::class, $user->id);
 

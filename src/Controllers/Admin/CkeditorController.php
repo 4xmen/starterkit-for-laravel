@@ -16,7 +16,6 @@ class CkeditorController extends Controller
      */
     public function index()
     {
-        //
     }
 
     public function tagsearch($query)

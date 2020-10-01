@@ -60,7 +60,6 @@ class PollController extends Controller
      */
     public function index(Request $request)
     {
-        //
         $n = Poll::latest();
         if ($request->has('filter')) {
             $n = $n->where('active', $request->filter);
@@ -77,7 +76,6 @@ class PollController extends Controller
      */
     public function create()
     {
-        //
         return view('starter-kit::admin.poll.pollForm');
     }
 
@@ -89,7 +87,6 @@ class PollController extends Controller
      */
     public function store(PollSaveRequest $request)
     {
-        //
         $poll = new Poll();
         $poll = $this->createOrUpdate($poll, $request);
         if ($request->has('options')) {
@@ -114,7 +111,6 @@ class PollController extends Controller
      */
     public function show($id)
     {
-        //
     }
 
     /**
@@ -125,7 +121,6 @@ class PollController extends Controller
      */
     public function edit(Poll $poll)
     {
-        //
         return  view('starter-kit::admin.poll.pollForm', compact('poll'));
     }
 
@@ -138,7 +133,6 @@ class PollController extends Controller
      */
     public function update(PollSaveRequest $request, Poll $poll)
     {
-        //
         $poll = $this->createOrUpdate($poll, $request);
         if ($request->has('options')) {
             foreach ($request->input('options') as $op) {
@@ -176,7 +170,6 @@ class PollController extends Controller
      */
     public function destroy(Poll $poll)
     {
-        //
         logAdmin(__METHOD__, Poll::class, $poll->id);
         $poll->delete();
 

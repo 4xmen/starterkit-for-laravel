@@ -53,7 +53,6 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
         $cats = Category::paginate(20);
 
         return view('starter-kit::admin.category.categoryIndex', compact('cats'));
@@ -66,7 +65,6 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
         $cats = Category::all();
 
         return view('starter-kit::admin.category.categoryForm', compact('cats'));
@@ -80,7 +78,6 @@ class CategoryController extends Controller
      */
     public function store(CategorySaveRequest $request)
     {
-        //
         $cat = new Category();
         $cat = $this->createOrUpdate($cat, $request);
         logAdmin(__METHOD__, Category::class, $cat->id);
@@ -96,7 +93,6 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        //
     }
 
     /**
@@ -107,7 +103,6 @@ class CategoryController extends Controller
      */
     public function edit(Category $cat)
     {
-        //
         $cats = Category::where('id', '<>', $cat->id)->get();
         $ccat = $cat;
 
@@ -123,7 +118,6 @@ class CategoryController extends Controller
      */
     public function update(CategorySaveRequest $request, Category $cat)
     {
-        //
         $this->createOrUpdate($cat, $request);
         logAdmin(__METHOD__, Category::class, $cat->id);
 
@@ -138,7 +132,6 @@ class CategoryController extends Controller
      */
     public function destroy(Category $cat)
     {
-        //
         logAdmin(__METHOD__, Category::class, $cat->id);
         $cat->delete();
 
