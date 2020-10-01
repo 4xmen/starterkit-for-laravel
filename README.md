@@ -92,9 +92,7 @@ clear any cached views with `view:clear`.
 This will ensure the newly-updated StarterKit version is using the latest versions.
 
 ```bash
-php artisan vendor:publish --provider="Xmen\StarterKit\StarterKitServiceProvider" --tag="assets" --force
-php artisan vendor:publish --provider="Xmen\StarterKit\StarterKitServiceProvider" --tag="lang" --force
-php artisan view:clear
+php artisan starter-kit:publish --force
 ```
 
 ## Testing

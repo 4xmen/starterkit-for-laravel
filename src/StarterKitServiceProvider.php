@@ -4,6 +4,7 @@ namespace Xmen\StarterKit;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use Xmen\StarterKit\Commands\PublishCommand;
 use Xmen\StarterKit\Commands\StarterKitCommand;
 
 class StarterKitServiceProvider extends ServiceProvider
@@ -42,6 +43,7 @@ class StarterKitServiceProvider extends ServiceProvider
 
             $this->commands([
                 StarterKitCommand::class,
+                PublishCommand::class
             ]);
         }
 
