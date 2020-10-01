@@ -2,22 +2,25 @@
 
 namespace Xmen\StarterKit\Controllers\Admin;
 
-use Xmen\StarterKit\Models\Category;
 use App\Http\Controllers\Controller;
-use Xmen\StarterKit\Requests\MenuSaveRequest;
-use Xmen\StarterKit\Models\Menu;
 use Illuminate\Http\Request;
 use function Xmen\StarterKit\Helpers\logAdmin;
+use Xmen\StarterKit\Models\Category;
+use Xmen\StarterKit\Models\Menu;
+use Xmen\StarterKit\Requests\MenuSaveRequest;
 
-class MenuController extends Controller {
+class MenuController extends Controller
+{
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index() {
+    public function index()
+    {
         //
         $menus = Menu::paginate(5);
+
         return view('starter-kit::admin.menu.menuList', compact('menus'));
     }
 
@@ -26,7 +29,8 @@ class MenuController extends Controller {
      *
      * @return \Illuminate\Http\Response
      */
-    public function create() {
+    public function create()
+    {
         //
     }
 
@@ -36,13 +40,15 @@ class MenuController extends Controller {
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(MenuSaveRequest $request) {
+    public function store(MenuSaveRequest $request)
+    {
         //
         $menu = new Menu();
         $menu->name = $request->input('name');
         $menu->user_id = auth()->id();
         $menu->save();
         logAdmin(__METHOD__, Menu::class, $menu->id);
+
         return redirect()->back()
             ->with(['message' => "Menu stored"]);
     }
@@ -53,9 +59,10 @@ class MenuController extends Controller {
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Menu $menu) {
+    public function show(Menu $menu)
+    {
         //
-        return  view('starter-kit::admin.menu.menuShow',compact('menu'));
+        return  view('starter-kit::admin.menu.menuShow', compact('menu'));
     }
 
     /**
@@ -64,43 +71,45 @@ class MenuController extends Controller {
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Menu $menu) {
+    public function edit(Menu $menu)
+    {
         //
 //        return $menu->menuItems()->whereNull('parent')->orderBy('sort')->get();
         $cats = Category::all();
+
         return view('starter-kit::admin.menu.menuForm', compact('menu', 'cats'));
     }
 
-    public function save(Menu $menu, $arr, $parent = null) {
-
+    public function save(Menu $menu, $arr, $parent = null)
+    {
         foreach ($arr as $k => $a) {
             $tmp = $a;
             $tmp['sort'] = $k;
-            if (!isset($tmp['menuabletype']) || $tmp['menuabletype'] == ''){
+            if (! isset($tmp['menuabletype']) || $tmp['menuabletype'] == '') {
                 $tmp['menuable_type'] = null;
                 $tmp['menuable_id'] = null;
                 unset($tmp['menuabletype'],$tmp['menuableid']);
-            }else{
+            } else {
                 $tmp['menuable_type'] = $tmp['menuabletype'];
                 $tmp['menuable_id'] = $tmp['menuableid'];
                 unset($tmp['menuabletype'],$tmp['menuableid']);
             }
-            $tmp['parent']  = $parent;
-            $tmp['user_id']  = auth()->id() ;
+            $tmp['parent'] = $parent;
+            $tmp['user_id'] = auth()->id() ;
             unset($tmp['can']);
             unset($tmp['id']);
-            if (isset($tmp['children'])){
+            if (isset($tmp['children'])) {
                 unset($tmp['children']);
                 $b = true;
-            }else{
+            } else {
                 $b = false;
             }
 //            dd( json_encode($tmp) );
             $m = $menu->menuItems()->create(
                 $tmp
             );
-            if($b){
-                $this->save($menu,$a['children'][0],$m->id);
+            if ($b) {
+                $this->save($menu, $a['children'][0], $m->id);
             }
         }
     }
@@ -112,19 +121,21 @@ class MenuController extends Controller {
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Menu $menu) {
+    public function update(Request $request, Menu $menu)
+    {
         //
         $request->validate([
-            'info' => 'required|json'
+            'info' => 'required|json',
         ]);
 
         $arr = json_decode($request->input('info'), true);
         $menu->menuItems()->delete();
-        $this->save($menu,$arr[0]);
+        $this->save($menu, $arr[0]);
         logAdmin(__METHOD__, Menu::class, $menu->id);
-        if ($request->ajax()){
+        if ($request->ajax()) {
             return  ["OK" => true, 'msg' => "Menu updated"];
         }
+
         return redirect()->back()
             ->with(['message' => "Menu updated"]);
     }
@@ -135,10 +146,12 @@ class MenuController extends Controller {
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Menu $menu) {
+    public function destroy(Menu $menu)
+    {
         //
         $menu->delete();
         logAdmin(__METHOD__, MenuSaveRequest::class, $menu->id);
+
         return redirect()->back()
             ->with(['message' => "Menu deleted."]);
     }

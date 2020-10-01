@@ -33,7 +33,8 @@ class Menu extends Model
     //
     use  SoftDeletes;
 
-    public function menuItems(){
-        return $this->hasMany(MenuItem::class,'menu_id','id');
+    public function menuItems()
+    {
+        return $this->hasMany(MenuItem::class, 'menu_id', 'id');
     }
 }

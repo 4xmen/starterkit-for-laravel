@@ -2,9 +2,8 @@
 
 namespace Xmen\StarterKit\Controllers\Admin;
 
-use Xmen\StarterKit\Helpers\TDate;
-use LaravelDaily\LaravelCharts\Classes\LaravelChart;
 use App\Http\Controllers\Controller;
+use Xmen\StarterKit\Helpers\TDate;
 
 class DashboardController extends Controller
 {
@@ -69,7 +68,7 @@ class DashboardController extends Controller
                     "pointHoverBackgroundColor" => "#fff",
                     "pointHoverBorderColor" => "rgba(220,220,220,1)",
                     'data' => [12, 33, 44, 44, 55, 23, 40],
-                ]
+                ],
             ])
             ->options([]);
 
@@ -82,8 +81,8 @@ class DashboardController extends Controller
                 [
                     'backgroundColor' => ['#FF6384', '#36A2EB'],
                     'hoverBackgroundColor' => ['#FF6384', '#36A2EB'],
-                    'data' => [69, 59]
-                ]
+                    'data' => [69, 59],
+                ],
             ])
             ->options([]);
 

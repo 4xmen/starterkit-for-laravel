@@ -41,12 +41,13 @@ class Gallery extends Model implements HasMedia
     use  InteractsWithMedia;
 
 
-    public function images(){
-        return $this->hasMany(Image::class,'gallery_id','id')->orderBy('sort')->orderByDesc('id');
+    public function images()
+    {
+        return $this->hasMany(Image::class, 'gallery_id', 'id')->orderBy('sort')->orderByDesc('id');
     }
 
-    public function registerMediaConversions(Media $media = null): void {
-
+    public function registerMediaConversions(Media $media = null): void
+    {
         $this->addMediaConversion('gallery-image')->optimize();
 
         $this->addMediaConversion('gthumb')->width(500)
@@ -56,11 +57,13 @@ class Gallery extends Model implements HasMedia
 //                    ->withResponsiveImages();
     }
 
-    public function getRouteKeyName() {
+    public function getRouteKeyName()
+    {
         return 'slug';
     }
 
-    public function imgurl() {
+    public function imgurl()
+    {
         if ($this->getMedia()->count() > 0) {
             return $this->getMedia()->first()->getUrl('gthumb');
         } else {

@@ -2,16 +2,15 @@
 
 namespace Xmen\StarterKit\Models;
 
-use Xmen\StarterKit\Helpers\TDate;
 use Conner\Tagging\Taggable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Image\Manipulations;
+use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\HasMedia;
 use Te7aHoudini\LaravelTrix\Traits\HasTrixRichText;
-
+use Xmen\StarterKit\Helpers\TDate;
 
 /**
  * App\News
@@ -75,22 +74,25 @@ use Te7aHoudini\LaravelTrix\Traits\HasTrixRichText;
  * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereIsPinned($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Post whereLike($value)
  */
-class Post extends Model implements HasMedia {
+class Post extends Model implements HasMedia
+{
     use SoftDeletes, InteractsWithMedia, Taggable, HasTrixRichText;
 
 
-    public function categories() {
+    public function categories()
+    {
         return $this->belongsToMany(Category::class);
     }
 
     //
-    public function getRouteKeyName() {
+    public function getRouteKeyName()
+    {
         return 'slug';
     }
 
 
-    public function registerMediaConversions(Media $media = null): void {
-
+    public function registerMediaConversions(Media $media = null): void
+    {
         $this->addMediaConversion('posts-image')
             ->width(1200)
             ->height(600)
@@ -103,7 +105,8 @@ class Post extends Model implements HasMedia {
         //            ->withResponsiveImages();
     }
 
-    public function imgurl() {
+    public function imgurl()
+    {
         if ($this->getMedia()->count() > 0) {
             return $this->getMedia()->first()->getUrl('posts-image');
         } else {
@@ -111,17 +114,19 @@ class Post extends Model implements HasMedia {
         }
     }
 
-    public function spendTime() {
-
+    public function spendTime()
+    {
         $word = strlen(strip_tags($this->body));
         $m = ceil($word / 1350);
 //        $est = $m . ' '.__('minute') . ($m == 1 ? '' : 's') . ', ' . $s . ' second' . ($s == 1 ? '' : 's');
         return $m . ' ' . __('minute') ;
     }
 
-    public function persianDate(){
+    public function persianDate()
+    {
         $dt = TDate::GetInstance();
-        return $dt->PDate("Y/m/d H:i:s",$this->created_at->timestamp);
+
+        return $dt->PDate("Y/m/d H:i:s", $this->created_at->timestamp);
     }
 
     public function comments()
@@ -130,8 +135,6 @@ class Post extends Model implements HasMedia {
     }
     public function approved_comments()
     {
-        return $this->morphMany(Comment::class, 'commentable')->where('status',1);
+        return $this->morphMany(Comment::class, 'commentable')->where('status', 1);
     }
-
-
 }

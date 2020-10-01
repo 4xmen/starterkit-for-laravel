@@ -30,10 +30,12 @@ class Slider extends Model
 {
     //
 
-    public function imgUrl() {
+    public function imgUrl()
+    {
         if ($this->image == null) {
             return null;
         }
+
         return \Storage::url('sliders/' . $this->image);
     }
 }

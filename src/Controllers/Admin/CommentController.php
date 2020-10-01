@@ -2,41 +2,45 @@
 
 namespace Xmen\StarterKit\Controllers\Admin;
 
-use Xmen\StarterKit\Models\Comment;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use function Xmen\StarterKit\Helpers\logAdmin;
 use function Xmen\StarterKit\Helpers\logAdminBatch;
+use Xmen\StarterKit\Models\Comment;
 
 class CommentController extends Controller
 {
-
-    public function bulk(Request $request) {
-
+    public function bulk(Request $request)
+    {
         switch ($request->input('bulk')) {
             case 'delete':
                 $msg = __('Comments deleted successfully');
-                logAdminBatch(__METHOD__.'.'.$request->input('bulk'),Comment::class,$request->input('id'));
+                logAdminBatch(__METHOD__.'.'.$request->input('bulk'), Comment::class, $request->input('id'));
                 Comment::destroy($request->input('id'));
+
                 break;
             case 'pending':
                 $msg = __('Comments pending successfully');
-                logAdminBatch(__METHOD__.'.'.$request->input('bulk'),Comment::class,$request->input('id'));
+                logAdminBatch(__METHOD__.'.'.$request->input('bulk'), Comment::class, $request->input('id'));
                 Comment::whereIn('id', $request->input('id'))->update(['status' => 0]);
+
                 break;
             case 'approve':
                 $msg = __('Comments approved successfully');
-                logAdminBatch(__METHOD__.'.'.$request->input('bulk'),Comment::class,$request->input('id'));
+                logAdminBatch(__METHOD__.'.'.$request->input('bulk'), Comment::class, $request->input('id'));
                 Comment::whereIn('id', $request->input('id'))->update(['status' => 1]);
+
                 break;
             case 'reject':
                 $msg = __('Comments rejected successfully');
-                logAdminBatch(__METHOD__.'.'.$request->input('bulk'),Comment::class,$request->input('id'));
+                logAdminBatch(__METHOD__.'.'.$request->input('bulk'), Comment::class, $request->input('id'));
                 Comment::whereIn('id', $request->input('id'))->update(['status' => -1]);
+
                 break;
             default:
                 $msg = __('Unknown bulk action :' . $request->input('bulk'));
         }
+
         return redirect()->route('admin.comment.index')->with(['message' => $msg]);
     }
     /**
@@ -48,11 +52,12 @@ class CommentController extends Controller
     {
         //
         $comment = Comment::latest();
-        if ($request->has('filter')){
-            $comment = $comment->where('status',$request->filter);
+        if ($request->has('filter')) {
+            $comment = $comment->where('status', $request->filter);
         }
         $comments = $comment->paginate(20);
-        return view('starter-kit::admin.comments',compact('comments'));
+
+        return view('starter-kit::admin.comments', compact('comments'));
     }
 
     /**
@@ -116,12 +121,13 @@ class CommentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function status(Comment $comment,$status)
+    public function status(Comment $comment, $status)
     {
         //
-        logAdmin(__METHOD__.'.'.$status,Comment::class,$comment->id);
+        logAdmin(__METHOD__.'.'.$status, Comment::class, $comment->id);
         $comment->status = $status;
         $comment->save();
+
         return  redirect()->back()->with(['message' => _("Comment status changed")]);
     }
 
@@ -134,8 +140,9 @@ class CommentController extends Controller
     public function destroy(Comment $comment)
     {
         //
-        logAdmin(__METHOD__,Comment::class,$comment->id);
+        logAdmin(__METHOD__, Comment::class, $comment->id);
         $comment->delete();
+
         return redirect()->route('admin.comment.index')->with(['message' => __('Comment deleted successfully')]);
     }
 }

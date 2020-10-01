@@ -36,19 +36,23 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\MenuItem whereUserId($value)
  * @mixin \Eloquent
  */
-class MenuItem extends Model {
+class MenuItem extends Model
+{
     protected $guarded = [];
 
     //
-    public function menu() {
+    public function menu()
+    {
         return $this->belongsTo(Menu::class, 'menu_id', 'id');
     }
 
-    public function parent() {
+    public function parent()
+    {
         return $this->belongsTo(MenuItem::class, 'parent');
     }
 
-    public function children() {
+    public function children()
+    {
         return $this->hasMany(MenuItem::class, 'parent');
     }
 }

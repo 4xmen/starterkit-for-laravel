@@ -4,7 +4,6 @@ namespace Xmen\StarterKit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Support\Facades\Storage;
 
 /**
  * App\Poll
@@ -42,13 +41,13 @@ class Poll extends Model
     use  SoftDeletes;
     //
     protected $guarded = [];
-    public function opinions(){
-        return $this->hasMany(Opinion::class,'poll_id','id');
+    public function opinions()
+    {
+        return $this->hasMany(Opinion::class, 'poll_id', 'id');
     }
 
-    public function getRouteKeyName() {
+    public function getRouteKeyName()
+    {
         return 'slug';
     }
-
-
 }

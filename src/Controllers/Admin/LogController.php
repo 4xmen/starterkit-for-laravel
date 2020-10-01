@@ -2,10 +2,9 @@
 
 namespace Xmen\StarterKit\Controllers\Admin;
 
-use Xmen\StarterKit\Models\AdminLog;
 use App\Http\Controllers\Controller;
 use App\User;
-use Illuminate\Http\Request;
+use Xmen\StarterKit\Models\AdminLog;
 
 class LogController extends Controller
 {
@@ -18,12 +17,14 @@ class LogController extends Controller
     {
         //
         $logs = AdminLog::latest()->paginate(30);
-        return view('starter-kit::admin.LogIndex',compact('logs'));
+
+        return view('starter-kit::admin.LogIndex', compact('logs'));
     }
     public function user(User $user)
     {
         //
         $logs = $user->logs()->latest()->paginate(30);
-        return view('starter-kit::admin.LogIndex',compact('logs'));
+
+        return view('starter-kit::admin.LogIndex', compact('logs'));
     }
 }

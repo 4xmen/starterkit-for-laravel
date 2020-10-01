@@ -3,6 +3,7 @@
 namespace Xmen\StarterKit\Commands;
 
 use Illuminate\Console\Command;
+use Xmen\StarterKit\StarterKitServiceProvider;
 
 class PublishCommand extends Command
 {
@@ -28,30 +29,30 @@ class PublishCommand extends Command
     public function handle()
     {
         $this->call('vendor:publish', [
-            '--provider'=>'Xmen\StarterKit\StarterKitServiceProvider',
+            '--provider' => StarterKitServiceProvider::class,
             '--tag' => 'config',
             '--force' => $this->option('force'),
         ]);
 
         $this->call('vendor:publish', [
-            '--provider'=>'Xmen\StarterKit\StarterKitServiceProvider',
+            '--provider' => StarterKitServiceProvider::class,
             '--tag' => 'assets',
             '--force' => true,
         ]);
 
         $this->call('vendor:publish', [
-            '--provider'=>'Xmen\StarterKit\StarterKitServiceProvider',
+            '--provider' => StarterKitServiceProvider::class,
             '--tag' => 'lang',
             '--force' => $this->option('force'),
         ]);
 
         $this->call('vendor:publish', [
-            '--provider'=>'Xmen\StarterKit\StarterKitServiceProvider',
+            '--provider' => StarterKitServiceProvider::class,
             '--tag' => 'views',
             '--force' => $this->option('force'),
         ]);
         $this->call('vendor:publish', [
-            '--provider'=>'Xmen\StarterKit\StarterKitServiceProvider',
+            '--provider' => StarterKitServiceProvider::class,
             '--tag' => 'fonts',
             '--force' => $this->option('force'),
         ]);

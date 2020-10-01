@@ -36,23 +36,28 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property-read \Illuminate\Database\Eloquent\Collection|\Xmen\StarterKit\Models\Post[] $news
  * @property-read int|null $news_count
  */
-class Category extends Model {
+class Category extends Model
+{
     use SoftDeletes;
 
-    public function posts() {
+    public function posts()
+    {
         return $this->belongsToMany(Post::class);
     }
 
     //
-    public function parent() {
+    public function parent()
+    {
         return $this->belongsTo(Category::class, 'parent_id');
     }
 
-    public function children() {
+    public function children()
+    {
         return $this->hasMany(Category::class, 'parent_id');
     }
 
-    public function getRouteKeyName() {
+    public function getRouteKeyName()
+    {
         return 'slug';
     }
 }

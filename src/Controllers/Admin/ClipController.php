@@ -2,40 +2,41 @@
 
 namespace Xmen\StarterKit\Controllers\Admin;
 
-use Xmen\StarterKit\Models\Clip;
 use App\Http\Controllers\Controller;
-use Xmen\StarterKit\Requests\ClipSaveRequest;
-use Xmen\StarterKit\Models\Poll;
-
 use Illuminate\Http\Request;
 use function Xmen\StarterKit\Helpers\logAdmin;
+
 use function Xmen\StarterKit\Helpers\logAdminBatch;
+use Xmen\StarterKit\Models\Clip;
+use Xmen\StarterKit\Requests\ClipSaveRequest;
 
 class ClipController extends Controller
 {
-
     public function bulk(Request $request)
     {
-
         switch ($request->input('bulk')) {
             case 'delete':
                 $msg = __('Clip deleted successfully');
                 logAdminBatch(__METHOD__ . '.' . $request->input('bulk'), Clip::class, $request->input('id'));
                 Clip::destroy($request->input('id'));
+
                 break;
             case 'inactive':
                 $msg = __('Clip deactivated successfully');
                 logAdminBatch(__METHOD__ . '.' . $request->input('bulk'), Clip::class, $request->input('id'));
                 Clip::whereIn('id', $request->input('id'))->update(['active' => 0]);
+
                 break;
             case 'active':
                 $msg = __('Clip activated successfully');
                 logAdminBatch(__METHOD__ . '.' . $request->input('bulk'), Clip::class, $request->input('id'));
                 Clip::whereIn('id', $request->input('id'))->update(['active' => 1]);
+
                 break;
             default:
                 $msg = __('Unknown bulk action :' . $request->input('bulk'));
         }
+
         return redirect()->route('admin.clip.index')->with(['message' => $msg]);
     }
 
@@ -59,6 +60,7 @@ class ClipController extends Controller
 
         $clip->save();
         $clip->retag(explode(',', $request->input('tags')));
+
         return $clip;
     }
 
@@ -75,6 +77,7 @@ class ClipController extends Controller
             $n = $n->where('active', $request->filter);
         }
         $clips = $n->paginate(10);
+
         return view('starter-kit::admin.clip.clipList', compact('clips'));
     }
 
@@ -101,6 +104,7 @@ class ClipController extends Controller
         $clip = new Clip();
         $clip = $this->createOrUpdate($clip, $request);
         logAdmin(__METHOD__, Clip::class, $clip->id);
+
         return redirect()->route('admin.clip.edit', $clip->slug)->with(['message' => $clip->title . ' ' . __('created successfully')]);
     }
 
@@ -141,8 +145,8 @@ class ClipController extends Controller
         $clip = $this->createOrUpdate($clip, $request);
 
         logAdmin(__METHOD__, Clip::class, $clip->id);
-        return redirect()->route('admin.clip.edit', $clip->slug)->with(['message' => $clip->title . ' ' . __('created successfully')]);
 
+        return redirect()->route('admin.clip.edit', $clip->slug)->with(['message' => $clip->title . ' ' . __('created successfully')]);
     }
 
     /**
@@ -156,6 +160,7 @@ class ClipController extends Controller
         //
         logAdmin(__METHOD__, Clip::class, $clip->id);
         $clip->delete();
+
         return redirect()->back()->with(['message' => __('Clip deleted successfully')]);
     }
 }

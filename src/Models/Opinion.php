@@ -29,7 +29,8 @@ class Opinion extends Model
 {
     protected $guarded = [];
     //
-    public function poll(){
-        return $this->belongsTo(Poll::class,'poll_id','id');
+    public function poll()
+    {
+        return $this->belongsTo(Poll::class, 'poll_id', 'id');
     }
 }

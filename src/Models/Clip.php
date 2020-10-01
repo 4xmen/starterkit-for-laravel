@@ -46,26 +46,32 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property string $cover
  * @method static \Illuminate\Database\Eloquent\Builder|\Xmen\StarterKit\Models\Clip whereCover($value)
  */
-class Clip extends Model {
+class Clip extends Model
+{
     //
     use  SoftDeletes, Taggable;
 
 
-    public function getRouteKeyName() {
+    public function getRouteKeyName()
+    {
         return 'slug';
     }
 
-    public function coverUrl() {
+    public function coverUrl()
+    {
         if ($this->cover == null) {
             return null;
         }
+
         return \Storage::url('clips/' . $this->cover);
     }
 
-    public function fileUrl() {
+    public function fileUrl()
+    {
         if ($this->file == null) {
             return null;
         }
+
         return \Storage::url('clips/' . $this->file);
     }
 }

@@ -3,28 +3,33 @@
 namespace Xmen\StarterKit\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use Xmen\StarterKit\Models\Post;
 use Conner\Tagging\Model\Tag;
 use Illuminate\Http\Request;
+use Xmen\StarterKit\Models\Post;
 
-class CkeditorController extends Controller {
+class CkeditorController extends Controller
+{
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index() {
+    public function index()
+    {
         //
     }
 
-    public function tagsearch($query) {
+    public function tagsearch($query)
+    {
         return Tag::where('name', 'LIKE', "%$query%")->limit(5)->pluck('name')->toArray();
     }
-    public function newssearch($query) {
+    public function newssearch($query)
+    {
         return Post::where('title', 'LIKE', "%$query%")->limit(5)->get(['id','title'])->toArray();
     }
 
-    public function upload(Request $request) {
+    public function upload(Request $request)
+    {
         if ($request->hasFile('upload')) {
             $originName = $request->file('upload')->getClientOriginalName();
             $fileName = pathinfo($originName, PATHINFO_FILENAME);

@@ -2,23 +2,21 @@
 
 namespace Xmen\StarterKit\Controllers\Admin;
 
-use Xmen\StarterKit\Models\Category;
-use Xmen\StarterKit\Helpers\TDate;
 use App\Http\Controllers\Controller;
-use Xmen\StarterKit\Requests\PostSaveRequest;
-use Xmen\StarterKit\Models\Post;
 use Illuminate\Http\Request;
 use Spatie\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
 use Spatie\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
 use function Xmen\StarterKit\Helpers\logAdmin;
 use function Xmen\StarterKit\Helpers\logAdminBatch;
+use Xmen\StarterKit\Helpers\TDate;
+use Xmen\StarterKit\Models\Category;
+use Xmen\StarterKit\Models\Post;
+use Xmen\StarterKit\Requests\PostSaveRequest;
 
 class PostController extends Controller
 {
-
     public function createOrUpdate(Post $post, PostSaveRequest $request)
     {
-
         $dt = new TDate();
 
         $post->title = $request->input('title');
@@ -64,26 +62,29 @@ class PostController extends Controller
 
     public function bulk(Request $request)
     {
-
         switch ($request->input('bulk')) {
             case 'delete':
                 $msg = __('Post deleted successfully');
                 logAdminBatch(__METHOD__ . '.' . $request->input('bulk'), Post::class, $request->input('id'));
                 Post::destroy($request->input('id'));
+
                 break;
             case 'draft':
                 $msg = __('Post drafted successfully');
                 logAdminBatch(__METHOD__ . '.' . $request->input('bulk'), Post::class, $request->input('id'));
                 Post::whereIn('id', $request->input('id'))->update(['status' => 0]);
+
                 break;
             case 'publish':
                 $msg = __('Post published successfully');
                 logAdminBatch(__METHOD__ . '.' . $request->input('bulk'), Post::class, $request->input('id'));
                 Post::whereIn('id', $request->input('id'))->update(['status' => 1]);
+
                 break;
             default:
                 $msg = __('Unknown bulk action :' . $request->input('bulk'));
         }
+
         return redirect()->route('admin.post.index')->with(['message' => $msg]);
     }
 
@@ -95,6 +96,7 @@ class PostController extends Controller
             $n = $n->where('status', $request->filter);
         }
         $posts = $n->paginate(20);
+
         return view('starter-kit::admin.post.postIndex', compact('posts'));
     }
 
@@ -102,6 +104,7 @@ class PostController extends Controller
     {
         //
         $cats = Category::all();
+
         return view('starter-kit::admin.post.postForm', compact('cats'));
     }
 
@@ -111,6 +114,7 @@ class PostController extends Controller
         $post = new Post();
         $post = $this->createOrUpdate($post, $request);
         logAdmin(__METHOD__, Post::class, $post->id);
+
         return redirect()->route('admin.post.index')->with(['message' => $post->title . ' ' . __('created successfully')]);
     }
 
@@ -122,6 +126,7 @@ class PostController extends Controller
     public function edit(Post $posts)
     {
         $cats = Category::all();
+
         return view('starter-kit::admin.post.postForm', compact('cats', 'posts'));
     }
 
@@ -129,8 +134,8 @@ class PostController extends Controller
     {
         $this->createOrUpdate($post, $request);
         logAdmin(__METHOD__, Post::class, $post->id);
-        return redirect()->route('admin.post.index')->with(['message' => $post->title . ' ' . __('updated successfully')]);
 
+        return redirect()->route('admin.post.index')->with(['message' => $post->title . ' ' . __('updated successfully')]);
     }
 
     public function destroy(Post $post)
@@ -138,6 +143,7 @@ class PostController extends Controller
         //
         logAdmin(__METHOD__, Post::class, $post->id);
         $post->delete();
+
         return redirect()->route('admin.post.index')->with(['message' => __('Post deleted successfully')]);
     }
 }

@@ -2,8 +2,8 @@
 
 namespace Xmen\StarterKit\Models;
 
-use Xmen\StarterKit\Helpers\TDate;
 use Illuminate\Database\Eloquent\Model;
+use Xmen\StarterKit\Helpers\TDate;
 
 /**
  * App\Comment
@@ -49,17 +49,21 @@ class Comment extends Model
         return $this->morphTo();
     }
 
-    public function children(){
-        return $this->hasMany(Comment::class,'sub_comment_id');
+    public function children()
+    {
+        return $this->hasMany(Comment::class, 'sub_comment_id');
     }
 
-    public function approved_children(){
-        return $this->hasMany(Comment::class,'sub_comment_id')->where('status',1);
+    public function approved_children()
+    {
+        return $this->hasMany(Comment::class, 'sub_comment_id')->where('status', 1);
     }
 
 
-    public function persianDate(){
+    public function persianDate()
+    {
         $dt = TDate::GetInstance();
+
         return $dt->RDate($this->created_at->timestamp);
     }
 }

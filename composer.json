@@ -5,13 +5,13 @@
         "xmen",
         "starter-kit"
     ],
-    "homepage": "https://github.com/spatie/starter-kit",
+    "homepage": "https://gitgo.ir/4xmen/laravel-starter-kit",
     "license": "MIT",
     "authors": [
         {
             "name": "xmen",
             "email": "sadeghpm@gmail.com",
-            "homepage": "https://spatie.be",
+            "homepage": "https://gitgo.ir/sadeghpm",
             "role": "Developer"
         }
     ],

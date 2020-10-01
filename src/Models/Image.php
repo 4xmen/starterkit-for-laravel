@@ -39,14 +39,15 @@ class Image extends Model implements HasMedia
 {
     use  InteractsWithMedia;
 
-    protected $guarded =[];
+    protected $guarded = [];
 
-    public function gallery(){
-        return $this->belongsTo(Gallery::class,'gallery_id');
+    public function gallery()
+    {
+        return $this->belongsTo(Gallery::class, 'gallery_id');
     }
 
-    public function registerMediaConversions(Media $media = null): void {
-
+    public function registerMediaConversions(Media $media = null): void
+    {
         $this->addMediaConversion('image-image')->optimize();
 
         $this->addMediaConversion('ithumb')->width(500)
@@ -56,7 +57,8 @@ class Image extends Model implements HasMedia
 //                    ->withResponsiveImages();
     }
 
-    public function imgurl() {
+    public function imgurl()
+    {
         if ($this->getMedia()->count() > 0) {
             return $this->getMedia()->first()->getUrl('ithumb');
         } else {

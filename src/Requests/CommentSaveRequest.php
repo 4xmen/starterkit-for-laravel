@@ -4,13 +4,15 @@ namespace Xmen\StarterKit\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CommentSaveRequest extends FormRequest {
+class CommentSaveRequest extends FormRequest
+{
     /**
      * Determine if the user is authorized to make this request.
      *
      * @return bool
      */
-    public function authorize() {
+    public function authorize()
+    {
         return true;
     }
 
@@ -19,13 +21,14 @@ class CommentSaveRequest extends FormRequest {
      *
      * @return array
      */
-    public function rules() {
+    public function rules()
+    {
         return [
             //
             'name' => ['required', 'string','min:2', 'max:60'],
             'email' => ['required', 'string', 'email', 'max:100'],
             'body' => ['required', 'string','max:10000','min:10'],
-            'parent' => ['nullable','exists:posts,id']
+            'parent' => ['nullable','exists:posts,id'],
         ];
     }
 }

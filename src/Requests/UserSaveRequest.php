@@ -4,7 +4,6 @@ namespace Xmen\StarterKit\Requests;
 
 use App\User;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 
 class UserSaveRequest extends FormRequest
 {

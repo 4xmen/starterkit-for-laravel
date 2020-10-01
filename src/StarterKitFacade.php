@@ -9,19 +9,15 @@ use Illuminate\Support\Facades\Facade;
  */
 class StarterKitFacade extends Facade
 {
-
     protected static function getFacadeAccessor()
     {
         return 'starterkit';
     }
 
-    static function slug($name, $replace_char = '-') {
+    public static function slug($name, $replace_char = '-')
+    {
         // special chars
-        $name = str_replace('&','and',$name);
-        $name = str_replace('+','plus',$name);
-        $name = str_replace('-','minus',$name);
-        $name = str_replace('@','at',$name);
-        $name = str_replace('*','star',$name);
+        $name = str_replace(array('&', '+', '-', '@', '*'), array('and', 'plus', 'minus', 'at', 'star'), $name);
 
         // replace non letter or digits by -
         $name = preg_replace('~[^\pL\d\.]+~u', $replace_char, $name);
@@ -41,7 +37,7 @@ class StarterKitFacade extends Facade
         if (empty($name)) {
             return 'N-A';
         }
-        return substr($name,0,200);
-    }
 
+        return substr($name, 0, 200);
+    }
 }

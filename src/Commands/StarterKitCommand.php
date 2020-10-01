@@ -16,12 +16,12 @@ class StarterKitCommand extends Command
         $this->info('Create Admin User');
 
         $role = Role::FirstOrCreate(['name' => 'super-admin']);
-        $mrole = Role::FirstOrCreate(['name' => 'manager']);
+        Role::FirstOrCreate(['name' => 'manager']);
 
         $user = new \App\User();
-        $user->email=$this->ask('Enter Email:','admin@example.com');
-        $user->name=$this->ask('Enter name:','admin');
-        $user->password=bcrypt($this->ask('Enter password','password'));
+        $user->email = $this->ask('Enter Email:', 'admin@example.com');
+        $user->name = $this->ask('Enter name:', 'admin');
+        $user->password = bcrypt($this->ask('Enter password', 'password'));
         $user->assignRole($role);
         $user->save();
 

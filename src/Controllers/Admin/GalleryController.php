@@ -2,39 +2,41 @@
 
 namespace Xmen\StarterKit\Controllers\Admin;
 
-use Xmen\StarterKit\Models\Gallery;
 use App\Http\Controllers\Controller;
-use Xmen\StarterKit\Requests\GallerySaveRequest;
-
 use Illuminate\Http\Request;
 use function Xmen\StarterKit\Helpers\logAdmin;
+
 use function Xmen\StarterKit\Helpers\logAdminBatch;
+use Xmen\StarterKit\Models\Gallery;
+use Xmen\StarterKit\Requests\GallerySaveRequest;
 
 class GalleryController extends Controller
 {
-
     public function bulk(Request $request)
     {
-
         switch ($request->input('bulk')) {
             case 'delete':
                 $msg = __('Gallery deleted successfully');
                 logAdminBatch(__METHOD__ . '.' . $request->input('bulk'), Gallery::class, $request->input('id'));
                 Gallery::destroy($request->input('id'));
+
                 break;
             case 'draft':
                 $msg = __('Gallery drafted successfully');
                 logAdminBatch(__METHOD__ . '.' . $request->input('bulk'), Gallery::class, $request->input('id'));
                 Gallery::whereIn('id', $request->input('id'))->update(['status' => 0]);
+
                 break;
             case 'publish':
                 $msg = __('Gallery published successfully');
                 logAdminBatch(__METHOD__ . '.' . $request->input('bulk'), Gallery::class, $request->input('id'));
                 Gallery::whereIn('id', $request->input('id'))->update(['status' => 1]);
+
                 break;
             default:
                 $msg = __('Unknown bulk action :' . $request->input('bulk'));
         }
+
         return redirect()->route('admin.gallery.all')->with(['message' => $msg]);
     }
 
@@ -66,6 +68,7 @@ class GalleryController extends Controller
             $n = $n->where('status', $request->filter);
         }
         $galleries = $n->paginate(10);
+
         return view('starter-kit::admin.gallery.galleryIndex', compact('galleries'));
     }
 
@@ -81,8 +84,8 @@ class GalleryController extends Controller
         $gallery = new Gallery();
         $gallery = $this->createOrUpdate($gallery, $request);
         logAdmin(__METHOD__, Gallery::class, $gallery->id);
-        return redirect()->route('admin.gallery.edit', $gallery->slug)->with(['message' => $gallery->title . ' ' . __('created successfully')]);
 
+        return redirect()->route('admin.gallery.edit', $gallery->slug)->with(['message' => $gallery->title . ' ' . __('created successfully')]);
     }
 
     /**
@@ -94,7 +97,6 @@ class GalleryController extends Controller
     public function show(Gallery $gallery)
     {
         //
-
     }
 
     public function edit(Gallery $gallery)
@@ -108,6 +110,7 @@ class GalleryController extends Controller
         //
         $this->createOrUpdate($gallery, $request);
         logAdmin(__METHOD__, Gallery::class, $gallery->id);
+
         return redirect()->route('admin.gallery.edit', $gallery->slug)->with(['message' => $gallery->title . ' ' . __('updated successfully')]);
     }
 
@@ -117,6 +120,7 @@ class GalleryController extends Controller
         $gallery->images()->delete();
         logAdmin(__METHOD__, Gallery::class, $gallery->id);
         $gallery->delete();
+
         return redirect()->route('admin.gallery.all')->with(['message' => $gallery->title . ' ' . __(' deleted successfully')]);
     }
 }

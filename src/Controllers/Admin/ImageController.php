@@ -2,11 +2,11 @@
 
 namespace Xmen\StarterKit\Controllers\Admin;
 
-use Xmen\StarterKit\Models\Gallery;
 use App\Http\Controllers\Controller;
-use Xmen\StarterKit\Models\Image;
 use Illuminate\Http\Request;
 use function Xmen\StarterKit\Helpers\logAdmin;
+use Xmen\StarterKit\Models\Gallery;
+use Xmen\StarterKit\Models\Image;
 
 class ImageController extends Controller
 {
@@ -36,21 +36,21 @@ class ImageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request,Gallery $gallery)
+    public function store(Request $request, Gallery $gallery)
     {
         //
         $img = $request->file('image');
 
         foreach ($request->input('title') as $k => $item) {
             $newimage = $gallery->images()->create([
-                'title'=> $item,
+                'title' => $item,
                 'user_id' => auth()->id(),
             ]);
             $newimage->addMedia($img[$k])->toMediaCollection();
         }
-        logAdmin(__METHOD__,Gallery::class,$gallery->id);
-        return redirect()->route('admin.gallery.edit',$gallery->slug)->with(['message' =>  count($request->input('title')) . ' ' . __('images uploaded successfully')]);
+        logAdmin(__METHOD__, Gallery::class, $gallery->id);
 
+        return redirect()->route('admin.gallery.edit', $gallery->slug)->with(['message' => count($request->input('title')) . ' ' . __('images uploaded successfully')]);
     }
 
     /**
@@ -96,8 +96,9 @@ class ImageController extends Controller
     public function destroy(Image $image)
     {
         //
-        logAdmin(__METHOD__,Image::class,$image->id);
+        logAdmin(__METHOD__, Image::class, $image->id);
         $image->delete();
-        return  redirect()->back()->with(['message' =>  __('image deleted successfully')]);
+
+        return  redirect()->back()->with(['message' => __('image deleted successfully')]);
     }
 }

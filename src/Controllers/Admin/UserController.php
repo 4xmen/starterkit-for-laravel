@@ -3,21 +3,23 @@
 namespace Xmen\StarterKit\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use Xmen\StarterKit\Requests\UserSaveRequest;
 use App\User;
 use function Xmen\StarterKit\Helpers\logAdmin;
+use Xmen\StarterKit\Requests\UserSaveRequest;
 
-class UserController extends Controller {
-
+class UserController extends Controller
+{
     private $name = 'User';
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index() {
+    public function index()
+    {
         //
         $users = User::orderBy('name')->paginate(20);
+
         return view('starter-kit::admin.user.userList', compact('users'));
     }
 
@@ -26,12 +28,14 @@ class UserController extends Controller {
      *
      * @return \Illuminate\Http\Response
      */
-    public function create() {
+    public function create()
+    {
         //
         return view('starter-kit::admin.user.userForm');
     }
 
-    public function createOrUpdate(User $user, UserSaveRequest $req) {
+    public function createOrUpdate(User $user, UserSaveRequest $req)
+    {
         $user->name = $req->input('name');
         $user->email = $req->input('email');
         if (trim($req->input('password')) != '') {
@@ -48,12 +52,14 @@ class UserController extends Controller {
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(UserSaveRequest $request) {
+    public function store(UserSaveRequest $request)
+    {
         //
         $user = new User();
         $user = $this->createOrUpdate($user, $request);
-        logAdmin(__METHOD__,User::class,$user->id);
-        return redirect()->route('admin.user.all')->with(['message'=> $user->name .' '.__($this->name)  .' '. __(' created') ]);
+        logAdmin(__METHOD__, User::class, $user->id);
+
+        return redirect()->route('admin.user.all')->with(['message' => $user->name .' '.__($this->name)  .' '. __(' created') ]);
     }
 
     /**
@@ -62,21 +68,24 @@ class UserController extends Controller {
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id) {
+    public function show($id)
+    {
         //
     }
 
-    public function edit(User $user) {
+    public function edit(User $user)
+    {
         //
         return view('starter-kit::admin.user.userForm', compact('user'));
     }
 
-    public function update(UserSaveRequest $request, User $user) {
+    public function update(UserSaveRequest $request, User $user)
+    {
         //
         $this->createOrUpdate($user, $request);
-        logAdmin(__METHOD__,User::class,$user->id);
-        return redirect()->route('admin.user.all')->with(['message'=> $user->name .' '.__($this->name)  .' '. __(' edited') ]);
+        logAdmin(__METHOD__, User::class, $user->id);
 
+        return redirect()->route('admin.user.all')->with(['message' => $user->name .' '.__($this->name)  .' '. __(' edited') ]);
     }
 
     /**
@@ -85,10 +94,12 @@ class UserController extends Controller {
      * @param int $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user) {
+    public function destroy(User $user)
+    {
         //
         $user->delete();
-        logAdmin(__METHOD__,User::class,$user->id);
-        return redirect()->back()->with(['message'=> $user->name .' '.__($this->name)  .' '. __(' deleted') ]);
+        logAdmin(__METHOD__, User::class, $user->id);
+
+        return redirect()->back()->with(['message' => $user->name .' '.__($this->name)  .' '. __(' deleted') ]);
     }
 }

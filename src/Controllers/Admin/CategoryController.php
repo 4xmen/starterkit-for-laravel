@@ -2,42 +2,47 @@
 
 namespace Xmen\StarterKit\Controllers\Admin;
 
-use Xmen\StarterKit\Models\Category;
 use App\Http\Controllers\Controller;
-use Xmen\StarterKit\Requests\CategorySaveRequest;
-
 use Illuminate\Http\Request;
 use function Xmen\StarterKit\Helpers\logAdmin;
+
 use function Xmen\StarterKit\Helpers\logAdminBatch;
+use Xmen\StarterKit\Models\Category;
+use Xmen\StarterKit\Requests\CategorySaveRequest;
 
-class CategoryController extends Controller {
-
-    public function __construct() {
+class CategoryController extends Controller
+{
+    public function __construct()
+    {
         $this->middleware('auth');
     }
 
 
-    public function createOrUpdate(Category $cat, CategorySaveRequest $request) {
+    public function createOrUpdate(Category $cat, CategorySaveRequest $request)
+    {
         $cat->name = $request->input('name');
         $cat->slug = \StarterKit::slug($request->input('name'));
         $cat->description = $request->input('description');
         $cat->parent_id = $request->input('parent') == '' ? null : $request->input('parent');
         $cat->save();
+
         return $cat;
     }
 
 
-    public function bulk(Request $request) {
-
+    public function bulk(Request $request)
+    {
         switch ($request->input('bulk')) {
             case 'delete':
                 $msg = __('Categories deleted successfully');
-                logAdminBatch(__METHOD__.'.'.$request->input('bulk'),Category::class,$request->input('id'));
+                logAdminBatch(__METHOD__.'.'.$request->input('bulk'), Category::class, $request->input('id'));
                 Category::destroy($request->input('id'));
+
                 break;
             default:
                 $msg = __('Unknown bulk action :' . $request->input('bulk'));
         }
+
         return redirect()->route('admin.category.index')->with(['message' => $msg]);
     }
 
@@ -46,9 +51,11 @@ class CategoryController extends Controller {
      *
      * @return \Illuminate\Http\Response
      */
-    public function index() {
+    public function index()
+    {
         //
         $cats = Category::paginate(20);
+
         return view('starter-kit::admin.category.categoryIndex', compact('cats'));
     }
 
@@ -57,9 +64,11 @@ class CategoryController extends Controller {
      *
      * @return \Illuminate\Http\Response
      */
-    public function create() {
+    public function create()
+    {
         //
         $cats = Category::all();
+
         return view('starter-kit::admin.category.categoryForm', compact('cats'));
     }
 
@@ -69,11 +78,13 @@ class CategoryController extends Controller {
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CategorySaveRequest $request) {
+    public function store(CategorySaveRequest $request)
+    {
         //
         $cat = new Category();
         $cat = $this->createOrUpdate($cat, $request);
-        logAdmin(__METHOD__,Category::class,$cat->id);
+        logAdmin(__METHOD__, Category::class, $cat->id);
+
         return redirect()->route('admin.category.index')->with(['message' => __('Category created successfully')]);
     }
 
@@ -83,7 +94,8 @@ class CategoryController extends Controller {
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id) {
+    public function show($id)
+    {
         //
     }
 
@@ -93,12 +105,13 @@ class CategoryController extends Controller {
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Category $cat) {
+    public function edit(Category $cat)
+    {
         //
         $cats = Category::where('id', '<>', $cat->id)->get();
         $ccat = $cat;
-        return view('starter-kit::admin.category.categoryForm', compact('ccat', 'cats'));
 
+        return view('starter-kit::admin.category.categoryForm', compact('ccat', 'cats'));
     }
 
     /**
@@ -108,12 +121,13 @@ class CategoryController extends Controller {
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(CategorySaveRequest $request, Category $cat) {
+    public function update(CategorySaveRequest $request, Category $cat)
+    {
         //
         $this->createOrUpdate($cat, $request);
-        logAdmin(__METHOD__,Category::class,$cat->id);
-        return redirect()->route('admin.category.index')->with(['message' => __('Category updated successfully')]);
+        logAdmin(__METHOD__, Category::class, $cat->id);
 
+        return redirect()->route('admin.category.index')->with(['message' => __('Category updated successfully')]);
     }
 
     /**
@@ -122,38 +136,45 @@ class CategoryController extends Controller {
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Category $cat) {
+    public function destroy(Category $cat)
+    {
         //
-        logAdmin(__METHOD__,Category::class,$cat->id);
+        logAdmin(__METHOD__, Category::class, $cat->id);
         $cat->delete();
+
         return redirect()->route('admin.category.index')->with(['message' => __('Category deleted successfully')]);
     }
 
-    public function sort() {
+    public function sort()
+    {
         $cats = Category::orderBy('sort')->whereNull('parent')->get();
-        return view('starter-kit::admin.category.categorySort',compact('cats'));
+
+        return view('starter-kit::admin.category.categorySort', compact('cats'));
     }
 
-    public function sortStore(Request $request) {
+    public function sortStore(Request $request)
+    {
         $request->validate([
-            'info' => 'required|json'
+            'info' => 'required|json',
         ]);
         $arr = json_decode($request->input('info'), true);
         $this->saveSort($arr[0]);
         logAdmin(__METHOD__, Category::class, '0');
-        if ($request->ajax()){
+        if ($request->ajax()) {
             return  ["OK" => true, 'msg' => "Categories sort updated"];
         }
+
         return redirect()->back()
             ->with(['message' => "Categories sort updated"]);
     }
 
-    public function saveSort($arr){
+    public function saveSort($arr)
+    {
         foreach ($arr as $key => $value) {
             $cat = Category::whereId($value['id'])->first();
             $cat->sort = $key;
             $cat->save();
-            if(isset($arr['children']) && count($arr['children'][0]) > 0){
+            if (isset($arr['children']) && count($arr['children'][0]) > 0) {
                 $this->saveSort($arr['children'][0]);
             }
         }
