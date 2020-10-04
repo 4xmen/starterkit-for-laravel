@@ -5,6 +5,7 @@ namespace Xmen\StarterKit\Models;
 use Conner\Tagging\Taggable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Laravel\Scout\Searchable;
 use Spatie\Image\Manipulations;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -76,7 +77,7 @@ use Xmen\StarterKit\Helpers\TDate;
  */
 class Post extends Model implements HasMedia
 {
-    use SoftDeletes, InteractsWithMedia, Taggable, HasTrixRichText;
+    use SoftDeletes, InteractsWithMedia, Taggable, HasTrixRichText, Searchable;
 
 
     public function categories()
@@ -84,7 +85,11 @@ class Post extends Model implements HasMedia
         return $this->belongsToMany(Category::class);
     }
 
-    //
+    public function author()
+    {
+        return $this->belongsTo(\App\User::class);
+    }
+
     public function getRouteKeyName()
     {
         return 'slug';
@@ -99,10 +104,6 @@ class Post extends Model implements HasMedia
             ->crop(Manipulations::CROP_CENTER, 1200, 600)
             ->optimize()
             ->sharpen(10);
-
-//        $this->addMediaConversion('pgallery')->width(1200)->optimize();
-        //            ->watermark(public_path('images/logo.png'))->watermarkOpacity(50);
-        //            ->withResponsiveImages();
     }
 
     public function imgurl()
@@ -118,8 +119,8 @@ class Post extends Model implements HasMedia
     {
         $word = strlen(strip_tags($this->body));
         $m = ceil($word / 1350);
-//        $est = $m . ' '.__('minute') . ($m == 1 ? '' : 's') . ', ' . $s . ' second' . ($s == 1 ? '' : 's');
-        return $m . ' ' . __('minute') ;
+
+        return $m . ' ' . __('minute');
     }
 
     public function persianDate()
@@ -133,8 +134,22 @@ class Post extends Model implements HasMedia
     {
         return $this->morphMany(Comment::class, 'commentable');
     }
+
     public function approved_comments()
     {
         return $this->morphMany(Comment::class, 'commentable')->where('status', 1);
+    }
+
+    public function toArray()
+    {
+        return [
+            'id' => $this->id,
+            'title' => $this->title,
+            'subtitle' => $this->subtitle,
+            'body' => $this->body,
+            'categories' => $this->categories->implode(' '),
+            'author' => $this->author->name,
+            'tags' => $this->tags->implode(' '),
+        ];
     }
 }

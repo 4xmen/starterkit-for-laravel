@@ -86,6 +86,15 @@ php artisan starter-kit:install
 
 Also install `laravel/ui` if you need login/registration.
 
+### Laravel Scout
+Some models have been integrated with scout and [tntsearch](https://packagist.org/packages/teamtnt/laravel-scout-tntsearch-driver) driver, like `Post` model. You could use power of scout in these models.
+
+If you are installing starter kit in an existing project, you can import models with this command:
+```bash
+php artisan scout:import \\Xmen\\StarterKit\\Models\\Post
+```
+For more information see [scout document](https://laravel.com/docs/7.x/scout)
+
 ## Update
 After updating to a new StarterKit release, you should be sure to update StarterKit's JavaScript and CSS assets and language file using `publish` command and
 clear any cached views with `view:clear`.
