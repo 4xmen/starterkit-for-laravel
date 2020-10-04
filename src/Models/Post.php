@@ -147,9 +147,9 @@ class Post extends Model implements HasMedia
             'title' => $this->title,
             'subtitle' => $this->subtitle,
             'body' => $this->body,
-            'categories' => $this->categories->implode(' '),
-            'author' => $this->author->name,
-            'tags' => $this->tags->implode(' '),
+            'categories' => $this->categories->implode(' ')??null,
+            'author' => $this->author->name??null,
+            'tags' => $this->tags->implode(' ')??null,
         ];
     }
 }
