@@ -3,7 +3,9 @@
 namespace Xmen\StarterKit\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Routing\Route;
 use Spatie\Permission\Models\Role;
+use Symfony\Component\Routing\Exception\RouteNotFoundException;
 
 class StarterKitCommand extends Command
 {
@@ -17,15 +19,21 @@ class StarterKitCommand extends Command
 
         $role = Role::FirstOrCreate(['name' => 'super-admin']);
         Role::FirstOrCreate(['name' => 'manager']);
-
-        $user = new \App\User();
+        if (class_exists('\\App\\User')){
+            $user = new \App\User();
+        }else{
+            $user=new \App\Models\User();
+        }
         $user->email = $this->ask('Enter Email:', 'admin@example.com');
         $user->name = $this->ask('Enter name:', 'admin');
         $user->password = bcrypt($this->ask('Enter password', 'password'));
         $user->assignRole($role);
         $user->save();
-
-        $this->info('Admin created. Now login '.route('login'));
+        try {
+            $this->info('Admin created. Now login '.route('login'));
+        }catch (RouteNotFoundException $exception){
+            $this->info('Admin created. Now install Laravel/Ui and login to dashboard.');
+        }
 
         return 0;
     }
