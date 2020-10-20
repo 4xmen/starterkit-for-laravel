@@ -4,4 +4,5 @@ namespace Xmen\StarterKit;
 
 class StarterKit
 {
+
 }

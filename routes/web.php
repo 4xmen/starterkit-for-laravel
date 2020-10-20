@@ -1,6 +1,10 @@
 <?php
 use Illuminate\Support\Facades\Route;
 
+// Scripts & Styles...
+Route::get('/scripts/{script}', 'ScriptController@show');
+Route::get('/styles/{style}', 'StyleController@show');
+
 Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
     function () {
         Route::get('/', 'Admin\DashboardController@index')->name('home');

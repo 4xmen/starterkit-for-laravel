@@ -73,7 +73,7 @@ This is the contents of the published config file:
 ```php
 return [
     //The dashboard uri
-    'uri'=>'dashboard'
+    'uri'=>'dashboard',
 ];
 ```
 
@@ -95,6 +95,14 @@ php artisan scout:import \\Xmen\\StarterKit\\Models\\Post
 ```
 For more information see [scout document](https://laravel.com/docs/7.x/scout)
 
+### Javascript
+When customizing starterKit, you may use a variety of helpers that are globally available to your JavaScript components. The `$`,`axios`,`chart`,`alertify` are globally available.
+#### Adding Javascript and css
+You could add `javascript` and `css` file to dashboard with a name and file path.
+```php
+\StarterKit::script('new-chart',resource_path('js/new-chart.js'));
+\StarterKit::style('new-color',resource_path('scss/new-color.css'));
+```
 ## Update
 After updating to a new StarterKit release, you should be sure to update StarterKit's JavaScript and CSS assets and language file using `publish` command and
 clear any cached views with `view:clear`.

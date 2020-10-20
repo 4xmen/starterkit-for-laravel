@@ -9,16 +9,11 @@
 
     <title>@yield('page_title', '') {{config('app.name', 'Laravel')}} </title>
 
-{{--    @trixassets--}}
-
-
-<!-- Scripts -->
-    <script src="{{ asset('vendor/starter-kit/js/app.js') }}" defer></script>
-    <script src="https://cdn.ckeditor.com/4.14.0/full-all/ckeditor.js"></script>
-
     <!-- Styles -->
     <link href="{{ asset('vendor/starter-kit/css/app.css') }}" rel="stylesheet">
-
+    @foreach(\StarterKit::allStyles() as $name => $path)
+        <link rel="stylesheet" href="/styles/{{ $name }}">
+    @endforeach
 </head>
 <body>
 
@@ -46,6 +41,23 @@
 <div id="preloader">
     <i class="fas fa-spinner fa fa-spinner fa-spin"></i>
 </div>
+<!-- Scripts -->
+<script src="{{ asset('vendor/starter-kit/js/manifest.js') }}" ></script>
+<script src="{{ asset('vendor/starter-kit/js/vendor.js') }}" ></script>
+<script src="{{ asset('vendor/starter-kit/js/app.js') }}" ></script>
+<script src="https://cdn.ckeditor.com/4.14.0/full-all/ckeditor.js"></script>
+
+@foreach (\StarterKit::allScripts() as $name => $path)
+    @if (\Illuminate\Support\Str::startsWith($path, ['http://', 'https://']))
+        <script src="{!! $path !!}"></script>
+    @else
+        <script src="/scripts/{{ $name }}"></script>
+    @endif
+@endforeach
+<script>
+    window.StarterKit.boot();
+</script>
+
 <script type="text/javascript">
     var xupload = "{{route('admin.ckeditor.upload', ['_token' => csrf_token() ])}}";
     var tagsearch = "{{route('admin.ckeditor.tagsearch','')}}";
