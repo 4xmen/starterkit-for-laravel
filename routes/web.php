@@ -46,10 +46,10 @@ Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
                         Route::get('', "Admin\PostController@index")->name('index');
                         Route::get('create', "Admin\PostController@create")->name('create');
                         Route::post('store', "Admin\PostController@store")->name('store');
-                        Route::get('edit/{posts}', "Admin\PostController@edit")->name('edit');
-                        Route::get('show/{posts}', "Admin\PostController@show")->name('show');
-                        Route::post('update/{posts}', "Admin\PostController@update")->name('update');
-                        Route::get('delete/{posts}', "Admin\PostController@destroy")->name('delete');
+                        Route::get('edit/{post}', "Admin\PostController@edit")->name('edit');
+                        Route::get('show/{post}', "Admin\PostController@show")->name('show');
+                        Route::post('update/{post}', "Admin\PostController@update")->name('update');
+                        Route::get('delete/{post}', "Admin\PostController@destroy")->name('delete');
                         Route::post('bulk', "Admin\PostController@bulk")->name('bulk');
                     }
                 );
