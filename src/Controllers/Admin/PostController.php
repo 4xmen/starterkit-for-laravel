@@ -119,10 +119,10 @@ class PostController extends Controller
     {
     }
 
-    public function edit(Post $posts)
+    public function edit(Post $post)
     {
         $cats = Category::all();
-
+        $posts=$post;
         return view('starter-kit::admin.post.postForm', compact('cats', 'posts'));
     }
 
