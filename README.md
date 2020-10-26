@@ -81,10 +81,32 @@ return [
 
 Create admin user by running `install` command and then login to dashboard:
 ```bash
+php artisan migrate
 php artisan starter-kit:install
 ```
 
 Also install `laravel/ui` if you need login/registration.
+
+Laravel 8.x & above:
+```bash
+composer require laravel/ui
+php artisan ui bootstrap
+php artisan ui vue
+php artisan ui bootstrap --auth
+```
+Laravel 6.x & 7.x
+```bash
+composer require laravel/ui "^2.4"
+php artisan ui bootstrap
+php artisan ui vue
+php artisan ui bootstrap --auth
+```
+
+#### fix auth pages css
+You must add this line to `app.layout.blade.php`:
+```html
+<link href="{{ asset('vendor/starter-kit/css/app.css') }}" rel="stylesheet">
+```
 
 ### Laravel Scout
 Some models have been integrated with scout and [tntsearch](https://packagist.org/packages/teamtnt/laravel-scout-tntsearch-driver) driver, like `Post` model. You could use power of scout in these models.
