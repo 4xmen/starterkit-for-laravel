@@ -140,7 +140,7 @@ class CategoryController extends Controller
 
     public function sort()
     {
-        $cats = Category::orderBy('sort')->whereNull('parent')->get();
+        $cats = Category::orderBy('sort')->whereNull('parent_id')->get();
 
         return view('starter-kit::admin.category.categorySort', compact('cats'));
     }
@@ -161,14 +161,15 @@ class CategoryController extends Controller
             ->with(['message' => "Categories sort updated"]);
     }
 
-    public function saveSort($arr)
+    public function saveSort($arr, $parent_id = null)
     {
         foreach ($arr as $key => $value) {
             $cat = Category::whereId($value['id'])->first();
             $cat->sort = $key;
+            $cat->parent_id = $parent_id;
             $cat->save();
             if (isset($arr['children']) && count($arr['children'][0]) > 0) {
-                $this->saveSort($arr['children'][0]);
+                $this->saveSort($arr['children'][0], $value['id']);
             }
         }
     }
