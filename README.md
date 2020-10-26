@@ -81,7 +81,6 @@ return [
 
 Create admin user by running `install` command and then login to dashboard:
 ```bash
-php artisan migrate
 php artisan starter-kit:install
 ```
 
@@ -150,6 +149,13 @@ If you discover any security related issues, please email sadeghpm@gmail.com ins
 - [SadeghPM](https://github.com/sadeghpm)
 - [A1Gard](https://github.com/A1Gard)
 - [All Contributors](../../contributors)
+
+## Screenshot & Online tutorial (Persian)
+![screenshot](screenshot.jpg)
+
+```
+https://aparat.com/v/TAvPy
+```
 
 ## License
 
