@@ -39,7 +39,7 @@
                         <option value=""> {{__('No parent')}} </option>
                         @foreach($cats as $cat )
                             <option value="{{ $cat->id }}"
-                                    @if (old('parent',$ccat->parent??null) == $cat->id ) selected @endif > {{$cat->name}} </option>
+                                    @if (old('parent',$ccat->parent->id??null) == $cat->id ) selected @endif > {{$cat->name}} </option>
                         @endforeach
                     </select>
                 </div>
