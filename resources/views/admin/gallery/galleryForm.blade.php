@@ -95,7 +95,8 @@
           {{__("Images")}}
         </div>
         <div class="card-body">
-          <form action="{{route('admin.gallery.updatetitle',$gallery->slug)}}">
+          <form action="{{route('admin.gallery.updatetitle',$gallery->slug)}}" method="post">
+            @csrf
             @foreach($gallery->images as $img)
               <div class="img-preview">
                 <a href="{{route('admin.image.delete',$img->id)}}" class="del-conf">
@@ -103,10 +104,12 @@
                 </a>
                 <img src="{{$img->imgUrl()}}" alt="">
                 <h4>
-                  <input type="text" name="titles[{{$img->id}}]" value="{{$img->title}}"/>
+                  <input type="text" class="form-control" name="titles[{{$img->id}}]" value="{{$img->title}}"/>
                 </h4>
               </div>
             @endforeach
+            <br>
+            <input type="submit"  class="btn btn-primary" value="{{__("Save")}}"/>
           </form>
         </div>
       </div>

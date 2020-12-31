@@ -42,13 +42,13 @@ class GalleryController extends Controller
     }
 
 
-    public function updatetitle(Xmen\StarterKit\Requests $request){
+    public function updatetitle(\Illuminate\Http\Request $request){
       foreach ($request->titles as $k => $title) {
             $image = Image::whereId($k)->first();
             $image->title = $title;
             $image->save();
         }
-        return redirect()->route('admin.gallery.all')->with(['message' => __("Titles updated")]);
+        return redirect()->back()->with(['message' => __("Titles updated")]);
     }
     public function createOrUpdate(Gallery $gallery, GallerySaveRequest $request)
     {

@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="fix lang bug and category sort">
+    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/gallery/galleryForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/gallery/galleryForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/GalleryController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,7 +225,8 @@
       <workItem from="1603699072438" duration="1404000" />
       <workItem from="1603705183440" duration="336000" />
       <workItem from="1603713147028" duration="1181000" />
-      <workItem from="1609436352792" duration="656000" />
+      <workItem from="1609436352792" duration="879000" />
+      <workItem from="1609437747878" duration="52000" />
     </task>
     <task id="LOCAL-00001" summary="Ready To Fire!">
       <created>1598681409055</created>
@@ -319,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603713456742</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add Gallery update title">
+      <created>1609437050550</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1609437050550</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,26 +354,27 @@
     <MESSAGE value="fix lang bug and category sort" />
     <MESSAGE value="update readme" />
     <MESSAGE value="add demo and screenshot to readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="add demo and screenshot to readme" />
+    <MESSAGE value="add Gallery update title" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Gallery update title" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="0" width="1188" height="1030" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601444139632">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="361" y="0" width="1188" height="1030" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1601444139632" />
-    <state x="543" y="180" width="1069" height="900" key="CommitChangelistDialog2" timestamp="1603713456714">
+    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2" timestamp="1609437050498">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="543" y="180" width="1069" height="900" key="CommitChangelistDialog2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1603713456714" />
+    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1609437050498" />
     <state x="100" y="100" width="1720" height="832" key="DiffContextDialog" timestamp="1601448305454">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="100" y="100" width="1720" height="832" key="DiffContextDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1601448305454" />
-    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2" timestamp="1603713472061">
+    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2" timestamp="1609437053647">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="555" y="251" width="800" height="527" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1601448342679" />
-    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1603713472061" />
+    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1609437053647" />
     <state x="693" y="444" width="523" height="189" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609436492116">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
