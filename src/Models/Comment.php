@@ -64,6 +64,6 @@ class Comment extends Model
     {
         $dt = TDate::GetInstance();
 
-        return $dt->RDate($this->created_at->timestamp);
+        return $dt->RDate('Y/m/d H:s',$this->created_at->timestamp);
     }
 }
