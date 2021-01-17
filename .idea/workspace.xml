@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +33,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -233,7 +233,7 @@
       <workItem from="1610841824764" duration="626000" />
       <workItem from="1610866021018" duration="648000" />
       <workItem from="1610895819325" duration="702000" />
-      <workItem from="1610919211838" duration="22000" />
+      <workItem from="1610919211838" duration="1131000" />
     </task>
     <task id="LOCAL-00001" summary="Ready To Fire!">
       <created>1598681409055</created>
@@ -382,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610866347714</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add manager access">
+      <created>1610919333071</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1610919333071</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,17 +422,26 @@
     <MESSAGE value="fix some ux bug" />
     <MESSAGE value="fix permistion" />
     <MESSAGE value="fix bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
+    <MESSAGE value="add manager access" />
+    <option name="LAST_COMMIT_MESSAGE" value="add manager access" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2" timestamp="1610866347682">
+    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2" timestamp="1610919332990">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610866347682" />
-    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2" timestamp="1610866255833">
+    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610919332990" />
+    <state x="182" y="104" width="1536" height="869" key="MergeDialog" timestamp="1610920074138">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610866255833" />
+    <state x="182" y="104" width="1536" height="869" key="MergeDialog/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610920074138" />
+    <state x="578" y="291" width="753" height="496" key="MultipleFileMergeDialog" timestamp="1610920075775">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="578" y="291" width="753" height="496" key="MultipleFileMergeDialog/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610920075775" />
+    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2" timestamp="1610920032232">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610920032232" />
     <state x="693" y="444" width="523" height="189" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609436492116">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
