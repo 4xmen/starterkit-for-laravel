@@ -14,7 +14,7 @@ class UserSaveRequest extends FormRequest
      */
     public function authorize()
     {
-        return auth()->check() and auth()->user()->hasRole('super-admin|manger');
+        return auth()->check() and auth()->user()->hasRole('super-admin|manager');
     }
 
     /**
