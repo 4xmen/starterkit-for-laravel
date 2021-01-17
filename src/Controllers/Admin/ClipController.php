@@ -151,6 +151,8 @@ class ClipController extends Controller
     public function destroy(Clip $clip)
     {
         logAdmin(__METHOD__, Clip::class, $clip->id);
+        unlink($clip->file);
+        unlink($clip->cover);
         $clip->delete();
 
         return redirect()->back()->with(['message' => __('Clip deleted successfully')]);

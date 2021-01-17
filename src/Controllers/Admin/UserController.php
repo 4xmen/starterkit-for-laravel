@@ -90,9 +90,11 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        $user->delete();
-        logAdmin(__METHOD__, User::class, $user->id);
-
-        return redirect()->back()->with(['message' => $user->name .' '.__($this->name)  .' '. __(' deleted') ]);
+      if (auth()->user()->hasRole('super-admin')){
+          $user->delete();
+          logAdmin(__METHOD__, User::class, $user->id);
+          return redirect()->back()->with(['message' => $user->name .' '.__($this->name)  .' '. __(' deleted') ]);
+      }
+      return redirect()->route('admin.user.all');
     }
 }
