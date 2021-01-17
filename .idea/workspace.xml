@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Requests/UserSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/UserSaveRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/ClipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/ClipController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +230,7 @@
       <workItem from="1609464858304" duration="599000" />
       <workItem from="1609663901134" duration="116000" />
       <workItem from="1610841824764" duration="626000" />
-      <workItem from="1610866021018" duration="222000" />
+      <workItem from="1610866021018" duration="321000" />
     </task>
     <task id="LOCAL-00001" summary="Ready To Fire!">
       <created>1598681409055</created>
@@ -358,7 +358,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610866181550</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fix bug">
+      <created>1610866253288</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1610866253288</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix bug">
+      <created>1610866291000</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1610866291000</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,6 +391,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Ready To Fire!" />
     <MESSAGE value="Bug fix" />
     <MESSAGE value="Add Fonts Asset" />
@@ -393,14 +408,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2" timestamp="1610866181501">
+    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2" timestamp="1610866290968">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610866181501" />
-    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2" timestamp="1610866184637">
+    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610866290968" />
+    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2" timestamp="1610866255833">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610866184637" />
+    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610866255833" />
     <state x="693" y="444" width="523" height="189" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609436492116">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
