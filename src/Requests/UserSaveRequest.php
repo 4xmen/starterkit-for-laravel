@@ -18,6 +18,7 @@ class UserSaveRequest extends FormRequest
         return auth()->check() and auth()->user()->hasRole('super-admin|manager');
     }
 
+
     /**
      * Get the validation rules that apply to the request.
      *

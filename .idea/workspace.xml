@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="fix bug">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/ClipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/ClipController.php" afterDir="false" />
+    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/Requests/UserSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/UserSaveRequest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -232,7 +230,7 @@
       <workItem from="1609464858304" duration="599000" />
       <workItem from="1609663901134" duration="116000" />
       <workItem from="1610841824764" duration="626000" />
-      <workItem from="1610866021018" duration="156000" />
+      <workItem from="1610866021018" duration="222000" />
     </task>
     <task id="LOCAL-00001" summary="Ready To Fire!">
       <created>1598681409055</created>
@@ -353,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610842278901</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix bug">
+      <created>1610866181550</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1610866181550</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,20 +387,20 @@
     <MESSAGE value="update readme" />
     <MESSAGE value="add demo and screenshot to readme" />
     <MESSAGE value="add Gallery update title" />
-    <MESSAGE value="fix bug" />
     <MESSAGE value="fix some ux bug" />
     <MESSAGE value="fix permistion" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix permistion" />
+    <MESSAGE value="fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2" timestamp="1610866170637">
+    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2" timestamp="1610866181501">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610866170637" />
-    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2" timestamp="1610842295574">
+    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610866181501" />
+    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2" timestamp="1610866184637">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610842295574" />
+    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610866184637" />
     <state x="693" y="444" width="523" height="189" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609436492116">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
