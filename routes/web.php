@@ -10,7 +10,7 @@ Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
         Route::get('/', 'Admin\DashboardController@index')->name('home');
         Route::get('calendar/{y}/{m}', 'Admin\DashboardController@index')->name('home.nav');
         Route::group(
-            ['middleware' => ['auth', 'role:super-admin']],
+            ['middleware' => ['auth', 'role:super-admin|manager']],
             function () {
                 Route::get('ckeditor', 'Admin\CkeditorController@index');
                 Route::get('tagsearch/{query}', 'Admin\CkeditorController@tagsearch')->name('ckeditor.tagsearch');
