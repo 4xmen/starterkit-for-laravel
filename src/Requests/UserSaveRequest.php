@@ -4,6 +4,7 @@ namespace Xmen\StarterKit\Requests;
 
 use App\User;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Storage;
 
 class UserSaveRequest extends FormRequest
 {
