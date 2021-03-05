@@ -3,7 +3,7 @@
 namespace Xmen\StarterKit\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\User;
+use App\Models\User;
 use function Xmen\StarterKit\Helpers\logAdmin;
 use Xmen\StarterKit\Requests\UserSaveRequest;
 

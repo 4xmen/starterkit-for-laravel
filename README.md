@@ -132,6 +132,9 @@ This will ensure the newly-updated StarterKit version is using the latest versio
 ```bash
 php artisan starter-kit:publish --force
 ```
+## notes
+
+If you have problem with laravel mix, `/vendor/xmen/starter-kit/package-sample.json` could help you. BTW **don't forget to have got backup form you `package.json`**
 
 ## Testing
 
