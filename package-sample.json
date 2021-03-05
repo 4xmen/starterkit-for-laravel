@@ -27,7 +27,6 @@
         "@fortawesome/fontawesome-free": "^5.15.1",
         "alertifyjs": "^1.13.1",
         "animate.css": "^4.1.1",
-        "css-loader": "^2.1.0",
         "lightbox2": "^2.11.3",
         "owl.carousel": "^2.3.4",
         "persian-date": "^1.1.0",
