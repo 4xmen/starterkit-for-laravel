@@ -42,6 +42,7 @@ class UserController extends Controller
         $user->mobile = $req->input('mobile');
         $user->syncRoles($req->input('role'));
         $user->save();
+	return $user;
     }
 
     /**
