@@ -27,7 +27,11 @@ class StarterKitServiceProvider extends ServiceProvider
             ], 'assets');
 
             $this->publishes([
-                __DIR__ . '/../public/asset' => base_path('public'),
+                __DIR__ . '/../public/fonts' => base_path('public'),
+            ], 'fonts');
+
+            $this->publishes([
+                __DIR__ . '/../public/images' => base_path('public'),
             ], 'fonts');
 
             $this->publishes([

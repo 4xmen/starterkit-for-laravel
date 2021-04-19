@@ -1,0 +1,338 @@
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "~@ghalamborm/bootstrap4-rtl/bootstrap-rtl.min.css";
+@import "~vazir-font/dist/font-face.css";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~rvnm/dist/jquery-rvnm.min.css";
+@import "~rvnm/dist/jquery-rvnm-rtl.min.css";
+@import "~bootstrap-select/dist/css/bootstrap-select.min.css";
+@import "~bootstrap-tagsinput/dist/bootstrap-tagsinput-typeahead.css";
+@import "~bootstrap-tagsinput/dist/bootstrap-tagsinput.css";
+//@import "~alertifyjs/build/css/alertify.min.css";
+@import "~alertifyjs/build/css/alertify.rtl.min.css";
+//@import "~alertifyjs/build/css/themes/semantic.min.css";
+@import "~alertifyjs/build/css/themes/semantic.rtl.min.css";
+//@import "~trix/dist/trix.css";
+@import "~lightbox2/dist/css/lightbox.min.css";
+@import "~alertifyjs/build/css/alertify.rtl.min.css";
+@import "~alertifyjs/build/css/themes/bootstrap.rtl.min.css";
+@import "~owl.carousel/dist/assets/owl.carousel.min.css";
+@import "~owl.carousel/dist/assets/owl.theme.default.min.css";
+@import "~fontawesome-iconpicker/dist/css/fontawesome-iconpicker.min.css";
+@import "~uprogress/dist/uprogress.min.css";
+@import "~chart.js/dist/Chart.min.css";
+@import "other/menu";
+@import "other/slider";
+
+//@import "~jquery-sortable/source/css/example.css";
+
+* {
+    font-family: "Vazir";
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    overflow-x: hidden;
+    color: $text-color;
+}
+
+table td{
+    color: $text-color;
+}
+
+section{
+    padding: 2em 0;
+}
+#preloader {
+    //display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 99;
+    padding-top: 45vh;
+    text-align: center;
+
+    i.fa {
+        font-size: 70px;
+    }
+}
+
+#top-menu {
+    min-height: 30px;
+    background: $purple;
+    padding: 10px;
+    color: white;
+}
+
+
+
+
+.category-control {
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding-top: 10px;
+
+        input {
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+    }
+
+    ul {
+        list-style: none !important;
+        padding-right: 10px;
+        border-right: 1px dashed silver;
+    }
+}
+
+.posts-text {
+    text-align: justify;
+    line-height: 2.2em;
+    img{
+        max-width: 100%;
+        height: auto !important;
+    }
+    iframe{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+.img-preview{
+    width: 256px;
+    padding: 7px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    img{
+        max-width: 100%;
+    }
+    h4{
+        margin-top: 6px;
+    }
+    a{
+        position: absolute;
+        left: 12px;
+        top: 8px;
+        font-size: 18pt;
+        color: red;
+        text-shadow: 0px 0px 5px #000;
+    }
+}
+
+#newimgs{
+    list-style: none;
+    overflow: hidden;
+    li{
+        border: 1px solid deepskyblue;
+        float: right;
+        width: 250px;
+        padding: 15px;
+        margin-right: 10px;
+        .img{
+            width: 215px;
+            height: 215px;
+            background-size: cover;
+            background-position: center;
+        }
+        input{
+            margin-top: 10px;
+        }
+    }
+}
+.pinned{
+    background: rgba(0,0,0,0.02);
+    overflow: hidden;
+    margin-bottom: 15px;
+    img{
+        max-width: 100%;
+    }
+    h2{
+        padding: 12px;
+        font-size: 12pt;
+        height: 40px;
+        background: rgba(0,0,0,0.3);
+        position: relative;
+        top: -40px;
+        margin-bottom: -40px;
+        a{
+            color: white;
+        }
+
+    }
+}
+
+.feature-image {
+    height: 96px;
+}
+
+.btn .fa {
+    margin: 0 10px;
+    font-size: 12pt;
+}
+
+.txt-show {
+    white-space: pre-wrap;
+}
+
+.vac {
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+// status
+.status {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.posts-status-0 {
+    background: gray;
+}
+
+.posts-status-1 {
+    background: green;
+}
+
+.comment-status-0 {
+    background: gray;
+}
+
+.comment-status-1 {
+    background: green;
+}
+
+.comment-status--1 {
+    background: darkred;
+}
+
+//bootstrap fix
+.float-right {
+    float: left !important;
+}
+
+.float-left {
+    float: right !important;
+}
+
+.bootstrap-tagsinput {
+    width: 100%;
+
+    .tag {
+        background: deepskyblue;
+        padding: 0 5px;
+        margin-bottom: 3px;
+        display: inline-block !important;
+    }
+}
+
+.comments-list {
+    list-style: none;
+    padding: 0 4px 0 0;
+
+    ul {
+        list-style: none;
+        padding: 0 12px 0 0;
+    }
+
+    li {
+        background: rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid gray;
+        border-right: 2px solid gray;
+        margin-bottom: 3px;
+
+        p {
+            padding: 15px;
+        }
+
+        .comment-reply{
+            cursor: pointer;
+        }
+    }
+}
+
+.like-panel{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px auto ;
+    background: #9fcef0;
+    float: left;
+    border-radius: 3px;
+}
+
+.img-avatar {
+    width: 64px;
+    max-width: 100%;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+.adv img{
+    max-width: 100%;
+}
+
+// other media
+
+.just-print {
+    display: none;
+}
+
+@media print {
+    .non-print {
+        display: none !important;
+    }
+    .just-print {
+        display: block !important;
+    }
+}
+.clip{
+    position: relative;
+    img{
+        width: 100%;
+        position: relative;
+    }
+    video{
+        display: none;
+    }
+}
+.clip::after{
+    content: " ";
+    position: absolute;
+    left: calc(50% - 7.5%);
+    top: 35%;
+    opacity: 0.5;
+    background: url("/images/play.png") no-repeat center;
+    background-size: 100% auto;
+    width: 15%;
+    height: 25%;
+    z-index: 9;
+}
+.played::after{
+    display: none !important;
+}
+.date-current{
+    background: #333;
+    color: white;
+}
+.dark-section{
+    background: #333;
+    color: white;
+}
+.silver-section{
+    background: silver;
+}
