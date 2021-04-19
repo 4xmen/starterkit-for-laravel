@@ -26,7 +26,7 @@ class PostSaveRequest extends FormRequest
         return [
             //
             'title' => ['required', 'string', 'max:255','min:5'],
-            'subtitle' => ['required', 'string', 'max:2048','min:15'],
+            'subtitle' => ['nullable', 'string', 'max:2048'],
             'body' => ['required', 'string','min:15'],
             'status' => ['required', 'boolean'],
             'is_breaking' => ['nullable', 'boolean'],

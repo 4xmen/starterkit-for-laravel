@@ -205,5 +205,9 @@ class CreateStarterKitTable extends Migration
                 ->references('id')->on('menus');
         });
 
+	Schema::table('users', function (Blueprint $table) {
+	    $table->string('mobile',15)->nullable()->default(null);
+	});
+
     }
 }

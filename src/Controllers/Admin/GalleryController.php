@@ -4,6 +4,7 @@ namespace Xmen\StarterKit\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Xmen\StarterKit\Models\Image;
 use function Xmen\StarterKit\Helpers\logAdmin;
 
 use function Xmen\StarterKit\Helpers\logAdminBatch;
@@ -41,6 +42,14 @@ class GalleryController extends Controller
     }
 
 
+    public function updatetitle(\Illuminate\Http\Request $request){
+      foreach ($request->titles as $k => $title) {
+            $image = Image::whereId($k)->first();
+            $image->title = $title;
+            $image->save();
+        }
+        return redirect()->back()->with(['message' => __("Titles updated")]);
+    }
     public function createOrUpdate(Gallery $gallery, GallerySaveRequest $request)
     {
         $gallery->title = $request->input('title');

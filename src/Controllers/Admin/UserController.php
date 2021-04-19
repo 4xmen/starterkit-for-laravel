@@ -3,7 +3,7 @@
 namespace Xmen\StarterKit\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\User;
+use App\Models\User;
 use function Xmen\StarterKit\Helpers\logAdmin;
 use Xmen\StarterKit\Requests\UserSaveRequest;
 
@@ -42,6 +42,7 @@ class UserController extends Controller
         $user->mobile = $req->input('mobile');
         $user->syncRoles($req->input('role'));
         $user->save();
+	return $user;
     }
 
     /**
@@ -90,9 +91,11 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        $user->delete();
-        logAdmin(__METHOD__, User::class, $user->id);
-
-        return redirect()->back()->with(['message' => $user->name .' '.__($this->name)  .' '. __(' deleted') ]);
+      if (auth()->user()->hasRole('super-admin')){
+          $user->delete();
+          logAdmin(__METHOD__, User::class, $user->id);
+          return redirect()->back()->with(['message' => $user->name .' '.__($this->name)  .' '. __(' deleted') ]);
+      }
+      return redirect()->route('admin.user.all');
     }
 }

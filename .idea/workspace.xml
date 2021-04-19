@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="Change news to post and bug fix">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminlayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminlayout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/PostController.php" afterDir="false" />
-    </list>
+    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +31,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -152,6 +148,27 @@
       <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/fx3costa/laravelchartjs" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/thiagocordeiro/laravel-translator" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/league/glide" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/rtconner/laravel-tagging" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/te7a-houdini/laravel-trix" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image" />
+      <path value="$PROJECT_DIR$/vendor/spatie/temporary-directory" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-medialibrary" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-sluggable" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gduMYkrGZNWKTtoQdLhnoVO4K9" />
@@ -161,24 +178,28 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/vendor/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/vendor" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public/vendor/css" />
       <recent name="$PROJECT_DIR$/public/vendor/js" />
       <recent name="$PROJECT_DIR$/public/asset" />
       <recent name="$PROJECT_DIR$/resources/langs" />
-      <recent name="$PROJECT_DIR$/public" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/vendor" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="" />
@@ -198,6 +219,20 @@
       <workItem from="1599629376474" duration="805000" />
       <workItem from="1600061385846" duration="219000" />
       <workItem from="1601441725779" duration="6162000" />
+      <workItem from="1603699072438" duration="1404000" />
+      <workItem from="1603705183440" duration="336000" />
+      <workItem from="1603713147028" duration="1181000" />
+      <workItem from="1609436352792" duration="879000" />
+      <workItem from="1609437747878" duration="1419000" />
+      <workItem from="1609445610641" duration="774000" />
+      <workItem from="1609458802118" duration="13000" />
+      <workItem from="1609464858304" duration="599000" />
+      <workItem from="1609663901134" duration="116000" />
+      <workItem from="1610841824764" duration="626000" />
+      <workItem from="1610866021018" duration="648000" />
+      <workItem from="1610895819325" duration="702000" />
+      <workItem from="1610919211838" duration="1131000" />
+      <workItem from="1611021497487" duration="631000" />
     </task>
     <task id="LOCAL-00001" summary="Ready To Fire!">
       <created>1598681409055</created>
@@ -269,7 +304,91 @@
       <option name="project" value="LOCAL" />
       <updated>1601448340961</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix lang bug and category sort">
+      <created>1603699870574</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603699870574</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update readme">
+      <created>1603705511452</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1603705511452</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add demo and screenshot to readme">
+      <created>1603713456742</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603713456742</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add Gallery update title">
+      <created>1609437050550</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1609437050550</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix bug">
+      <created>1609437814493</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1609437814493</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix some ux bug">
+      <created>1609445704930</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1609445704930</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix permistion">
+      <created>1610842278901</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1610842278901</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix bug">
+      <created>1610866181550</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1610866181550</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix bug">
+      <created>1610866253288</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1610866253288</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix bug">
+      <created>1610866291000</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1610866291000</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fix bug">
+      <created>1610866347714</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1610866347714</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add manager access">
+      <created>1610919333071</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1610919333071</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,54 +407,47 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Ready To Fire!" />
     <MESSAGE value="Bug fix" />
     <MESSAGE value="Add Fonts Asset" />
     <MESSAGE value="Add Icon Picker" />
     <MESSAGE value="Add Persian Language Validation Messages" />
     <MESSAGE value="Change news to post and bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change news to post and bug fix" />
+    <MESSAGE value="fix lang bug and category sort" />
+    <MESSAGE value="update readme" />
+    <MESSAGE value="add demo and screenshot to readme" />
+    <MESSAGE value="add Gallery update title" />
+    <MESSAGE value="fix some ux bug" />
+    <MESSAGE value="fix permistion" />
+    <MESSAGE value="fix bug" />
+    <MESSAGE value="add manager access" />
+    <option name="LAST_COMMIT_MESSAGE" value="add manager access" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="576" y="313" width="758" height="404" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598511917826">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2" timestamp="1610919332990">
+      <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="576" y="313" width="758" height="404" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1598511917826" />
-    <state x="361" y="0" width="1188" height="1030" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601444139632">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610919332990" />
+    <state x="182" y="104" width="1536" height="869" key="MergeDialog" timestamp="1610920074138">
+      <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="361" y="0" width="1188" height="1030" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1601444139632" />
-    <state x="693" y="274" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598680542577">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="182" y="104" width="1536" height="869" key="MergeDialog/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610920074138" />
+    <state x="578" y="291" width="753" height="496" key="MultipleFileMergeDialog" timestamp="1610920075775">
+      <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="693" y="274" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1598680542577" />
-    <state x="100" y="100" width="1720" height="832" key="DiffContextDialog" timestamp="1601448305454">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="578" y="291" width="753" height="496" key="MultipleFileMergeDialog/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610920075775" />
+    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2" timestamp="1610920032232">
+      <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="100" y="100" width="1720" height="832" key="DiffContextDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1601448305454" />
-    <state x="743" y="274" width="424" height="482" key="FileChooserDialogImpl" timestamp="1600061603107">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610920032232" />
+    <state x="693" y="444" width="523" height="189" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609436492116">
+      <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="743" y="274" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1600061603107" />
-    <state x="685" y="221" width="539" height="588" key="NewPhpClassDialog" timestamp="1598679926983">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="693" y="444" width="523" height="189" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1609436492116" />
+    <state x="623" y="315" width="721" height="640" key="search.everywhere.popup" timestamp="1610866389715">
+      <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="685" y="221" width="539" height="588" key="NewPhpClassDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1598679926983" />
-    <state x="755" y="438" width="389" height="153" key="NewPhpFileDialog" timestamp="1598459535499">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="755" y="438" width="389" height="153" key="NewPhpFileDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1598459535499" />
-    <state x="555" y="251" width="800" height="527" key="Vcs.Push.Dialog.v2" timestamp="1601448342679">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="555" y="251" width="800" height="527" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1601448342679" />
-    <state x="641" y="33" width="638" height="966" key="find.popup" timestamp="1601443267955">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="641" y="33" width="638" height="966" key="find.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1601443267955" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601449673406">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1601449673406" />
+    <state x="623" y="315" width="721" height="640" key="search.everywhere.popup/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610866389715" />
   </component>
 </project>

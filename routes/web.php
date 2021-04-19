@@ -10,7 +10,7 @@ Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
         Route::get('/', 'Admin\DashboardController@index')->name('home');
         Route::get('calendar/{y}/{m}', 'Admin\DashboardController@index')->name('home.nav');
         Route::group(
-            ['middleware' => ['auth', 'role:super-admin']],
+            ['middleware' => ['auth', 'role:super-admin|manager']],
             function () {
                 Route::get('ckeditor', 'Admin\CkeditorController@index');
                 Route::get('tagsearch/{query}', 'Admin\CkeditorController@tagsearch')->name('ckeditor.tagsearch');
@@ -59,6 +59,7 @@ Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
                         Route::get('', "Admin\GalleryController@index")->name('all');
                         Route::get('create', "Admin\GalleryController@create")->name('create');
                         Route::post('store', "Admin\GalleryController@store")->name('store');
+                        Route::post('updatetitle', "Admin\GalleryController@updatetitle")->name('updatetitle');
                         Route::get('edit/{gallery}', "Admin\GalleryController@edit")->name('edit');
                         Route::get('show/{gallery}', "Admin\GalleryController@show")->name('show');
                         Route::post('update/{gallery}', "Admin\GalleryController@update")->name('update');

@@ -4,6 +4,7 @@ namespace Xmen\StarterKit\Requests;
 
 use App\User;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Storage;
 
 class UserSaveRequest extends FormRequest
 {
@@ -14,8 +15,9 @@ class UserSaveRequest extends FormRequest
      */
     public function authorize()
     {
-        return auth()->check() and auth()->user()->hasRole('super-admin');
+        return auth()->check() and auth()->user()->hasRole('super-admin|manager');
     }
+
 
     /**
      * Get the validation rules that apply to the request.
