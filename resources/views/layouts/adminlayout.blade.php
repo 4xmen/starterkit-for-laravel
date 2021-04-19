@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    @yield('header-content') 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -14,6 +15,7 @@
     @foreach(\StarterKit::allStyles() as $name => $path)
         <link rel="stylesheet" href="/styles/{{ $name }}">
     @endforeach
+    
 </head>
 <body>
 
