@@ -55,7 +55,7 @@
                         </label>
                         <select name="role" id="" class="form-control @error('role') is-invalid @enderror">
                             <option value="super-admin"
-                                    @if (old('role',$user->role??null) == 'super-admin' ) selected @endif >{{__("Admin")}} </option>
+                                    @if (old('role',$user->role??null) == 'super-admin') selected @endif >{{__("Admin")}} </option>
                             <option value="manager"
                                     @if (old('role',$user->role??null) == 'manager' ) selected @endif >{{__("User")}} </option>
                         </select>

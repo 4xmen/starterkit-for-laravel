@@ -4,18 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    @yield('header-content') 
-    <!-- CSRF Token -->
+    <script src="{{ asset('vendor/starter-kit/js/manifest.js') }}"  ></script>
+    <script src="{{ asset('vendor/starter-kit/js/vendor.js') }}" defer  ></script>
+    <script src="{{ asset('vendor/starter-kit/js/app.js') }}"  defer ></script>
+@yield('header-content')
+<!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('page_title', '') {{config('app.name', 'Laravel')}} </title>
 
     <!-- Styles -->
+
     <link href="{{ asset('vendor/starter-kit/css/app.css') }}" rel="stylesheet">
     @foreach(\StarterKit::allStyles() as $name => $path)
         <link rel="stylesheet" href="/styles/{{ $name }}">
     @endforeach
-    
+
 </head>
 <body>
 
@@ -44,9 +48,7 @@
     <i class="fas fa-spinner fa fa-spinner fa-spin"></i>
 </div>
 <!-- Scripts -->
-<script src="{{ asset('vendor/starter-kit/js/manifest.js') }}" ></script>
-<script src="{{ asset('vendor/starter-kit/js/vendor.js') }}" ></script>
-<script src="{{ asset('vendor/starter-kit/js/app.js') }}" ></script>
+
 <script src="https://cdn.ckeditor.com/4.14.0/full-all/ckeditor.js"></script>
 
 @foreach (\StarterKit::allScripts() as $name => $path)
@@ -56,9 +58,6 @@
         <script src="/scripts/{{ $name }}"></script>
     @endif
 @endforeach
-<script>
-    window.StarterKit.boot();
-</script>
 
 <script type="text/javascript">
     var xupload = "{{route('admin.ckeditor.upload', ['_token' => csrf_token() ])}}";
@@ -66,5 +65,14 @@
 </script>
 @yield('js-content')
 @include('starter-kit::component.lang')
+<script defer >
+    window.addEventListener('load', (event) => {
+        setTimeout(function () {
+            window.StarterKit.boot();
+        },100);
+    });
+
+</script>
+
 </body>
 </html>

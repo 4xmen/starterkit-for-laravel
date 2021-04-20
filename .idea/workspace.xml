@@ -19,7 +19,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="" />
+    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_18_21,_1_17_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_18_21__1_17_AM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/starter-kit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/starter-kit.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/js/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/LogIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/LogIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/categoryForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/categoryForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/categoryIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/categoryIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/categorySort.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/categorySort.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/comments.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/gallery/galleryIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/gallery/galleryIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/postIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/postIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/userForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/userForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/component/bulk.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/component/bulk.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminlayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminlayout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Requests/CategorySaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/CategorySaveRequest.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +56,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -169,6 +204,12 @@
       <path value="$PROJECT_DIR$/vendor/spatie/image-optimizer" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-sluggable" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/scout" />
+      <path value="$PROJECT_DIR$/vendor/teamtnt/tntsearch" />
+      <path value="$PROJECT_DIR$/vendor/teamtnt/laravel-scout-tntsearch-driver" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gduMYkrGZNWKTtoQdLhnoVO4K9" />
@@ -180,7 +221,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../news_agency" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -233,6 +274,13 @@
       <workItem from="1610895819325" duration="702000" />
       <workItem from="1610919211838" duration="1131000" />
       <workItem from="1611021497487" duration="631000" />
+      <workItem from="1615349511459" duration="418000" />
+      <workItem from="1615423038742" duration="3000" />
+      <workItem from="1615423166413" duration="23000" />
+      <workItem from="1618534046066" duration="1137000" />
+      <workItem from="1618954370544" duration="1870000" />
+      <workItem from="1618956400450" duration="89000" />
+      <workItem from="1618957000664" duration="1680000" />
     </task>
     <task id="LOCAL-00001" summary="Ready To Fire!">
       <created>1598681409055</created>
@@ -423,31 +471,5 @@
     <MESSAGE value="fix bug" />
     <MESSAGE value="add manager access" />
     <option name="LAST_COMMIT_MESSAGE" value="add manager access" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2" timestamp="1610919332990">
-      <screen x="0" y="28" width="1920" height="1052" />
-    </state>
-    <state x="543" y="180" width="1152" height="900" key="CommitChangelistDialog2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610919332990" />
-    <state x="182" y="104" width="1536" height="869" key="MergeDialog" timestamp="1610920074138">
-      <screen x="0" y="28" width="1920" height="1052" />
-    </state>
-    <state x="182" y="104" width="1536" height="869" key="MergeDialog/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610920074138" />
-    <state x="578" y="291" width="753" height="496" key="MultipleFileMergeDialog" timestamp="1610920075775">
-      <screen x="0" y="28" width="1920" height="1052" />
-    </state>
-    <state x="578" y="291" width="753" height="496" key="MultipleFileMergeDialog/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610920075775" />
-    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2" timestamp="1610920032232">
-      <screen x="0" y="28" width="1920" height="1052" />
-    </state>
-    <state x="555" y="284" width="800" height="533" key="Vcs.Push.Dialog.v2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610920032232" />
-    <state x="693" y="444" width="523" height="189" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609436492116">
-      <screen x="0" y="28" width="1920" height="1052" />
-    </state>
-    <state x="693" y="444" width="523" height="189" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1609436492116" />
-    <state x="623" y="315" width="721" height="640" key="search.everywhere.popup" timestamp="1610866389715">
-      <screen x="0" y="28" width="1920" height="1052" />
-    </state>
-    <state x="623" y="315" width="721" height="640" key="search.everywhere.popup/0.28.1920.1052/1920.170.1360.768@0.28.1920.1052" timestamp="1610866389715" />
   </component>
 </project>

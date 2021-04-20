@@ -7,13 +7,14 @@
 
 require('./bootstrap');
 
-require('rvnm/dist/rvnm.min');
+require('rvnm/src/jquery-rvnm');
 require('bootstrap-select/dist/js/bootstrap-select.min');
 require('bootstrap-select/dist/js/i18n/defaults-fa_IR.min');
 require('bootstrap-tagsinput/dist/bootstrap-tagsinput.min');
 require('lightbox2/dist/js/lightbox-plus-jquery.min');
 require('alertifyjs/build/alertify.min');
 require('fontawesome-iconpicker/dist/js/fontawesome-iconpicker.min');
+require('select2');
 const Chart = require('chart.js');
 window.chart = Chart;
 
@@ -49,6 +50,12 @@ require('./other/typehead');
 require('./other/general');
 require('./other/menu');
 require('./other/slider');
+
+try {
+    $(".select2 .sel").select2();
+} catch(e) {
+    console.log(e.message);
+}
 
 
 class StarterKit {
