@@ -25,7 +25,7 @@
         "te7a-houdini/laravel-trix": "^2.0",
         "teamtnt/laravel-scout-tntsearch-driver": "^10.0",
         "thiagocordeiro/laravel-translator": "^1.1",
-        "laravel/framework": "^6.* | ^7.* | ^8.*"
+        "laravel/framework": "^6 | ^7 | ^8"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
