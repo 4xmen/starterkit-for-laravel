@@ -3,7 +3,7 @@
 namespace Xmen\StarterKit\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\User;
+use App\Models\User;
 use Xmen\StarterKit\Models\AdminLog;
 
 class LogController extends Controller

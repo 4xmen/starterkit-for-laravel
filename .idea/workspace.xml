@@ -19,30 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_18_21,_1_17_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_18_21__1_17_AM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/starter-kit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/starter-kit.iml" afterDir="false" />
+    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="fix major error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/js/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/vendor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/LogIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/LogIndex.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/categoryForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/categoryForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/categoryIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/categoryIndex.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/categorySort.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/categorySort.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/comments.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/gallery/galleryIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/gallery/galleryIndex.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/postIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/postIndex.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/userForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/userForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/component/bulk.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/component/bulk.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminlayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminlayout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/CategorySaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/CategorySaveRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/LogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/LogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StarterKitServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarterKitServiceProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +261,8 @@
       <workItem from="1618534046066" duration="1137000" />
       <workItem from="1618954370544" duration="1870000" />
       <workItem from="1618956400450" duration="89000" />
-      <workItem from="1618957000664" duration="1680000" />
+      <workItem from="1618957000664" duration="1869000" />
+      <workItem from="1647240281322" duration="148000" />
     </task>
     <task id="LOCAL-00001" summary="Ready To Fire!">
       <created>1598681409055</created>
@@ -436,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610919333071</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="fix major error">
+      <created>1618959050196</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1618959050196</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,6 +459,7 @@
     <MESSAGE value="fix permistion" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="add manager access" />
-    <option name="LAST_COMMIT_MESSAGE" value="add manager access" />
+    <MESSAGE value="fix major error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix major error" />
   </component>
 </project>
