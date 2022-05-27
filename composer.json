@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^7.4|8",
+        "php": "^7.4|^8",
         "fx3costa/laravelchartjs": "^2.8",
         "rtconner/laravel-tagging": "~4.0",
         "spatie/laravel-medialibrary": "^8.2",
