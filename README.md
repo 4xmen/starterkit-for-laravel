@@ -142,6 +142,11 @@ If you have problem with laravel mix, `/vendor/xmen/starter-kit/package-sample.j
 composer test
 ```
 
+## Translate your language or words
+```bash
+ php artisan vendor:publish --provider="Translator\Framework\TranslatorServiceProvider" 
+```
+
 ## Security
 
 If you discover any security related issues, please email sadeghpm@gmail.com instead of using the issue tracker.

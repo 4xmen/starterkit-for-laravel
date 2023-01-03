@@ -29,9 +29,9 @@ class UserSaveRequest extends FormRequest
 //        dd($this);
         return [
             //
-            'name' => ['required', 'string', 'max:255'],
+            'name' => ['nullable', 'string', 'max:255'],
             'mobile' => ['required', 'string', 'min:10'],
-            'email' => ['required', 'string', 'email', 'max:255', "unique:users,email,".$this->id],
+            'email' => ['nullable', 'string', 'email', 'max:255', "unique:users,email,".$this->id],
             'password' => ['string', 'min:8', 'confirmed','nullable'],
         ];
     }

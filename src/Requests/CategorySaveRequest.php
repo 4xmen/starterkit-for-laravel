@@ -25,7 +25,7 @@ class CategorySaveRequest extends FormRequest
     {
         return [
             //
-            'name' => ['required', 'string', 'min:5', 'max:128'],
+            'name' => ['required', 'string', 'min:2', 'max:128'],
             'description' => ['nullable', 'string', 'min:5'],
             'parent_id' => ['nullable', 'exists:store_categories,id'],
         ];

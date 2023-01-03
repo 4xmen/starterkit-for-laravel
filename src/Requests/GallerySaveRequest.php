@@ -25,7 +25,7 @@ class GallerySaveRequest extends FormRequest
     {
         return [
             //
-            'title' => ['required', 'string', 'max:255','min:5'],
+            'title' => ['required', 'string', 'max:255','min:2'],
             'description' => ['nullable', 'string','min:15'],
             'status' => ['required', 'boolean'],
             'image' => ['nullable', 'image', 'mimes:jpeg,png,jpg,gif,svg', 'max:2048'],

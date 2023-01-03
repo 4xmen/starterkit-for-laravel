@@ -26,7 +26,7 @@ class ClipSaveRequest extends FormRequest
         return [
             //
             'title' => ['required', 'string', 'max:255','min:5'],
-            'body' => ['required', 'string','min:15'],
+            'body' => ['nullable', 'string','min:5'],
             'active' => ['nullable', 'boolean'],
             'clip' => ['nullable', 'mimes:mp4', 'max:15728640'],
             'cover' => ['nullable', 'image', 'mimes:jpeg,png,jpg,gif,svg', 'max:2048'],
