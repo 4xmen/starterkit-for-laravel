@@ -86,7 +86,15 @@ php artisan starter-kit:install
 
 Also install `laravel/ui` if you need login/registration.
 
-Laravel 8.x & above:
+Laravel 9 and above:
+
+```bash
+composer require laravel/ui
+php artisan ui bootstrap
+php artisan ui vue --auth
+```
+
+Laravel 8.x :
 ```bash
 composer require laravel/ui
 php artisan ui bootstrap

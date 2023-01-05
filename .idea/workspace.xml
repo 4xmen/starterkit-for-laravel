@@ -19,235 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="add assets">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/composerJson.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
+    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="fix some bug dec valiation senstivety">
       <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/starter-kit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/starter-kit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.php_cs" beforeDir="false" afterPath="$PROJECT_DIR$/.php_cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/starter-kit.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/starter-kit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/create_starter_kit_table.php.stub" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/create_starter_kit_table.php.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-sample.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-sample.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Black.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Black.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Black.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Black.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Black.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Black.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Black.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Bold.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Bold.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Bold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Bold.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Light.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Light.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Light.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Light.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Light.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Light.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Medium.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Medium.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Medium.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Medium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Medium.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Medium.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Medium.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Thin.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Thin.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Thin.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Thin.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Thin.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Thin.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Thin.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir-Thin.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/fonts/vendor/vazir-dist/Vazir.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/lightbox2/dist/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/lightbox2/dist/close.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/lightbox2/dist/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/lightbox2/dist/loading.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/lightbox2/dist/next.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/lightbox2/dist/next.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/lightbox2/dist/prev.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/lightbox2/dist/prev.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/owl.carousel/dist/owl.video.play.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/owl.carousel/dist/owl.video.play.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/cb.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/cb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/cw.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/cw.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/db.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/db.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/dw.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/dw.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/lb.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/lb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/lw.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/lw.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/mb.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/mb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/mw.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/mw.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/rb.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/rb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/rw.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/vendor/rvnm/dist/rw.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/lightbox2/dist/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/lightbox2/dist/close.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/lightbox2/dist/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/lightbox2/dist/loading.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/lightbox2/dist/next.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/lightbox2/dist/next.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/lightbox2/dist/prev.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/lightbox2/dist/prev.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/owl.carousel/dist/owl.video.play.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/owl.carousel/dist/owl.video.play.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/cb.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/cb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/cw.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/cw.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/db.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/db.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/dw.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/dw.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/lb.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/lb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/lw.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/lw.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/mb.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/mb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/mw.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/mw.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/rb.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/rb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/rw.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vendor/rvnm/dist/rw.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/js/app.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/app.js.LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/js/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/vendor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/js/vendor.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/vendor.js.LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/other/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/other/menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/other/slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/other/slider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/other/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/other/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/other/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/other/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/other/sortable.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/other/sortable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/other/typehead.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/other/typehead.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/fa/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/LogIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/LogIndex.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adv/advForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adv/advForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adv/advList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adv/advList.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/categoryForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/categoryForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/categoryIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/categoryIndex.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/categorySort.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/categorySort.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/clip/clipForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/clip/clipForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/clip/clipList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/clip/clipList.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/comments.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/gallery/galleryForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/gallery/galleryForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/gallery/galleryIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/gallery/galleryIndex.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/menu/menuForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/menu/menuForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/menu/menuList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/menu/menuList.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/menu/menuShow.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/menu/menuShow.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/poll/pollForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/poll/pollForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/poll/pollList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/poll/pollList.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/postForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/postForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/postIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/postIndex.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/sliderForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/slider/sliderForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/sliderList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/slider/sliderList.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/userForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/userForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/userList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/userList.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/component/bulk.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/component/bulk.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/component/comment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/component/comment.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/component/err.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/component/err.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/component/lang.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/component/lang.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/component/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/component/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/component/showPostList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/component/showPostList.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/component/siteSideLeft.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/component/siteSideLeft.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminlayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminlayout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/PublishCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/PublishCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/StarterKitCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/StarterKitCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/AdvController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/AdvController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/CkeditorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/CkeditorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/ClipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/ClipController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/GalleryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/ImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/ImageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/LogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/LogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/MenuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/MenuController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/PollController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/PollController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/SliderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/SliderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/ScriptController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/ScriptController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/StyleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/StyleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/AdminLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/AdminLog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Adv.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Adv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Clip.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Clip.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Gallery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/GuestLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/GuestLog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/MenuItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/MenuItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Opinion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Opinion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Poll.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Poll.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/StarterKit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/StarterKit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/AdvSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/AdvSaveRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/CategorySaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/CategorySaveRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/ClipSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/ClipSaveRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/CommentSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/CommentSaveRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/GallerySaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/GallerySaveRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/MenuSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/MenuSaveRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/PollSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/PollSaveRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/PostSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/PostSaveRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/SliderSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/SliderSaveRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/UserSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/UserSaveRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StarterKit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarterKit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StarterKitFacade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarterKitFacade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StarterKitServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarterKitServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -490,7 +264,7 @@
       <workItem from="1618956400450" duration="89000" />
       <workItem from="1618957000664" duration="1869000" />
       <workItem from="1647240281322" duration="533000" />
-      <workItem from="1672775368221" duration="1359000" />
+      <workItem from="1672775368221" duration="1603000" />
     </task>
     <task id="LOCAL-00001" summary="Ready To Fire!">
       <created>1598681409055</created>
@@ -667,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647240513334</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fix some bug dec valiation senstivety">
+      <created>1672781253809</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1672781253809</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -704,6 +485,7 @@
     <MESSAGE value="fix major error" />
     <MESSAGE value="optmize for laravel 8.x" />
     <MESSAGE value="add assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="add assets" />
+    <MESSAGE value="fix some bug dec valiation senstivety" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix some bug dec valiation senstivety" />
   </component>
 </project>
