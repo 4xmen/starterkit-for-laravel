@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="fix some bug dec valiation senstivety">
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="fix readme for laravel 9.x">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -265,6 +264,7 @@
       <workItem from="1618957000664" duration="1869000" />
       <workItem from="1647240281322" duration="533000" />
       <workItem from="1672775368221" duration="1603000" />
+      <workItem from="1672924855459" duration="316000" />
     </task>
     <task id="LOCAL-00001" summary="Ready To Fire!">
       <created>1598681409055</created>
@@ -448,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672781253809</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="fix readme for laravel 9.x">
+      <created>1672925099732</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1672925099732</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,6 +493,7 @@
     <MESSAGE value="optmize for laravel 8.x" />
     <MESSAGE value="add assets" />
     <MESSAGE value="fix some bug dec valiation senstivety" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix some bug dec valiation senstivety" />
+    <MESSAGE value="fix readme for laravel 9.x" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix readme for laravel 9.x" />
   </component>
 </project>
