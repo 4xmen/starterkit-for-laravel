@@ -11,7 +11,7 @@ An Starter Kit For Laravel Projects.
 1-Install the package via composer:
 
 ```bash
-composer require xmen/starter-kit
+ composer require xmen/starter-kit --with-all-dependencies
 ```
 
 2-Publish and run the migrations with:
@@ -19,7 +19,7 @@ composer require xmen/starter-kit
 ```bash
 php artisan vendor:publish --provider="Xmen\StarterKit\StarterKitServiceProvider" --tag="migrations"
 php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="migrations"
-php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
 php artisan migrate
 ```
 

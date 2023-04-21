@@ -108,3 +108,4 @@ typings/
 # FuseBox cache
 .fusebox/
 
+.ide/*
