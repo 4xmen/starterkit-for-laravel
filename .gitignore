@@ -109,3 +109,4 @@ typings/
 .fusebox/
 
 .ide/*
+.idea
