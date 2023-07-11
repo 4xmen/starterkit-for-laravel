@@ -5,8 +5,7 @@
 @import 'variables';
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
-@import "~@ghalamborm/bootstrap4-rtl/bootstrap-rtl.min.css";
+@import '~bootstrap/dist/css/bootstrap.rtl.min.css';
 @import "~vazir-font/dist/font-face.css";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import "~rvnm/dist/jquery-rvnm.min.css";
@@ -14,22 +13,19 @@
 @import "~bootstrap-select/dist/css/bootstrap-select.min.css";
 @import "~bootstrap-tagsinput/dist/bootstrap-tagsinput-typeahead.css";
 @import "~bootstrap-tagsinput/dist/bootstrap-tagsinput.css";
-//@import "~alertifyjs/build/css/alertify.min.css";
-@import "~alertifyjs/build/css/alertify.rtl.min.css";
-//@import "~alertifyjs/build/css/themes/semantic.min.css";
-@import "~alertifyjs/build/css/themes/semantic.rtl.min.css";
+@import "~alertifyjs/build/css/alertify.min.css";
+//@import "~alertifyjs/build/css/alertify.rtl.min.css";
+@import "~alertifyjs/build/css/themes/semantic.min.css";
+//@import "~alertifyjs/build/css/themes/semantic.rtl.min.css";
 //@import "~trix/dist/trix.css";
-@import "~lightbox2/dist/css/lightbox.min.css";
+//@import "~lightbox2/dist/css/lightbox.min.css";
 @import "~alertifyjs/build/css/alertify.rtl.min.css";
 @import "~alertifyjs/build/css/themes/bootstrap.rtl.min.css";
-@import "~owl.carousel/dist/assets/owl.carousel.min.css";
-@import "~owl.carousel/dist/assets/owl.theme.default.min.css";
 @import "~fontawesome-iconpicker/dist/css/fontawesome-iconpicker.min.css";
 @import "~uprogress/dist/uprogress.min.css";
 @import "~chart.js/dist/Chart.min.css";
 @import "~select2/dist/css/select2.min.css";
 @import "other/menu";
-@import "other/slider";
 
 //@import "~jquery-sortable/source/css/example.css";
 
@@ -46,6 +42,14 @@ body {
 
 table td{
     color: $text-color;
+}
+
+table td .btn{
+    margin-right: 4px;
+}
+
+table.table-bordered th{
+    vertical-align: center;
 }
 
 section{

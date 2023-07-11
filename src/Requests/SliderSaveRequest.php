@@ -25,7 +25,7 @@ class SliderSaveRequest extends FormRequest
     {
         return [
             //
-            'body' => ['nullable', 'string','min:15'],
+            'body' => ['required', 'string','min:1'],
             'active' => ['nullable', 'boolean'],
             'cover' => ['nullable', 'image', 'mimes:jpeg,png,jpg,gif,svg', 'max:4096'],
         ];

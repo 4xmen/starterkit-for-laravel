@@ -11,7 +11,7 @@ An Starter Kit For Laravel Projects.
 1-Install the package via composer:
 
 ```bash
- composer require xmen/starter-kit --with-all-dependencies
+ composer require xmen/starter-kit
 ```
 
 2-Publish and run the migrations with:
@@ -90,7 +90,7 @@ Laravel 9 and above:
 
 ```bash
 composer require laravel/ui
-php artisan ui bootstrap
+php artisan ui vue
 php artisan ui vue --auth
 ```
 

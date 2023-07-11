@@ -41,7 +41,7 @@ class SliderController extends Controller
 
     public function createOrUpdate(Slider $slider, SliderSaveRequest $request)
     {
-        $slider->body = $request->input('body');
+        $slider->body = $request->input('body','');
         $slider->active = $request->has('active');
         $slider->user_id = auth()->id();
         if ($request->hasFile('cover')) {

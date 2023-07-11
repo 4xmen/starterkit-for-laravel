@@ -115,6 +115,17 @@ class Post extends Model implements HasMedia
         }
     }
 
+    public function orgurl()
+    {
+        if ($this->getMedia()->count() > 0) {
+            return $this->getMedia()[$this->image_index]->getUrl();
+        } else {
+            return asset('/images/logo.png');
+
+        }
+    }
+
+
     public function spendTime()
     {
         $word = strlen(strip_tags($this->body));
@@ -147,9 +158,9 @@ class Post extends Model implements HasMedia
             'title' => $this->title,
             'subtitle' => $this->subtitle,
             'body' => $this->body,
-            'categories' => $this->categories->implode(' ')??null,
-            'author' => $this->author->name??null,
-            'tags' => $this->tags->implode(' ')??null,
+            'categories' => $this->categories->implode(' ') ?? null,
+            'author' => $this->author->name ?? null,
+            'tags' => $this->tags->implode(' ') ?? null,
         ];
     }
 }

@@ -96,6 +96,7 @@ function showMenuMange($arr)
         data-menuableid="$menu->menuable_id"
         data-meta="$menu->meta"
         data-kind="$menu->kind"
+        data-item-id="$menu->id"
         data-title="$menu->title"
         >
             <span>
