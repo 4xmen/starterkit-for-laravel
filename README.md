@@ -144,6 +144,37 @@ php artisan starter-kit:publish --force
 
 If you have problem with laravel mix, `/vendor/xmen/starter-kit/package-sample.json` could help you. BTW **don't forget to have got backup form you `package.json`**
 
+
+## Add persian jdate & fix pagination
+
+```php
+// top of file
+use Xmen\StarterKit\Helpers\TDate;
+
+// in the boot function
+public function boot()
+{
+    //
+    Carbon::setLocale('fa_IR');
+
+    Carbon::macro('jdate', function ($format, $tr_num = 'fa') {
+        $dt = new TDate();
+        return $dt->PDate($format,self::this()->timestamp);
+    });
+
+    Paginator::useBootstrap();
+}
+
+```
+
+### useage persion date
+
+Then you can use your custom format like this everywhere.
+
+```php
+$user->created_at->jdate('Y/m/d');
+```
+
 ## Testing
 
 ``` bash
