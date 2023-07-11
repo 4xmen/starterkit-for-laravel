@@ -147,8 +147,9 @@ If you have problem with laravel mix, `/vendor/xmen/starter-kit/package-sample.j
 
 ## Add persian jdate & fix pagination
 
+
 ```php
-// top of file
+// AppServiceProvider.php top of file
 use Xmen\StarterKit\Helpers\TDate;
 
 // in the boot function
@@ -157,7 +158,7 @@ public function boot()
     //
     Carbon::setLocale('fa_IR');
 
-    Carbon::macro('jdate', function ($format, $tr_num = 'fa') {
+    Carbon::macro('jdate', function ($format) {
         $dt = new TDate();
         return $dt->PDate($format,self::this()->timestamp);
     });
