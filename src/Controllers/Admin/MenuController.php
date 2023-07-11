@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use function Xmen\StarterKit\Helpers\logAdmin;
 use Xmen\StarterKit\Models\Category;
 use Xmen\StarterKit\Models\Menu;
+use Xmen\StarterKit\Models\MenuItem;
 use Xmen\StarterKit\Requests\MenuSaveRequest;
 
 class MenuController extends Controller
@@ -105,5 +106,9 @@ class MenuController extends Controller
 
         return redirect()->back()
             ->with(['message' => "Menu deleted."]);
+    }
+
+    public function remItem($item){
+        MenuItem::where('id',$item)->delete();
     }
 }

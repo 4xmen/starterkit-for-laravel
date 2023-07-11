@@ -188,6 +188,15 @@ jQuery(function () {
     }
 
 });
+
+$("#menu-manage li").bind('dblclick',async function () {
+    if (confirm('Are you sure to remove?')){
+        let url =  $("#rm-item").val()+'/'+$(this).data('item-id');
+        await  axios.get(url);
+        $(this).slideUp(300).remove();
+    }
+});
+
 var autcom = function () {
     try {
         $("#tag-auto1,#tag-auto2").autocomplete({

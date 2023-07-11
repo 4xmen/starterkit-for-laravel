@@ -134,6 +134,7 @@ Route::prefix(config('starter-kit.uri'))->name('admin.')->group(
                         Route::post('update/{menu}', "Admin\MenuController@update")->name('update');
                         Route::get('show/{menu}', "Admin\MenuController@show")->name('show');
                         Route::get('delete/{menu}', "Admin\MenuController@destroy")->name('delete');
+                        Route::get('remItem/{menu}', "Admin\MenuController@remItem")->name('remItem');
                     }
                 );
 
