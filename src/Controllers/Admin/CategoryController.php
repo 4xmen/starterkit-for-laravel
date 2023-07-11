@@ -35,7 +35,7 @@ class CategoryController extends Controller
         switch ($request->input('bulk')) {
             case 'delete':
                 $msg = __('Categories deleted successfully');
-                logAdminBatch(__METHOD__.'.'.$request->input('bulk'), Category::class, $request->input('id'));
+                logAdminBatch(__METHOD__ . '.' . $request->input('bulk'), Category::class, $request->input('id'));
                 Category::destroy($request->input('id'));
 
                 break;
@@ -148,28 +148,27 @@ class CategoryController extends Controller
     public function sortStore(Request $request)
     {
         $request->validate([
-            'info' => 'required|json',
+            'info' => 'required|json'
         ]);
         $arr = json_decode($request->input('info'), true);
         $this->saveSort($arr[0]);
-        logAdmin(__METHOD__, Category::class, '0');
+        logAdmin(__METHOD__, Cat::class, '0');
         if ($request->ajax()) {
-            return  ["OK" => true, 'msg' => "Categories sort updated"];
+            return ["OK" => true, 'msg' => "Categories sort updated"];
         }
-
         return redirect()->back()
             ->with(['message' => "Categories sort updated"]);
     }
 
-    public function saveSort($arr, $parent_id = null)
+    public function saveSort($arr, $parent = null)
     {
         foreach ($arr as $key => $value) {
             $cat = Category::whereId($value['id'])->first();
             $cat->sort = $key;
-            $cat->parent_id = $parent_id;
+            $cat->parent_id = $parent;
             $cat->save();
-            if (isset($arr['children']) && count($arr['children'][0]) > 0) {
-                $this->saveSort($arr['children'][0], $value['id']);
+            if (isset($value['children']) && count($value['children'][0]) > 0) {
+                $this->saveSort($value['children'][0], $value['id']);
             }
         }
     }
