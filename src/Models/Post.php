@@ -98,10 +98,18 @@ class Post extends Model implements HasMedia
 
     public function registerMediaConversions(Media $media = null): void
     {
+        $t = explode('x',config('starter-kit.post_thumb'));
+
+        if (config('starter-kit.post_thumb') == null || config('starter-kit.post_thumb') == ''){
+            $t[0] = 500 ;
+            $t[1] = 500 ;
+        }
+
+
         $this->addMediaConversion('posts-image')
-            ->width(1200)
-            ->height(600)
-            ->crop(Manipulations::CROP_CENTER, 1200, 600)
+            ->width($t[0])
+            ->height($t[1])
+            ->crop(Manipulations::CROP_CENTER, $t[0], $t[1])
             ->optimize()
             ->sharpen(10);
     }

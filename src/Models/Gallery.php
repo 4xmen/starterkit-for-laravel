@@ -50,9 +50,17 @@ class Gallery extends Model implements HasMedia
     {
         $this->addMediaConversion('gallery-image')->optimize();
 
-        $this->addMediaConversion('gthumb')->width(500)
-            ->height(500)
-            ->crop(Manipulations::CROP_CENTER, 500, 500)->optimize();
+        $t = explode('x',config('starter-kit.gallery_thumb'));
+
+        if (config('starter-kit.gallery_thumb') == null || config('starter-kit.gallery_thumb') == ''){
+            $t[0] = 500 ;
+            $t[1] = 500 ;
+        }
+
+
+        $this->addMediaConversion('gthumb')->width($t[0])
+            ->height($t[1])
+            ->crop(Manipulations::CROP_CENTER, $t[0], $t[1])->optimize();
 //                    ->watermark(public_path('images/logo.png'))->watermarkOpacity(50);
 //                    ->withResponsiveImages();
     }
