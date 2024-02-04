@@ -41,7 +41,7 @@ class Image extends Model implements HasMedia
     use  InteractsWithMedia, HasTranslations;
 
 
-    public $translatable = ['title','description'];
+    public $translatable = ['title'];
 
     protected $guarded = [];
 

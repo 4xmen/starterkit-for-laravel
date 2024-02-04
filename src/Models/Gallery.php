@@ -42,7 +42,7 @@ class Gallery extends Model implements HasMedia
     use  InteractsWithMedia,HasTranslations;
 
 
-    public $translatable = ['title'];
+    public $translatable = ['title','description'];
     public function images()
     {
         return $this->hasMany(Image::class, 'gallery_id', 'id')->orderBy('sort')->orderByDesc('id');
