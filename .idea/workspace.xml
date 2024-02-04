@@ -22,25 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="updated readme">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/starter-kit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/starter-kit.iml" afterDir="false" />
+    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="added translatable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/CkeditorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/CkeditorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/ClipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/ClipController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Clip.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Clip.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Gallery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/MenuItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/MenuItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Opinion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Opinion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Poll.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Poll.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/Slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Slider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -355,7 +338,7 @@
       <workItem from="1689113978273" duration="641000" />
       <workItem from="1690282094023" duration="483000" />
       <workItem from="1690431507381" duration="5000" />
-      <workItem from="1707047945994" duration="425000" />
+      <workItem from="1707047945994" duration="937000" />
     </task>
     <task id="LOCAL-00001" summary="Ready To Fire!">
       <created>1598681409055</created>
@@ -581,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689114010921</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="added translatable">
+      <created>1707048439444</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1707048439444</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,6 +614,7 @@
     <MESSAGE value="fixed menu item bug" />
     <MESSAGE value="upgraded bootstrap version 5&#10;fixed many bugs" />
     <MESSAGE value="updated readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated readme" />
+    <MESSAGE value="added translatable" />
+    <option name="LAST_COMMIT_MESSAGE" value="added translatable" />
   </component>
 </project>

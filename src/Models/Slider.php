@@ -3,6 +3,7 @@
 namespace Xmen\StarterKit\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Translatable\HasTranslations;
 
 /**
  * App\Slider
