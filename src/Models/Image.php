@@ -38,7 +38,7 @@ use Spatie\Translatable\HasTranslations;
  */
 class Image extends Model implements HasMedia
 {
-    use  InteractsWithMedia,HasTranslations;
+    use  InteractsWithMedia, HasTranslations;
 
 
     public $translatable = ['title'];
@@ -53,7 +53,7 @@ class Image extends Model implements HasMedia
     public function registerMediaConversions(Media $media = null): void
     {
 
-        $t = explode('x',config('starter-kit.post_thumb'));
+        $t = explode('x', config('starter-kit.post_thumb'));
         if (config('starter-kit.gallery_thumb') == null || config('starter-kit.gallery_thumb') == '') {
             $t[0] = 500;
             $t[1] = 500;
