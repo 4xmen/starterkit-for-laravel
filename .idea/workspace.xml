@@ -22,8 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="added translatable">
+    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="fixed error for slider model">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Clip.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Clip.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Gallery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Poll.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Poll.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/Slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Slider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -338,7 +343,7 @@
       <workItem from="1689113978273" duration="641000" />
       <workItem from="1690282094023" duration="483000" />
       <workItem from="1690431507381" duration="5000" />
-      <workItem from="1707047945994" duration="937000" />
+      <workItem from="1707047945994" duration="1879000" />
     </task>
     <task id="LOCAL-00001" summary="Ready To Fire!">
       <created>1598681409055</created>
@@ -571,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707048439444</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fixed error for slider model">
+      <created>1707048920754</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1707048920754</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,6 +627,7 @@
     <MESSAGE value="upgraded bootstrap version 5&#10;fixed many bugs" />
     <MESSAGE value="updated readme" />
     <MESSAGE value="added translatable" />
-    <option name="LAST_COMMIT_MESSAGE" value="added translatable" />
+    <MESSAGE value="fixed error for slider model" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed error for slider model" />
   </component>
 </project>

@@ -52,6 +52,7 @@ class Clip extends Model
     //
     use  SoftDeletes, Taggable, HasTranslations;
 
+    public $translatable = ['title','body'];
 
     public function getRouteKeyName()
     {

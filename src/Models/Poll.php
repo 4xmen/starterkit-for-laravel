@@ -4,7 +4,6 @@ namespace Xmen\StarterKit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Spatie\Translatable\HasTranslations;
 
 /**
  * App\Poll
@@ -39,7 +38,7 @@ use Spatie\Translatable\HasTranslations;
  */
 class Poll extends Model
 {
-    use  SoftDeletes, HasTranslations;
+    use  SoftDeletes;
 
     //
     protected $guarded = [];

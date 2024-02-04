@@ -31,6 +31,8 @@ class Slider extends Model
 {
     //
 
+    public $translatable = ['body'];
+
     use HasTranslations;
     public function imgUrl()
     {

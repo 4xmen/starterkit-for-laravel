@@ -41,6 +41,7 @@ class Category extends Model
 {
     use SoftDeletes,HasTranslations;
 
+    public $translatable = ['name','description'];
     public function posts()
     {
         return $this->belongsToMany(Post::class);
