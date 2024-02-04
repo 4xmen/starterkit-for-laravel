@@ -41,7 +41,7 @@ class Image extends Model implements HasMedia
     use  InteractsWithMedia, HasTranslations;
 
 
-    public $translatable = ['title'];
+    public $translatable = ['title','description'];
 
     protected $guarded = [];
 
@@ -71,7 +71,7 @@ class Image extends Model implements HasMedia
     public function imgurl()
     {
         if ($this->getMedia()->count() > 0) {
-            return $this->getMedia()->first()->getUrl('ithumb');
+            return $this->getMedia()->first()->getUrl('gthumb');
         } else {
             return "no image";
         }
