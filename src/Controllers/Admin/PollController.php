@@ -93,8 +93,8 @@ class PollController extends Controller
             foreach ($request->input('options') as $op) {
                 $poll->opinions()->create(
                     [
-                    'title' => $op,
-                ]
+                        'title' => $op,
+                    ]
                 );
             }
         }
@@ -121,7 +121,7 @@ class PollController extends Controller
      */
     public function edit(Poll $poll)
     {
-        return  view('starter-kit::admin.poll.pollForm', compact('poll'));
+        return view('starter-kit::admin.poll.pollForm', compact('poll'));
     }
 
     /**
@@ -138,8 +138,8 @@ class PollController extends Controller
             foreach ($request->input('options') as $op) {
                 $poll->opinions()->create(
                     [
-                    'title' => $op,
-                ]
+                        'title' => $op,
+                    ]
                 );
             }
         }
@@ -150,8 +150,8 @@ class PollController extends Controller
                 } else {
                     Opinion::whereId($k)->update(
                         [
-                        'title' => $op,
-                    ]
+                            'title' => $op,
+                        ]
                     );
                 }
             }
@@ -173,6 +173,6 @@ class PollController extends Controller
         logAdmin(__METHOD__, Poll::class, $poll->id);
         $poll->delete();
 
-        return  redirect()->back()->with(['message' => __('Poll deleted successfully')]);
+        return redirect()->back()->with(['message' => __('Poll deleted successfully')]);
     }
 }

@@ -5,6 +5,7 @@ namespace Xmen\StarterKit\Models;
 use Conner\Tagging\Taggable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\Translatable\HasTranslations;
 
 /**
  * App\Clip
@@ -49,7 +50,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Clip extends Model
 {
     //
-    use  SoftDeletes, Taggable;
+    use  SoftDeletes, Taggable, HasTranslations;
 
 
     public function getRouteKeyName()

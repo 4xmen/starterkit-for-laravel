@@ -22,6 +22,7 @@
         "spatie/laravel-medialibrary": "^10",
         "spatie/laravel-permission": "^5",
         "spatie/laravel-sluggable": "^3",
+        "spatie/laravel-translatable": "^6.5",
         "te7a-houdini/laravel-trix": "^2.0.9",
         "teamtnt/laravel-scout-tntsearch-driver": "^12.0",
         "thiagocordeiro/laravel-translator": "^1.2"

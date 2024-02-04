@@ -3,6 +3,7 @@
 namespace Xmen\StarterKit\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Translatable\HasTranslations;
 
 /**
  * App\MenuItem
@@ -38,6 +39,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class MenuItem extends Model
 {
+    use HasTranslations;
+
     protected $guarded = [];
 
     //

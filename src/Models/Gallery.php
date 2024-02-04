@@ -7,6 +7,7 @@ use Spatie\Image\Manipulations;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Spatie\Translatable\HasTranslations;
 
 /**
  * App\Gallery
@@ -38,7 +39,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  */
 class Gallery extends Model implements HasMedia
 {
-    use  InteractsWithMedia;
+    use  InteractsWithMedia,HasTranslations;
 
 
     public function images()

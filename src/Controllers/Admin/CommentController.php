@@ -15,25 +15,25 @@ class CommentController extends Controller
         switch ($request->input('bulk')) {
             case 'delete':
                 $msg = __('Comments deleted successfully');
-                logAdminBatch(__METHOD__.'.'.$request->input('bulk'), Comment::class, $request->input('id'));
+                logAdminBatch(__METHOD__ . '.' . $request->input('bulk'), Comment::class, $request->input('id'));
                 Comment::destroy($request->input('id'));
 
                 break;
             case 'pending':
                 $msg = __('Comments pending successfully');
-                logAdminBatch(__METHOD__.'.'.$request->input('bulk'), Comment::class, $request->input('id'));
+                logAdminBatch(__METHOD__ . '.' . $request->input('bulk'), Comment::class, $request->input('id'));
                 Comment::whereIn('id', $request->input('id'))->update(['status' => 0]);
 
                 break;
             case 'approve':
                 $msg = __('Comments approved successfully');
-                logAdminBatch(__METHOD__.'.'.$request->input('bulk'), Comment::class, $request->input('id'));
+                logAdminBatch(__METHOD__ . '.' . $request->input('bulk'), Comment::class, $request->input('id'));
                 Comment::whereIn('id', $request->input('id'))->update(['status' => 1]);
 
                 break;
             case 'reject':
                 $msg = __('Comments rejected successfully');
-                logAdminBatch(__METHOD__.'.'.$request->input('bulk'), Comment::class, $request->input('id'));
+                logAdminBatch(__METHOD__ . '.' . $request->input('bulk'), Comment::class, $request->input('id'));
                 Comment::whereIn('id', $request->input('id'))->update(['status' => -1]);
 
                 break;
@@ -43,6 +43,7 @@ class CommentController extends Controller
 
         return redirect()->route('admin.comment.index')->with(['message' => $msg]);
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -71,7 +72,7 @@ class CommentController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -81,7 +82,7 @@ class CommentController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -91,7 +92,7 @@ class CommentController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -101,33 +102,34 @@ class CommentController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Comment $comment)
     {
     }
+
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function status(Comment $comment, $status)
     {
-        logAdmin(__METHOD__.'.'.$status, Comment::class, $comment->id);
+        logAdmin(__METHOD__ . '.' . $status, Comment::class, $comment->id);
         $comment->status = $status;
         $comment->save();
 
-        return  redirect()->back()->with(['message' => _("Comment status changed")]);
+        return redirect()->back()->with(['message' => _("Comment status changed")]);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy(Comment $comment)

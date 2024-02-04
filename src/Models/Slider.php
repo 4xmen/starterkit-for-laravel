@@ -30,6 +30,7 @@ class Slider extends Model
 {
     //
 
+    use HasTranslations;
     public function imgUrl()
     {
         if ($this->image == null) {

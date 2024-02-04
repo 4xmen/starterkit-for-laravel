@@ -10,6 +10,7 @@ use Spatie\Image\Manipulations;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Spatie\Translatable\HasTranslations;
 use Te7aHoudini\LaravelTrix\Traits\HasTrixRichText;
 use Xmen\StarterKit\Helpers\TDate;
 
@@ -77,7 +78,7 @@ use Xmen\StarterKit\Helpers\TDate;
  */
 class Post extends Model implements HasMedia
 {
-    use SoftDeletes, InteractsWithMedia, Taggable, HasTrixRichText, Searchable;
+    use SoftDeletes, InteractsWithMedia, Taggable, HasTrixRichText, Searchable,HasTranslations;
 
 
     public function categories()

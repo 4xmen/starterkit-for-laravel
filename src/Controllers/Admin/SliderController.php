@@ -41,11 +41,11 @@ class SliderController extends Controller
 
     public function createOrUpdate(Slider $slider, SliderSaveRequest $request)
     {
-        $slider->body = $request->input('body','');
+        $slider->body = $request->input('body', '');
         $slider->active = $request->has('active');
         $slider->user_id = auth()->id();
         if ($request->hasFile('cover')) {
-            $name = time().'.'.request()->cover->getClientOriginalExtension();
+            $name = time() . '.' . request()->cover->getClientOriginalExtension();
             $slider->image = $name;
             $request->file('cover')->storeAs('public/sliders', $name);
         }
@@ -54,6 +54,7 @@ class SliderController extends Controller
 
         return $slider;
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -77,13 +78,13 @@ class SliderController extends Controller
      */
     public function create()
     {
-        return  view('starter-kit::admin.slider.sliderForm');
+        return view('starter-kit::admin.slider.sliderForm');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(SliderSaveRequest $request)
@@ -98,7 +99,7 @@ class SliderController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -108,19 +109,19 @@ class SliderController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit(Slider $slider)
     {
-        return  view('starter-kit::admin.slider.sliderForm', compact('slider'));
+        return view('starter-kit::admin.slider.sliderForm', compact('slider'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(SliderSaveRequest $request, Slider $slider)
@@ -135,7 +136,7 @@ class SliderController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy(Slider $slider)
@@ -143,6 +144,6 @@ class SliderController extends Controller
         logAdmin(__METHOD__, Slider::class, $slider->id);
         $slider->delete();
 
-        return  redirect()->back()->with(['message' => __('Slider deleted successfully')]);
+        return redirect()->back()->with(['message' => __('Slider deleted successfully')]);
     }
 }

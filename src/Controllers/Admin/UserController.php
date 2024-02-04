@@ -10,6 +10,7 @@ use Xmen\StarterKit\Requests\UserSaveRequest;
 class UserController extends Controller
 {
     private $name = 'User';
+
     /**
      * Display a listing of the resource.
      *
@@ -42,7 +43,7 @@ class UserController extends Controller
         $user->mobile = $req->input('mobile');
         $user->syncRoles($req->input('role'));
         $user->save();
-	return $user;
+        return $user;
     }
 
     /**
@@ -57,7 +58,7 @@ class UserController extends Controller
         $user = $this->createOrUpdate($user, $request);
         logAdmin(__METHOD__, User::class, $user->id);
 
-        return redirect()->route('admin.user.all')->with(['message' => $user->name .' '.__($this->name)  .' '. __(' created') ]);
+        return redirect()->route('admin.user.all')->with(['message' => $user->name . ' ' . __($this->name) . ' ' . __(' created')]);
     }
 
     /**
@@ -80,7 +81,7 @@ class UserController extends Controller
         $this->createOrUpdate($user, $request);
         logAdmin(__METHOD__, User::class, $user->id);
 
-        return redirect()->route('admin.user.all')->with(['message' => $user->name .' '.__($this->name)  .' '. __(' edited') ]);
+        return redirect()->route('admin.user.all')->with(['message' => $user->name . ' ' . __($this->name) . ' ' . __(' edited')]);
     }
 
     /**
@@ -91,11 +92,11 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-      if (auth()->user()->hasRole('super-admin')){
-          $user->delete();
-          logAdmin(__METHOD__, User::class, $user->id);
-          return redirect()->back()->with(['message' => $user->name .' '.__($this->name)  .' '. __(' deleted') ]);
-      }
-      return redirect()->route('admin.user.all');
+        if (auth()->user()->hasRole('super-admin')) {
+            $user->delete();
+            logAdmin(__METHOD__, User::class, $user->id);
+            return redirect()->back()->with(['message' => $user->name . ' ' . __($this->name) . ' ' . __(' deleted')]);
+        }
+        return redirect()->route('admin.user.all');
     }
 }

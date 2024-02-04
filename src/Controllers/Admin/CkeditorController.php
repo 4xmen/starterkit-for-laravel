@@ -22,9 +22,10 @@ class CkeditorController extends Controller
     {
         return Tag::where('name', 'LIKE', "%$query%")->limit(5)->pluck('name')->toArray();
     }
+
     public function newssearch($query)
     {
-        return Post::where('title', 'LIKE', "%$query%")->limit(5)->get(['id','title'])->toArray();
+        return Post::where('title', 'LIKE', "%$query%")->limit(5)->get(['id', 'title'])->toArray();
     }
 
     public function upload(Request $request)

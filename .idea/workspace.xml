@@ -22,55 +22,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="fixed menu item bug">
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Regular.woff2" afterDir="false" />
+    <list default="true" id="b7cdff7a-79aa-4672-af2a-18bbb2d78c00" name="Default Changelist" comment="updated readme">
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/starter-kit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/starter-kit.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Black.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Bold.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Light.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Medium.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/vazir-dist/Vazir-Thin.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/js/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/js/vendor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/other/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/other/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fa.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adv/advForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adv/advForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/postForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/postForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/slider/sliderForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/slider/sliderForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/SliderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/SliderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/CkeditorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/CkeditorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/ClipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/ClipController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/CommentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Helpers/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Clip.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Clip.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Gallery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/MenuItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/MenuItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Opinion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Opinion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Poll.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Poll.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/PostSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/PostSaveRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Requests/SliderSaveRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Requests/SliderSaveRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Slider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +98,156 @@
       <path value="$PROJECT_DIR$/vendor/spatie/ray" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-ray" />
       <path value="$PROJECT_DIR$/vendor/spatie/macroable" />
+      <path value="$PROJECT_DIR$/vendor/rtconner/laravel-tagging" />
+      <path value="$PROJECT_DIR$/vendor/orchestra/testbench-core" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/vendor/fidry/cpu-core-counter" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/teamtnt/tntsearch" />
+      <path value="$PROJECT_DIR$/vendor/teamtnt/laravel-scout-tntsearch-driver" />
+      <path value="$PROJECT_DIR$/vendor/fx3costa/laravelchartjs" />
+      <path value="$PROJECT_DIR$/vendor/vimeo/psalm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/amphp/byte-stream" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/amphp/amp" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/netresearch/jsonmapper" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/zbateson/mail-mime-parser" />
+      <path value="$PROJECT_DIR$/vendor/zbateson/mb-wrapper" />
+      <path value="$PROJECT_DIR$/vendor/zbateson/stream-decorators" />
+      <path value="$PROJECT_DIR$/vendor/spatie/temporary-directory" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-translatable" />
+      <path value="$PROJECT_DIR$/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-package-tools" />
+      <path value="$PROJECT_DIR$/vendor/spatie/array-to-xml" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/felixfbecker/advanced-json-rpc" />
+      <path value="$PROJECT_DIR$/vendor/felixfbecker/language-server-protocol" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/te7a-houdini/laravel-trix" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/league/glide" />
+      <path value="$PROJECT_DIR$/vendor/league/config" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/thiagocordeiro/laravel-translator" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/vendor/orchestra/canvas" />
+      <path value="$PROJECT_DIR$/vendor/orchestra/workbench" />
+      <path value="$PROJECT_DIR$/vendor/orchestra/canvas-core" />
+      <path value="$PROJECT_DIR$/vendor/rector/rector" />
+      <path value="$PROJECT_DIR$/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpstan" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gduMYkrGZNWKTtoQdLhnoVO4K9" />
@@ -137,20 +258,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/vendor" />
@@ -229,7 +351,11 @@
       <workItem from="1672924855459" duration="316000" />
       <workItem from="1688879495376" duration="1293000" />
       <workItem from="1688961945457" duration="4219000" />
-      <workItem from="1689057730039" duration="5054000" />
+      <workItem from="1689057730039" duration="9211000" />
+      <workItem from="1689113978273" duration="641000" />
+      <workItem from="1690282094023" duration="483000" />
+      <workItem from="1690431507381" duration="5000" />
+      <workItem from="1707047945994" duration="425000" />
     </task>
     <task id="LOCAL-00001" summary="Ready To Fire!">
       <created>1598681409055</created>
@@ -434,7 +560,28 @@
       <option name="project" value="LOCAL" />
       <updated>1689060074807</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="upgraded bootstrap version 5&#10;fixed many bugs">
+      <created>1689062995437</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1689062995437</updated>
+    </task>
+    <task id="LOCAL-00031" summary="updated readme">
+      <created>1689071609844</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1689071609844</updated>
+    </task>
+    <task id="LOCAL-00032" summary="updated readme">
+      <created>1689114010921</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1689114010921</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,6 +622,8 @@
     <MESSAGE value="fix readme for laravel 9.x" />
     <MESSAGE value="fixed sort child bug" />
     <MESSAGE value="fixed menu item bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed menu item bug" />
+    <MESSAGE value="upgraded bootstrap version 5&#10;fixed many bugs" />
+    <MESSAGE value="updated readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated readme" />
   </component>
 </project>

@@ -43,6 +43,7 @@ use Xmen\StarterKit\Helpers\TDate;
 class Comment extends Model
 {
     protected $guarded = [];
+
     //
     public function commentable()
     {
@@ -64,6 +65,6 @@ class Comment extends Model
     {
         $dt = TDate::GetInstance();
 
-        return $dt->PDate('Y/m/d H:s',$this->created_at->timestamp);
+        return $dt->PDate('Y/m/d H:s', $this->created_at->timestamp);
     }
 }

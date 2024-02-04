@@ -153,7 +153,7 @@ LI;
                 break;
             case "cat-posts":
 
-            break;
+                break;
             case "tag":
 
                 break;
@@ -193,7 +193,7 @@ function MenuShowItems($items)
 
                 break;
             case "link":
-                $out .= '<a href="' .$item->meta . '" >' . $item->title . '</a>';
+                $out .= '<a href="' . $item->meta . '" >' . $item->title . '</a>';
 
                 break;
             case "posts":
@@ -229,7 +229,7 @@ function MenuShowItems($items)
             case "cat-posts":
                 $out .= $item->title;
                 $cat = Category::whereId($item->menuable_id)->firstOrFail();
-                $posts = $cat->posts()->limit(10)->get(['slug','title']);
+                $posts = $cat->posts()->limit(10)->get(['slug', 'title']);
                 $out .= '<ul>';
                 foreach ($posts as $new) {
                     $out .= '<li><a href="' . route('n.show', $new->slug) . '" >' . $new->title . '</a></li>';
@@ -293,7 +293,7 @@ class TDate
 
     public static function GetInstance()
     {
-        if (! isset(self::$instance)) {
+        if (!isset(self::$instance)) {
             self::$instance = new self();
         }
 
@@ -772,7 +772,7 @@ class TDate
         $type = substr($format, 0, 3);
 
         $arDay = ["Sat" => "السبت", "Sun" => "الأحد", "Mon" => "الإثنين", "Tue" => "الثلاثاء",
-            "Wed" => "الأربعاء", "Thu" => "الخميس", "Fri" => "الجمعة", ];
+            "Wed" => "الأربعاء", "Thu" => "الخميس", "Fri" => "الجمعة",];
         $ampm = ['am' => 'صباحا', 'pm' => 'مساء'];
         list($d, $m, $y, $dayname, $monthname, $am) = explode(' ', date('d m Y D M a', $time_stamp));
 
@@ -813,7 +813,7 @@ class TDate
             $format = substr($format, 3);
             $arMonth = ["Jan" => "يناير", "Feb" => "فبراير", "Mar" => "مارس", "Apr" => "ابريل", "May" => "مايو",
                 "Jun" => "يونيو", "Jul" => "يوليو", "Aug" => "اغسطس", "Sep" => "سبتمبر", "Oct" => "اكتوبر",
-                "Nov" => "نوفمبر", "Dec" => "ديسمبر", ];
+                "Nov" => "نوفمبر", "Dec" => "ديسمبر",];
             $format = str_replace('l', $arDay[$dayname], $format);
             $format = str_replace('F', $arMonth[$monthname], $format);
             $format = str_replace('a', substr($ampm[$am], 0, 1), $format);
@@ -1323,8 +1323,7 @@ class TDate
      */
     public function ILastWeekStart()
     {
-        return ($this->PThisWeekStart() - (86400 * 7));
-        ;
+        return ($this->PThisWeekStart() - (86400 * 7));;
     }
 
     /**
@@ -1478,8 +1477,7 @@ class TDate
      */
     public function PLastWeekStart()
     {
-        return ($this->PThisWeekStart() - (86400 * 7));
-        ;
+        return ($this->PThisWeekStart() - (86400 * 7));;
     }
 
     /**

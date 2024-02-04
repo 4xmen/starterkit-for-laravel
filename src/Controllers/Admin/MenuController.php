@@ -37,7 +37,7 @@ class MenuController extends Controller
 
     public function show(Menu $menu)
     {
-        return  view('starter-kit::admin.menu.menuShow', compact('menu'));
+        return view('starter-kit::admin.menu.menuShow', compact('menu'));
     }
 
     public function edit(Menu $menu)
@@ -52,17 +52,17 @@ class MenuController extends Controller
         foreach ($arr as $k => $a) {
             $tmp = $a;
             $tmp['sort'] = $k;
-            if (! isset($tmp['menuabletype']) || $tmp['menuabletype'] == '') {
+            if (!isset($tmp['menuabletype']) || $tmp['menuabletype'] == '') {
                 $tmp['menuable_type'] = null;
                 $tmp['menuable_id'] = null;
-                unset($tmp['menuabletype'],$tmp['menuableid']);
+                unset($tmp['menuabletype'], $tmp['menuableid']);
             } else {
                 $tmp['menuable_type'] = $tmp['menuabletype'];
                 $tmp['menuable_id'] = $tmp['menuableid'];
-                unset($tmp['menuabletype'],$tmp['menuableid']);
+                unset($tmp['menuabletype'], $tmp['menuableid']);
             }
             $tmp['parent'] = $parent;
-            $tmp['user_id'] = auth()->id() ;
+            $tmp['user_id'] = auth()->id();
             unset($tmp['can']);
             unset($tmp['id']);
             if (isset($tmp['children'])) {
@@ -92,7 +92,7 @@ class MenuController extends Controller
         $this->save($menu, $arr[0]);
         logAdmin(__METHOD__, Menu::class, $menu->id);
         if ($request->ajax()) {
-            return  ["OK" => true, 'msg' => "Menu updated"];
+            return ["OK" => true, 'msg' => "Menu updated"];
         }
 
         return redirect()->back()
@@ -108,7 +108,8 @@ class MenuController extends Controller
             ->with(['message' => "Menu deleted."]);
     }
 
-    public function remItem($item){
-        MenuItem::where('id',$item)->delete();
+    public function remItem($item)
+    {
+        MenuItem::where('id', $item)->delete();
     }
 }

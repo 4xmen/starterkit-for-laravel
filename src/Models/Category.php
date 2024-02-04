@@ -4,6 +4,7 @@ namespace Xmen\StarterKit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\Translatable\HasTranslations;
 
 /**
  * App\Category
@@ -38,7 +39,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Category extends Model
 {
-    use SoftDeletes;
+    use SoftDeletes,HasTranslations;
 
     public function posts()
     {

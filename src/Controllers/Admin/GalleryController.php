@@ -42,14 +42,16 @@ class GalleryController extends Controller
     }
 
 
-    public function updatetitle(\Illuminate\Http\Request $request){
-      foreach ($request->titles as $k => $title) {
+    public function updatetitle(\Illuminate\Http\Request $request)
+    {
+        foreach ($request->titles as $k => $title) {
             $image = Image::whereId($k)->first();
             $image->title = $title;
             $image->save();
         }
         return redirect()->back()->with(['message' => __("Titles updated")]);
     }
+
     public function createOrUpdate(Gallery $gallery, GallerySaveRequest $request)
     {
         $gallery->title = $request->input('title');

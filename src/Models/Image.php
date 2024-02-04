@@ -50,9 +50,9 @@ class Image extends Model implements HasMedia
     {
 
         $t = explode('x',config('starter-kit.post_thumb'));
-        if (config('starter-kit.gallery_thumb') == null || config('starter-kit.gallery_thumb') == ''){
-            $t[0] = 500 ;
-            $t[1] = 500 ;
+        if (config('starter-kit.gallery_thumb') == null || config('starter-kit.gallery_thumb') == '') {
+            $t[0] = 500;
+            $t[1] = 500;
         }
 
         $this->addMediaConversion('image-image')->optimize();
