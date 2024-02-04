@@ -41,6 +41,8 @@ class MenuItem extends Model
 {
     use HasTranslations;
 
+    public $translatable = ['title'];
+
     protected $guarded = [];
 
     //
