@@ -80,7 +80,7 @@ class Post extends Model implements HasMedia
 {
     use SoftDeletes, InteractsWithMedia, Taggable, HasTrixRichText, Searchable,HasTranslations;
 
-    public $translatable = ['title','sub_title','body'];
+    public $translatable = ['title','subtitle','body'];
 
     public function categories()
     {
