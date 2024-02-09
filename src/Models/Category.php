@@ -62,4 +62,10 @@ class Category extends Model
     {
         return 'slug';
     }
+
+    public function author()
+    {
+        return $this->belongsTo(\App\Models\User::class);
+    }
+
 }

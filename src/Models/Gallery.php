@@ -81,5 +81,11 @@ class Gallery extends Model implements HasMedia
         }
     }
 
+    public function author()
+    {
+        return $this->belongsTo(\App\Models\User::class);
+    }
+
+
     //
 }

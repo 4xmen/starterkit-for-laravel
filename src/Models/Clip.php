@@ -76,4 +76,10 @@ class Clip extends Model
 
         return \Storage::url('clips/' . $this->file);
     }
+
+    public function author()
+    {
+        return $this->belongsTo(\App\Models\User::class);
+    }
+
 }

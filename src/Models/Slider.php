@@ -42,4 +42,10 @@ class Slider extends Model
 
         return \Storage::url('sliders/' . $this->image);
     }
+
+    public function author()
+    {
+        return $this->belongsTo(\App\Models\User::class);
+    }
+
 }
