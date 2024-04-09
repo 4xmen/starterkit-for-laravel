@@ -12,6 +12,7 @@ class CreateStarterKitTable extends Migration
             $table->id();
             $table->string('name', 128);
             $table->string('slug', 128)->unique();
+            $table->string('subtitle')->nullable();
             $table->text('description')->nullable();
             $table->integer('sort')->default(0);
             $table->unsignedInteger('parent_id')->nullable()->default(null)->index();

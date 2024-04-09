@@ -31,6 +31,13 @@
                            placeholder="{{__('Category name')}}" value="{{old('name',$ccat->name??null)}}"/>
                 </div>
                 <div class="col-md-8 mt-3">
+                    <label for="subtitle">
+                        {{__('Subtitle')}}
+                    </label>
+                    <input name="subtitle" type="text" class="form-control @error('subtitle') is-invalid @enderror"
+                           placeholder="{{__('Subtitle')}}" value="{{old('subtitle',$ccat->subtitle??null)}}"/>
+                </div>
+                <div class="col-md-8 mt-3">
                     <label for="parent">
                         {{__('Category Parent')}}
                     </label>
