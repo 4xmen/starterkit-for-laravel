@@ -55,7 +55,7 @@ class GalleryController extends Controller
     public function createOrUpdate(Gallery $gallery, GallerySaveRequest $request)
     {
         $gallery->title = $request->input('title');
-        if (!$request->has('slug') || $request->input('slug') == null){
+        if (!$request->has('slug') || $request->input('slug') == null ||  trim($request->input('slug'))  == ''){
             $gallery->slug = \StarterKit::slug($request->input('name'));
         }else{
             $gallery->slug = \StarterKit::slug($request->input('slug'));

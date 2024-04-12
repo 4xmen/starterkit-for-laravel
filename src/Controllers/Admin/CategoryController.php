@@ -22,7 +22,7 @@ class CategoryController extends Controller
     {
         $cat->name = $request->input('name');
 //        @if ()
-        if (!$request->has('slug') || $request->input('slug') == null){
+        if (!$request->has('slug') || $request->input('slug') == null ||  trim($request->input('slug'))  == ''){
             $cat->slug = \StarterKit::slug($request->input('name'));
         }else{
             $cat->slug = \StarterKit::slug($request->input('slug'));

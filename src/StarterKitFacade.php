@@ -20,7 +20,7 @@ class StarterKitFacade extends Facade
     public static function slug($name, $replace_char = '-')
     {
         // special chars
-        $name = str_replace(['&', '+', '-', '@', '*'], ['and', 'plus', 'minus', 'at', 'star'], $name);
+        $name = str_replace(['&', '+' , '@', '*'], ['and', 'plus', 'at', 'star'], $name);
 
         // replace non letter or digits by -
         $name = preg_replace('~[^\pL\d\.]+~u', $replace_char, $name);
