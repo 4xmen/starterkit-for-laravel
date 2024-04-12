@@ -44,7 +44,11 @@ class ClipController extends Controller
     public function createOrUpdate(Clip $clip, ClipSaveRequest $request)
     {
         $clip->title = $request->input('title');
-        $clip->slug = \StarterKit::slug($request->input('title'));
+        if (!$request->has('slug') || $request->input('slug') == null){
+            $clip->slug = \StarterKit::slug($request->input('name'));
+        }else{
+            $clip->slug = \StarterKit::slug($request->input('slug'));
+        }
         $clip->body = $request->input('body');
         $clip->active = $request->has('active');
         $clip->user_id = auth()->id();

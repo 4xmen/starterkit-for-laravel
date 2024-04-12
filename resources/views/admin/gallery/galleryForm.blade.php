@@ -35,6 +35,15 @@
                      placeholder="{{__('Title')}}" value="{{old('title',$gallery->title??null)}}"/>
             </div>
           </div>
+
+          <div class="col-md-12 mt-3">
+            <label for="slug">
+              {{__('Slug')}}
+            </label>
+            <input name="slug" type="text" class="form-control @error('slug') is-invalid @enderror"
+                   placeholder="{{__('Slug')}}" value="{{old('slug',$gallery->slug??null)}}"/>
+          </div>
+
           <div class="col-md-12 mt-3">
             <div class="form-group">
               <label for="description">

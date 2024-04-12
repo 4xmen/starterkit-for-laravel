@@ -21,7 +21,13 @@ class CategoryController extends Controller
     public function createOrUpdate(Category $cat, CategorySaveRequest $request)
     {
         $cat->name = $request->input('name');
-        $cat->slug = \StarterKit::slug($request->input('name'));
+//        @if ()
+        if (!$request->has('slug') || $request->input('slug') == null){
+            $cat->slug = \StarterKit::slug($request->input('name'));
+        }else{
+            $cat->slug = \StarterKit::slug($request->input('slug'));
+        }
+
         $cat->description = $request->input('description');
         $cat->subtitle = $request->input('subtitle');
         $cat->parent_id = $request->input('parent') == '' ? null : $request->input('parent');

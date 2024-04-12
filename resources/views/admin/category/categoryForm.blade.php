@@ -23,14 +23,23 @@
             @csrf
 
             <div class="form-group row">
-                <div class="col-md-8 mt-3">
+                <div class="col-md-6 mt-3">
                     <label for="name">
                         {{__('Category name')}}
                     </label>
                     <input name="name" type="text" class="form-control @error('name') is-invalid @enderror"
                            placeholder="{{__('Category name')}}" value="{{old('name',$ccat->name??null)}}"/>
                 </div>
-                <div class="col-md-8 mt-3">
+
+                <div class="col-md-6 mt-3">
+                    <label for="slug">
+                        {{__('Slug')}}
+                    </label>
+                    <input name="slug" type="text" class="form-control @error('slug') is-invalid @enderror"
+                           placeholder="{{__('Slug')}}" value="{{old('slug',$ccat->slug??null)}}"/>
+                </div>
+
+                <div class="col-md-12 mt-3">
                     <label for="subtitle">
                         {{__('Subtitle')}}
                     </label>

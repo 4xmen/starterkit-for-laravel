@@ -20,7 +20,11 @@ class PostController extends Controller
         $dt = new TDate();
 
         $post->title = $request->input('title');
-        $post->slug = \StarterKit::slug($request->input('title'));
+        if (!$request->has('slug') || $request->input('slug') == null){
+            $post->slug = \StarterKit::slug($request->input('name'));
+        }else{
+            $post->slug = \StarterKit::slug($request->input('slug'));
+        }
         $post->body = $request->input('body');
         $post->subtitle = $request->input('subtitle');
         $post->status = $request->input('status');
